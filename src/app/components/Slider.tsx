@@ -5,15 +5,16 @@ import { useEffect, useState, useRef, forwardRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Settings } from "react-slick";
 
 const ReactSlick = dynamic(() => import("react-slick"), { ssr: false });
 
-const ForwardedReactSlick = forwardRef((props, ref) => {
+const ForwardedReactSlick = forwardRef<ReactSlick, Settings>((props, ref) => {
   return <ReactSlick {...props} ref={ref} />;
 });
 ForwardedReactSlick.displayName = "ForwardedReactSlick";
 
-const sliderSettings = {
+const sliderSettings: Settings = {
   dots: true,
   infinite: true,
   speed: 500,
@@ -46,7 +47,7 @@ const sliderSettings = {
 
 const Slider = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const sliderRef = useRef(null);
+  const sliderRef = useRef<ReactSlick>(null);
 
   const handlePrev = () => {
     if (sliderRef.current) {
