@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useEffect, useState, useRef, forwardRef } from "react";
+import { useEffect, useState, useRef, forwardRef, ForwardedRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,9 +10,11 @@ import Image from "next/image";
 
 const ReactSlick = dynamic(() => import("react-slick"), { ssr: false });
 
-const ForwardedReactSlick = forwardRef<any, Settings>((props, ref) => {
-  return <ReactSlick {...props} ref={ref} />;
-});
+const ForwardedReactSlick = forwardRef<React.ComponentType<Settings>, Settings>(
+  (props, ref: ForwardedRef<React.ComponentType<Settings>>) => {
+    return <ReactSlick {...props} ref={ref} />;
+  }
+);
 ForwardedReactSlick.displayName = "ForwardedReactSlick";
 
 const sliderSettings: Settings = {
@@ -48,17 +50,17 @@ const sliderSettings: Settings = {
 
 const Slider = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const sliderRef = useRef<any>(null);
+  const sliderRef = useRef<React.ComponentType<Settings>>(null);
 
   const handlePrev = () => {
     if (sliderRef.current) {
-      sliderRef.current.slickPrev();
+      (sliderRef.current as any).slickPrev();
     }
   };
 
   const handleNext = () => {
     if (sliderRef.current) {
-      sliderRef.current.slickNext();
+      (sliderRef.current as any).slickNext();
     }
   };
 
