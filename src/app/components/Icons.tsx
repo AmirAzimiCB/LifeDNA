@@ -1,4 +1,6 @@
-export function ArrowLeftIcon(props) {
+import { SVGProps } from "react";
+
+export function ArrowLeftIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -18,7 +20,7 @@ export function ArrowLeftIcon(props) {
   );
 }
 
-export function DnaIcon(props) {
+export function DnaIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -47,7 +49,7 @@ export function DnaIcon(props) {
   );
 }
 
-export function FacebookIcon(props) {
+export function FacebookIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -66,7 +68,7 @@ export function FacebookIcon(props) {
   );
 }
 
-export function InstagramIcon(props) {
+export function InstagramIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -87,7 +89,7 @@ export function InstagramIcon(props) {
   );
 }
 
-export function TwitterIcon(props) {
+export function TwitterIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
