@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "./components/Slider";
-import Card from "./components/ui/Card"; // Updated import
-import CardContent from "./components/ui/CardContent"; // Updated import
-import { Button } from "./components/ui/button";
+import Card from "./components/ui/card"; // Ensure the correct case
+import CardContent from "./components/ui/card"; // Ensure the correct case
+import { Button } from "./components/ui/button"; // Ensure the correct case
 
 function CodeIcon(props) {
   return (
