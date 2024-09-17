@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -8,10 +9,12 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/">
               <span className="sr-only">LifeDNA</span>
-              <img
+              <Image
                 className="h-10 w-auto"
                 src="/images/logo-dark.png"
                 alt="LifeDNA"
+                width={40}
+                height={10}
               />
             </Link>
           </div>

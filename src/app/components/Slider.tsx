@@ -41,7 +41,7 @@ const sliderSettings = {
       </div>
     </div>
   ),
-  customPaging: (i) => <div className="dot"></div>,
+  customPaging: () => <div className="dot"></div>,
 };
 
 const Slider = () => {

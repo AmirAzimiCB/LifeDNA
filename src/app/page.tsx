@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Slider from "./components/Slider";
 import Card from "./components/ui/Card";
 import CardContent from "./components/ui/CardContent";
@@ -61,7 +60,7 @@ export default function Home() {
                 Advanced DNA Testing For Methylation And Overall Well-Being
               </h1>
               <p className="mt-4">
-                Tap into your DNA's hidden secrets and unlock actionable
+                Tap into your DNA&apos;s hidden secrets and unlock actionable
                 insights that can help you transform your body and achieve your
                 wellness goals in no time.
               </p>
@@ -94,35 +93,35 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center space-x-8">
-            <img
+            <Image
               src="/placeholder.svg"
               alt="Forbes"
               width={100}
               height={40}
               style={{ aspectRatio: "100/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="Entrepreneur"
               width={150}
               height={40}
               style={{ aspectRatio: "150/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="Business Journal"
               width={150}
               height={40}
               style={{ aspectRatio: "150/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="Daily Mail"
               width={150}
               height={40}
               style={{ aspectRatio: "150/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="CNN"
               width={100}
@@ -144,35 +143,35 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center space-x-8">
-            <img
+            <Image
               src="/placeholder.svg"
               alt="23andMe"
               width={100}
               height={40}
               style={{ aspectRatio: "100/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="Ancestry"
               width={100}
               height={40}
               style={{ aspectRatio: "100/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="MyHeritage"
               width={100}
               height={40}
               style={{ aspectRatio: "100/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="Living DNA"
               width={100}
               height={40}
               style={{ aspectRatio: "100/40", objectFit: "cover" }}
             />
-            <img
+            <Image
               src="/placeholder.svg"
               alt="FamilyTreeDNA"
               width={100}
@@ -209,10 +208,10 @@ export default function Home() {
                 </p>
                 <p className="text-2xl font-bold">$199</p>
                 <p className="text-sm">
-                  Everything in your Methylation Genes Report, and more! You'll
-                  unlock more personalized insights beyond your methylation
-                  analysis to help you make informed decisions about your
-                  well-being.
+                  Everything in your Methylation Genes Report, and more!
+                  You&apos;ll unlock more personalized insights beyond your
+                  methylation analysis to help you make informed decisions about
+                  your well-being.
                 </p>
                 <Button className="bg-green-500 text-white">
                   Get My Reports Now
@@ -249,7 +248,7 @@ export default function Home() {
               Features
             </h2>
             <p className="mt-2 text-3xl leading-8 font-semibold tracking-tight sm:text-4xl">
-              Here's What Makes LifeDNA A Game-Changer
+              Here&apos;s What Makes LifeDNA A Game-Changer
             </p>
           </div>
 
