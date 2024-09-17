@@ -45,8 +45,10 @@ export async function GET() {
     return NextResponse.json(data);
   } catch (error) {
     console.error("Error fetching products:", error); // Log the error
+    const errorMessage =
+      error instanceof Error ? error.message : "Unknown error";
     return NextResponse.json(
-      { error: "Error fetching products", details: error.message || error }, // Include error details
+      { error: "Error fetching products", details: errorMessage }, // Include error details
       { status: 500 }
     );
   }
