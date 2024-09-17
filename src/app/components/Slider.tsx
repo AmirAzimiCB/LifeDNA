@@ -6,12 +6,15 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Settings } from "react-slick";
+import Image from "next/image";
 
 const ReactSlick = dynamic(() => import("react-slick"), { ssr: false });
 
-const ForwardedReactSlick = forwardRef<ReactSlick, Settings>((props, ref) => {
-  return <ReactSlick {...props} ref={ref} />;
-});
+const ForwardedReactSlick = forwardRef<typeof ReactSlick, Settings>(
+  (props, ref) => {
+    return <ReactSlick {...props} ref={ref} />;
+  }
+);
 ForwardedReactSlick.displayName = "ForwardedReactSlick";
 
 const sliderSettings: Settings = {
@@ -47,7 +50,7 @@ const sliderSettings: Settings = {
 
 const Slider = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const sliderRef = useRef<ReactSlick>(null);
+  const sliderRef = useRef<typeof ReactSlick>(null);
 
   const handlePrev = () => {
     if (sliderRef.current) {
@@ -75,7 +78,12 @@ const Slider = () => {
             <div className="bg-[#FBFBFB] rounded-[16px] p-6 min-h-[400px] flex flex-col justify-between shadow-lg">
               <div className="flex items-start">
                 <div className="text-white p-1 rounded-full">
-                  <img src={slide.icon} alt={slide.title} className="w-8 h-8" />
+                  <Image
+                    src={slide.icon}
+                    alt={slide.title}
+                    width={32}
+                    height={32}
+                  />
                 </div>
               </div>
               <div className="text-left mt-auto">
