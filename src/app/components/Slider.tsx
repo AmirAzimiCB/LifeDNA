@@ -50,17 +50,17 @@ const sliderSettings: Settings = {
 
 const Slider = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const sliderRef = useRef<React.ComponentType<Settings>>(null);
+  const sliderRef = useRef<ReactSlick | null>(null);
 
   const handlePrev = () => {
     if (sliderRef.current) {
-      (sliderRef.current as any).slickPrev();
+      sliderRef.current.slickPrev();
     }
   };
 
   const handleNext = () => {
     if (sliderRef.current) {
-      (sliderRef.current as any).slickNext();
+      sliderRef.current.slickNext();
     }
   };
 
