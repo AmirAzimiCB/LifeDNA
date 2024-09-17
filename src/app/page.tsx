@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "./components/Slider";
-import Card from "./components/ui/card"; // Ensure the correct case
-import CardContent from "./components/ui/card"; // Ensure the correct case
-import { Button } from "./components/ui/button"; // Ensure the correct case
+import Card from "./components/ui/Card";
+import CardContent from "./components/ui/CardContent";
+import { Button } from "./components/ui/Button";
+import { DnaIcon } from "./components/Icons";
 
 function CodeIcon(props) {
   return (
@@ -21,35 +22,6 @@ function CodeIcon(props) {
     >
       <polyline points="16 18 22 12 16 6" />
       <polyline points="8 6 2 12 8 18" />
-    </svg>
-  );
-}
-
-function DnaIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M2 15c6.667-6 13.333 0 20-6" />
-      <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" />
-      <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" />
-      <path d="m17 6-2.5-2.5" />
-      <path d="m14 8-1-1" />
-      <path d="m7 18 2.5 2.5" />
-      <path d="m3.5 14.5.5.5" />
-      <path d="m20 9 .5.5" />
-      <path d="m6.5 12.5 1 1" />
-      <path d="m16.5 10.5 1 1" />
-      <path d="m10 16 1.5 1.5" />
     </svg>
   );
 }
@@ -93,7 +65,7 @@ export default function Home() {
                 insights that can help you transform your body and achieve your
                 wellness goals in no time.
               </p>
-              <button className="mt-6 w-full py-3 bg-green-500 text-white font-semibold rounded-md hover:bg-green-600">
+              <button className="mt-6 w-full py-3 bg-accent-color text-white font-semibold rounded-md hover:bg-black">
                 Transform My Wellness
               </button>
             </div>
