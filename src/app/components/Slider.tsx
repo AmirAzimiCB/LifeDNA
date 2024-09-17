@@ -10,14 +10,9 @@ import Image from "next/image";
 
 const ReactSlick = dynamic(() => import("react-slick"), { ssr: false });
 
-const ForwardedReactSlick = forwardRef<React.ComponentType<Settings>, Settings>(
-  (props, ref: ForwardedRef<React.ComponentType<Settings>>) => {
-    return (
-      <ReactSlick
-        {...props}
-        ref={ref as unknown as React.LegacyRef<React.ComponentType<Settings>>}
-      />
-    );
+const ForwardedReactSlick = forwardRef<ReactSlick, Settings>(
+  (props, ref: ForwardedRef<ReactSlick>) => {
+    return <ReactSlick {...props} ref={ref} />;
   }
 );
 ForwardedReactSlick.displayName = "ForwardedReactSlick";
@@ -55,17 +50,17 @@ const sliderSettings: Settings = {
 
 const Slider = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const sliderRef = useRef<React.ComponentType<Settings>>(null);
+  const sliderRef = useRef<ReactSlick | null>(null);
 
   const handlePrev = () => {
     if (sliderRef.current) {
-      (sliderRef.current as unknown as { slickPrev: () => void }).slickPrev();
+      sliderRef.current.slickPrev();
     }
   };
 
   const handleNext = () => {
     if (sliderRef.current) {
-      (sliderRef.current as unknown as { slickNext: () => void }).slickNext();
+      sliderRef.current.slickNext();
     }
   };
 
