@@ -1,10 +1,12 @@
 import { Card, Separator, Text, Title } from "@/components/atoms";
 import {
+  Testimonials,
   BetterWellnessSection,
   HeroSection,
   Partners,
+  Qna,
 } from "@/components/organism/home";
-import { ReportsData, RoadMapData } from "@/constants";
+import { LifeDNAGameChangerData, ReportsData, RoadMapData } from "@/constants";
 import Image from "next/image";
 import { lock, WorksWith, Upload, ColoredDNA } from "../../../../public/icons";
 import { Button } from "@/components/ui/Button";
@@ -12,7 +14,7 @@ import { LifeDNATabsComponent } from "@/components/organism/home/LifeDNATabsComp
 
 export function HomePage() {
   return (
-    <div className="bg-white flex flex-col gap-[75px]">
+    <div className="bg-white flex flex-col gap-[75px] pb-[64px]">
       {/* Hero section */}
       <div className="flex flex-col gap-8">
         <HeroSection />
@@ -106,6 +108,46 @@ export function HomePage() {
             <Image src={ColoredDNA} width={16} height={16} alt="icon" />
             <Text variant="smaller">Take a DNA test</Text>
           </div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-6 max-w-[1440px] mx-auto px-8 lg:px-16">
+        <Title className="text-center">
+          Here&apos;s what makes LifeDNA a game-changer
+        </Title>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {LifeDNAGameChangerData.map((item, index) => (
+            <Card variant="light" key={index} className="flex flex-col gap-6">
+              <Title variant="medium" className="text-2xl">
+                0{item.id}
+              </Title>
+              <Title variant="medium">{item.title}</Title>
+              <div className="flex flex-col gap-6">
+                {item.list.map((i, k) => (
+                  <Text variant="small" key={k}>
+                    {i}
+                  </Text>
+                ))}
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-8 lg:gap-16">
+        <Testimonials />
+        <div className="flex flex-col gap-[42px] max-w-[1440px] mx-auto px-8 lg:px-16">
+          <Title className="text-center">Frequently Asked Questions</Title>
+          <Qna />
+          <Text variant="small">
+            *Our reports have not been evaluated by the Food and Drug
+            Administration. The contents on our website and our reports are for
+            informational purposes only, and are not intended to diagnose any
+            medical condition, replace the advice of a healthcare professional,
+            or provide any medical advice, diagnosis, or treatment. Consult with
+            a healthcare professional before making any major lifestyle changes
+            or if you have any other concerns about your results. The
+            testimonials featured may have used more than one LifeDNA or LifeDNA
+            vendors’ product or reports. 
+          </Text>
         </div>
       </div>
     </div>

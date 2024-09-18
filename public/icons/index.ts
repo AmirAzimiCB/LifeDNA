@@ -8,6 +8,7 @@ import ArrowLeft from "./arrow-left.svg";
 import lock from "./lock.svg";
 import Upload from "./upload.svg";
 import ColoredDNA from "./dna-colored.svg";
+import TestimonialBg from "./testimonialBg.svg";
 export {
   Dna,
   Nutrition,
@@ -19,4 +20,5 @@ export {
   lock,
   Upload,
   ColoredDNA,
+  TestimonialBg,
 };

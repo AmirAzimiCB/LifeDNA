@@ -38,3 +38,27 @@ export type LifeDNASteps = {
   _key: LifeDNATabs;
   showIcon: boolean;
 };
+
+// Here's what makes LifeDNA a game-changer
+
+export type GameChanger = {
+  id?: number;
+  title: string;
+  list: string[];
+};
+
+// testimonials
+
+export type Testimonials = {
+  id?: number;
+  name: string;
+  message: string;
+  rating: 1 | 2 | 3 | 4 | 5;
+};
+
+// Qna
+
+export type QNA = {
+  title: string;
+  description: string;
+};
