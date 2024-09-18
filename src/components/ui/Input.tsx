@@ -1,6 +1,14 @@
 import React from "react";
 
-export const Input = ({ type, placeholder, className }) => {
+export const Input = ({
+  type,
+  placeholder,
+  className,
+}: {
+  type?: string;
+  placeholder?: string;
+  className?: string;
+}) => {
   const baseStyles =
     "px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-300";
 
