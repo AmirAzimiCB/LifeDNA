@@ -14,8 +14,10 @@ import Basket from "./ph_basket.svg";
 import ParkOutline from "./icon-park-outline_vial.svg";
 import Clock from "./material-symbols.svg";
 import GeneticResearch from "./geneticresearch.svg";
+import ReportBg from "./reportsbg.svg";
 
 export {
+  ReportBg,
   GeneticResearch,
   Basket,
   ParkOutline,
