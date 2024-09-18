@@ -1,5 +1,6 @@
 import {
   GameChanger,
+  HowItWorksInThreeStepsTypes,
   LifeDNASteps,
   QNA,
   Reports,
@@ -7,7 +8,15 @@ import {
   Slide,
   Testimonials,
 } from "@/components/types";
-import { Nutrition, Vitamins, Personality, Fitness } from "../../public/icons";
+import {
+  Nutrition,
+  Vitamins,
+  Personality,
+  Fitness,
+  Basket,
+  ParkOutline,
+  Clock,
+} from "../../public/icons";
 
 export const slides: Slide[] = [
   {
@@ -222,6 +231,63 @@ export const LifeDNAGameChangerData: GameChanger[] = [
       "Discover insights that are not offered by other DNA wellness tools.",
       "Unlock genetic secrets that are typically missed by other DNA testing companies.",
     ],
+  },
+];
+
+export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
+  {
+    id: 1,
+    step: 1,
+    title: "Purchase",
+    _key: "have_dna_test",
+    description:
+      "Get your DNA Test Bundle + Platinum Membership. Our DNA kit takes 3-7 days to get to you.",
+    icon: Basket,
+  },
+  {
+    id: 2,
+    step: 2,
+    title: "Swab",
+    _key: "have_dna_test",
+    description:
+      "Follow the instructions in your kit on how to collect your DNA sample and send it back to our lab. It takes around 5 days to ship your saliva swab back to us.",
+    icon: ParkOutline,
+  },
+  {
+    id: 3,
+    step: 3,
+    title: "Explore",
+    _key: "have_dna_test",
+    description:
+      "It takes 3-5 weeks for your DNA sample to be analyzed in our lab. As soon as your reports are generated, we will send you a notification via email. You will then be able to explore your personalized reports.",
+    icon: Clock,
+  },
+  {
+    id: 4,
+    step: 1,
+    title: "Purchase",
+    _key: "no_dna_test",
+    description:
+      "Get your DNA Test Bundle + Platinum Membership. Our DNA kit takes 3-7 days to get to you.",
+    icon: Basket,
+  },
+  {
+    id: 5,
+    step: 2,
+    title: "Swab",
+    _key: "no_dna_test",
+    description:
+      "Follow the instructions in your kit on how to collect your DNA sample and send it back to our lab. It takes around 5 days to ship your saliva swab back to us.",
+    icon: ParkOutline,
+  },
+  {
+    id: 6,
+    step: 3,
+    title: "Explore",
+    _key: "no_dna_test",
+    description:
+      "It takes 3-5 weeks for your DNA sample to be analyzed in our lab. As soon as your reports are generated, we will send you a notification via email. You will then be able to explore your personalized reports.",
+    icon: Clock,
   },
 ];
 

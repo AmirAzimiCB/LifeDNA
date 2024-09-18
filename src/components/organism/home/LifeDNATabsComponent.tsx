@@ -11,7 +11,10 @@ export function LifeDNATabsComponent() {
   const tabs = ["have_dna_test", "no_dna_test"];
 
   return (
-    <Tabs.Root defaultValue={tabs[0]} className="w-full">
+    <Tabs.Root
+      defaultValue={tabs[0]}
+      className="w-full transition-all duration-500 ease-in-out"
+    >
       <Tabs.List className="flex justify-center mb-8 border-[0.5px] p-1 border-[#B5B5B5] rounded-full w-fit mx-auto">
         <Tabs.Trigger
           value="have_dna_test"
@@ -28,28 +31,30 @@ export function LifeDNATabsComponent() {
       </Tabs.List>
 
       <Tabs.Content value="have_dna_test">
-        <Wrapper className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 w-full h-full bg-[#FCFCFC]">
+        <Wrapper className="p-6 max-lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 w-full h-full bg-[#FCFCFC]">
           {LifeDNAStepsData.filter((step) => step._key === "have_dna_test").map(
             (step: LifeDNASteps, index: number) => (
               <div
                 key={index}
-                className="flex items-center gap-10 h-full justify-between"
+                className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 h-full justify-between "
               >
-                <div className="h-full flex flex-col gap-4 items-start">
+                <div className="h-full flex flex-col gap-3 lg:gap-4 items-center max-lg:justify-center lg:items-start">
                   <Text variant="base">Step {step.step}</Text>
-                  <Text className="text-xl font-semibold leading-6 min-w-[340px] w-full">
+                  <Text className="text-xl font-semibold leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
                     {step.title}
                   </Text>
-                  <Text>{step?.description || ""}</Text>
+                  <Text className="text-center lg:text-left">
+                    {step?.description || ""}
+                  </Text>
                 </div>
                 {step.showIcon ? (
-                  <div className="h-full flex items-center justify-center flex-shrink-0">
+                  <div className="lg:h-full flex items-center justify-center flex-shrink-0">
                     <Image
                       src={ArrowLeft}
                       width={32}
                       height={32}
                       alt="arrowleft"
-                      className="aspect-auto flex-shrink-0"
+                      className="aspect-auto flex-shrink-0 max-lg:rotate-90"
                     />
                   </div>
                 ) : null}
@@ -60,28 +65,30 @@ export function LifeDNATabsComponent() {
       </Tabs.Content>
 
       <Tabs.Content value="no_dna_test">
-        <Wrapper className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 w-full h-full bg-[#FCFCFC]">
+        <Wrapper className="p-6 max-lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 w-full h-full bg-[#FCFCFC]">
           {LifeDNAStepsData.filter((step) => step._key === "no_dna_test").map(
             (step: LifeDNASteps, index: number) => (
               <div
                 key={index}
-                className="flex items-center gap-10 h-full justify-between"
+                className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 h-full justify-between "
               >
-                <div className="h-full flex flex-col gap-4 items-start">
+                <div className="h-full flex flex-col gap-3 lg:gap-4 items-center max-lg:justify-center lg:items-start">
                   <Text variant="base">Step {step.step}</Text>
-                  <Text className="text-xl font-semibold leading-6 min-w-[340px] w-full">
+                  <Text className="text-xl font-semibold leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
                     {step.title}
                   </Text>
-                  <Text>{step?.description || ""}</Text>
+                  <Text className="text-center lg:text-left">
+                    {step?.description || ""}
+                  </Text>
                 </div>
                 {step.showIcon ? (
-                  <div className="h-full flex items-center justify-center flex-shrink-0">
+                  <div className="lg:h-full flex items-center justify-center flex-shrink-0">
                     <Image
                       src={ArrowLeft}
                       width={32}
                       height={32}
                       alt="arrowleft"
-                      className="aspect-auto flex-shrink-0"
+                      className="aspect-auto flex-shrink-0 max-lg:rotate-90"
                     />
                   </div>
                 ) : null}

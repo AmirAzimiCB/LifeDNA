@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type Slide = {
   icon: string;
   title: string;
@@ -37,6 +39,15 @@ export type LifeDNASteps = {
   description?: string;
   _key: LifeDNATabs;
   showIcon: boolean;
+};
+
+export type HowItWorksInThreeStepsTypes = {
+  id?: number;
+  step: number;
+  title: string;
+  description?: string;
+  _key: LifeDNATabs;
+  icon: StaticImageData | string;
 };
 
 // Here's what makes LifeDNA a game-changer

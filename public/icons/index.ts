@@ -9,7 +9,18 @@ import lock from "./lock.svg";
 import Upload from "./upload.svg";
 import ColoredDNA from "./dna-colored.svg";
 import TestimonialBg from "./testimonialBg.svg";
+import HowItWorks from "./how-it-works.svg";
+import Basket from "./ph_basket.svg";
+import ParkOutline from "./icon-park-outline_vial.svg";
+import Clock from "./material-symbols.svg";
+import GeneticResearch from "./geneticresearch.svg";
+
 export {
+  GeneticResearch,
+  Basket,
+  ParkOutline,
+  Clock,
+  HowItWorks,
   Dna,
   Nutrition,
   Personality,
