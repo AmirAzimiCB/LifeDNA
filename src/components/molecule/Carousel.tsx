@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import { slides } from "@/constants";
+import { Text, Title } from "../atoms";
 
 const sliderSettings = {
   dots: true,
@@ -123,11 +124,9 @@ export const Carousel: React.FC = () => {
                   />
                 </div>
               </div>
-              <div className="text-left mt-auto">
-                <h4 className="text-sm font-semibold text-14px">
-                  {slide.title}
-                </h4>
-                <p className="text-sm text-14px">{slide.description}</p>
+              <div className="text-left mt-auto flex flex-col gap-2">
+                <Title variant="smaller">{slide.title}</Title>
+                <Text variant="small">{slide.description}</Text>
               </div>
             </div>
           </div>

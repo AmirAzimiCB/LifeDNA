@@ -15,7 +15,7 @@ export const Card: React.FC<CardProps> = ({
   const baseStyles =
     "rounded-[12px] p-5 shadow-[0px_0px_3.1px_0px_rgba(0,_0,_0,_0.22)]";
   const variantStyles = {
-    default: "bg-white",
+    default: "bg-white border-[1.5px] border-[#00A084]",
     light: "bg-[#FBFBFB] rounded-[16px]",
   };
 

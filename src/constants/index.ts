@@ -1,4 +1,5 @@
-import { Slide } from "@/components/types";
+import { LifeDNASteps, Reports, RoadMap, Slide } from "@/components/types";
+import { Nutrition, Vitamins, Personality, Fitness } from "../../public/icons";
 
 export const slides: Slide[] = [
   {
@@ -18,5 +19,162 @@ export const slides: Slide[] = [
     title: "Wellness",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+  },
+];
+
+// Explore Your Personalized Roadmap to Better Wellness
+
+export const RoadMapData: RoadMap[] = [
+  {
+    id: 1,
+    title: "Nutrition Report",
+    description:
+      "Take your nutrition to the next level. Achieve sustainable weight loss without starving yourself, spending countless hours at the gym, or wasting time on fad diets.",
+    items: [
+      "Power vs Endurance",
+      "Post Exercise Recovery Rate",
+      "Injury Predisposition",
+      "Blood Pressure and Exercise",
+      "Weight Loss and Exercise",
+    ],
+    buttonText: "See all traits",
+    icon: Nutrition,
+    href: "/",
+  },
+  {
+    id: 2,
+    title: "Vitamins and Supplements Report",
+    description:
+      "Get a clear understanding of which vitamins, minerals, and nutrients you potentially need based on your DNA analysis. ",
+    items: [
+      "Cholesterol Levels",
+      "Iron Levels",
+      "Probiotic Need",
+      "Calcium Levels",
+      "Zinc Levels",
+    ],
+    buttonText: "See all traits",
+    icon: Vitamins,
+    href: "/",
+  },
+  {
+    id: 3,
+    title: "Fitness Report",
+    description:
+      "Supercharge Your Workout Routine – Level Up Your Exercise with Personalized Fitness Insights.",
+    items: [
+      "Power vs Endurance",
+      "Post Exercise Recovery Rate",
+      "Injury Predisposition",
+      "Blood Pressure and Exercise",
+      "Weight Loss and Exercise",
+    ],
+    buttonText: "See all traits",
+    icon: Fitness,
+    href: "/",
+  },
+  {
+    id: 4,
+    title: "Personality & Cognition",
+    description: "Discover yourself, your intelligence, personality, and more.",
+    items: [
+      "Agreeableness",
+      "Conscientiousness",
+      "Openness",
+      "Extraversion",
+      "Neuroticism",
+    ],
+    buttonText: "See all traits",
+    icon: Personality,
+    href: "/",
+  },
+];
+
+// reports data
+
+export const ReportsData: Reports[] = [
+  {
+    id: 1,
+    title: "Methylation Genes Report",
+    kitIncluded: false,
+    price: "$99",
+    description:
+      "Feeling drained and struggling with mood swings? Discover the genetic reasons behind these signs with personalized insights based on your MTHFR gene and other unique methylation gene mutations. No DNA Kit Included.",
+    href: "/",
+    buttonText: "Get My Report Now",
+  },
+  {
+    id: 2,
+    title: "Methylation Genes Report + Wellness Report Bundle",
+    kitIncluded: false,
+    price: "$199",
+    description:
+      "Everything in your Methylation Genes Report, and more! You’ll unlock more personalized insights beyond your methylation analysis to help you make informed decisions about your well-being.",
+    href: "/",
+    buttonText: "Get My Report Now",
+  },
+  {
+    id: 3,
+    title: "Methylation Genes Report + Wellness Test Bundle",
+    kitIncluded: true,
+    price: "$249",
+    description:
+      "Get everything in your Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
+    href: "/",
+    buttonText: "Get My Report Now",
+  },
+];
+
+// Get started with LifeDNA today in 3 easy steps
+
+export const LifeDNAStepsData: LifeDNASteps[] = [
+  {
+    id: 1,
+    step: 1,
+    showIcon: true,
+    title: "Purchase your LifeDNA Reports",
+    _key: "have_dna_test",
+  },
+  {
+    id: 2,
+    step: 2,
+    showIcon: true,
+    title: "Upload your existing DNA Test",
+    _key: "have_dna_test",
+    description:
+      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
+  },
+  {
+    id: 3,
+    step: 3,
+    showIcon: false,
+    title: "Discover personalized wellness insights from your DNA",
+    _key: "have_dna_test",
+    description: "Unlock 120+ traits reports in a few hours.",
+  },
+  {
+    id: 4,
+    step: 1,
+    showIcon: true,
+    title: "Order your LifeDNA Test Kit",
+    _key: "no_dna_test",
+  },
+  {
+    id: 5,
+    step: 2,
+    showIcon: true,
+    title: "Collect Your DNA Sample",
+    _key: "no_dna_test",
+    description:
+      "Take a DNA test by swabbing your cheeks and send your sample back to our lab for your DNA analysis.",
+  },
+  {
+    id: 6,
+    step: 3,
+    showIcon: false,
+    title: "Get access to your personalized wellness reports in 3 - 5 weeks!",
+    _key: "no_dna_test",
+    description:
+      "Unlock 120+ traits reports tailored to you and your unique DNA.",
   },
 ];
