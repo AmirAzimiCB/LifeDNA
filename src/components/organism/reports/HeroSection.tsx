@@ -4,7 +4,7 @@ import { Text, Title } from "@/components/atoms";
 
 export function HeroSection() {
   return (
-    <section className="w-full relative px-4 lg:px-[94px] flex flex-col gap-[157px] justify-center min-h-[634px] h-full">
+    <section className="w-full relative px-4 lg:px-[94px] lg:pt-[175px] flex flex-col gap-[157px] justify-center max-h-[634px] h-full">
       <Image
         src={ReportBg}
         layout="fill"

@@ -3,11 +3,13 @@ import {
   HowItWorksInThreeStepsTypes,
   LifeDNASteps,
   QNA,
+  ReportCategory,
   Reports,
   RoadMap,
+  SelectOptions,
   Slide,
   Testimonials,
-} from "@/components/types";
+} from "@/types";
 import {
   Nutrition,
   Vitamins,
@@ -16,6 +18,8 @@ import {
   Basket,
   ParkOutline,
   Clock,
+  Fork,
+  BreadIcon,
 } from "../../public/icons";
 
 export const slides: Slide[] = [
@@ -330,5 +334,60 @@ export const QNAData: QNA[] = [
       "Will you sell my data to third parties like insurance companies? how do you protect my data?",
     description:
       "No. When you upload your DNA to LifeDNA, you keep 100% ownership over your data. We will NEVER sell your data, and we will NEVER share it without your permission. Your data is encrypted, protected, and safe. You can have your DNA information deleted anytime. Just send us a message and we’ll do so right away.",
+  },
+];
+
+export const reportOptions: SelectOptions[] = [
+  { value: "nutrition", label: "Nutrition" },
+  { value: "fitness", label: "Fitness" },
+  { value: "wellness", label: "Wellness" },
+];
+
+export const reportData: ReportCategory[] = [
+  {
+    category: "nutrition",
+    description: "Discover the best (and worst) foods for your DNA.",
+    icon: Fork,
+    items: [
+      { name: "Carbohydrate Metabolism", icon: BreadIcon },
+      { name: "Sodium Sensitivity", icon: BreadIcon },
+      { name: "Saturated Fat Metabolism", icon: BreadIcon },
+      { name: "Gluten Sensitivity", icon: BreadIcon },
+      { name: "Lactose Tolerance", icon: BreadIcon },
+      { name: "Caffeine Sensitivity", icon: BreadIcon },
+      { name: "Weight Change", icon: BreadIcon },
+      { name: "Protein Intake", icon: BreadIcon },
+      { name: "Peach Allergy", icon: BreadIcon },
+      { name: "Peanut Allergy", icon: BreadIcon },
+      { name: "Shrimp Allergy", icon: BreadIcon },
+      { name: "Sugar Preference", icon: BreadIcon },
+      { name: "Satiety", icon: BreadIcon },
+      { name: "Sensitivity To Bitter Foods", icon: BreadIcon },
+      { name: "Snacking Behavior", icon: BreadIcon },
+      { name: "Appetite", icon: BreadIcon },
+      { name: "Preference To Fatty Foods", icon: BreadIcon },
+      { name: "Antioxidant Status", icon: BreadIcon },
+    ],
+  },
+  {
+    category: "fitness",
+    description: "Personalized workout recommendations based on your DNA.",
+    icon: Fork,
+    items: [
+      { name: "Muscle Strength", icon: BreadIcon },
+      { name: "Endurance", icon: BreadIcon },
+      // Add more fitness items...
+    ],
+  },
+  {
+    category: "wellness",
+    description:
+      "Get insights into your overall well-being based on your genetics.",
+    icon: Fork,
+    items: [
+      { name: "Sleep Quality", icon: BreadIcon },
+      { name: "Stress Response", icon: BreadIcon },
+      // Add more wellness items...
+    ],
   },
 ];

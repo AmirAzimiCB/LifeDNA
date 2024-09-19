@@ -15,8 +15,12 @@ import ParkOutline from "./icon-park-outline_vial.svg";
 import Clock from "./material-symbols.svg";
 import GeneticResearch from "./geneticresearch.svg";
 import ReportBg from "./reportsbg.svg";
+import Fork from "./fork.svg";
+import BreadIcon from "./mingcute_bread-fill.svg";
 
 export {
+  BreadIcon,
+  Fork,
   ReportBg,
   GeneticResearch,
   Basket,

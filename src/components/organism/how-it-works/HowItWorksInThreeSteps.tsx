@@ -1,11 +1,10 @@
 "use client";
 
 import { Card, Text, Title, Wrapper } from "@/components/atoms";
-import { HowItWorksInThreeStepsTypes, LifeDNASteps } from "@/components/types";
-import { HowItWorksInThreeStepsData, LifeDNAStepsData } from "@/constants";
+import { HowItWorksInThreeStepsTypes } from "@/types";
+import { HowItWorksInThreeStepsData } from "@/constants";
 import * as Tabs from "@radix-ui/react-tabs";
 import Image from "next/image";
-import { ArrowLeft } from "../../../../public/icons";
 import { Button } from "@/components/ui/Button";
 
 export function HowItWorksInThreeSteps() {
@@ -68,34 +67,21 @@ export function HowItWorksInThreeSteps() {
         </Tabs.Content>
 
         <Tabs.Content value="no_dna_test">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full h-full bg-[#FCFCFC]">
-            {HowItWorksInThreeStepsData.filter(
-              (step) => step._key === "no_dna_test"
-            ).map((step: HowItWorksInThreeStepsTypes, index: number) => (
-              <Card
-                key={index}
-                className="flex items-center gap-10 h-full justify-between border-none"
-              >
-                <div className="h-full w-full flex flex-col gap-8 items-start">
-                  <div className="flex items-start w-full justify-between gap-4">
-                    <div className="flex flex-col gap-2">
-                      <Text variant="base">Step {step.step}</Text>
-                      <Title>{step.title}</Title>
-                    </div>
-                    <div className="h-full flex items-start flex-shrink-0">
-                      <Image
-                        src={step.icon}
-                        width={32}
-                        height={32}
-                        alt="arrowleft"
-                        className="aspect-auto flex-shrink-0"
-                      />
-                    </div>
+          <div className="grid grid-cols-1 gap-8 w-full h-full bg-[#FCFCFC]">
+            <Card className="flex items-center gap-10 h-full justify-between border-none">
+              <div className="h-full w-full flex flex-col gap-8 items-start">
+                <div className="flex items-start w-full justify-between gap-4">
+                  <div className="flex flex-col gap-2">
+                    <Text variant="base">step 1</Text>
+                    <Title>Already Taken A DNA test?</Title>
                   </div>
-                  <Text>{step?.description || ""}</Text>
                 </div>
-              </Card>
-            ))}
+                <Text>
+                  Simply upload your raw data and your reports will be generated
+                  in a few hours.
+                </Text>
+              </div>
+            </Card>
           </div>
         </Tabs.Content>
       </Tabs.Root>

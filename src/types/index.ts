@@ -73,3 +73,23 @@ export type QNA = {
   title: string;
   description: string;
 };
+
+// select
+export type SelectOptions = {
+  value: string;
+  label: StaticImageData | string;
+};
+
+export type ReportItem = {
+  icon: string;
+  name: StaticImageData | string;
+};
+
+export type ReportCategory = {
+  category: string;
+  description: string;
+  icon: StaticImageData | string;
+  items: ReportItem[];
+};
+
+export type ReportData = ReportCategory[];
