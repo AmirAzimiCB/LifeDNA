@@ -1,7 +1,7 @@
 "use client";
 
 import { Text, Wrapper } from "@/components/atoms";
-import { LifeDNASteps } from "@/components/types";
+import { LifeDNASteps } from "@/types";
 import { LifeDNAStepsData } from "@/constants";
 import * as Tabs from "@radix-ui/react-tabs";
 import Image from "next/image";

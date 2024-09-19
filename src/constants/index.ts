@@ -3,6 +3,7 @@ import {
   HowItWorksInThreeStepsTypes,
   LifeDNASteps,
   QNA,
+  ReportCard,
   ReportCategory,
   Reports,
   RoadMap,
@@ -389,5 +390,76 @@ export const reportData: ReportCategory[] = [
       { name: "Stress Response", icon: BreadIcon },
       // Add more wellness items...
     ],
+  },
+];
+
+export const reportCards: ReportCard[] = [
+  {
+    title: "Methylation Genes Report",
+    kitIncluded: "*No DNA Kit Included",
+    price: "$99",
+    description:
+      "Feeling drained and struggling with mood swings? Discover the genetic reasons behind these signs with personalized insights based on your MTHFR gene and other unique methylation gene mutations. No DNA Kit Included.",
+    listItems: [
+      "Methylation Genes Report",
+      "MTHFR Gene",
+      "COMT Gene",
+      "VDR Gene",
+      "CBS Gene",
+      "MTR Gene",
+      "BHMT Gene",
+      "SHMT Gene",
+      "AHCY Gene",
+      "ACAT Gene",
+      "MAO A Gene",
+      "MTHFD1 Gene",
+      "NOS3 Gene",
+    ],
+    href: "#",
+  },
+  {
+    title: "Methylation Genes Report + Wellness Report Bundle",
+    kitIncluded: "*No DNA Kit Included",
+    price: "$199",
+    description:
+      "Everything in your Methylation Genes Report, and more! You’ll unlock more personalized insights beyond your methylation analysis to help you make informed decisions about your well-being.",
+    listItems: [
+      "Methylation Genes Report",
+      "Nutrition Report",
+      "Fitness Report",
+      "Vitamins & Supplements Report",
+      "Wellness Report",
+      "Personality & Cognition Report",
+      "Skincare Report",
+      "New Traits Weekly",
+      "Genomic Newsletters",
+      "Wellness Goals",
+      "25% Discount On All LifeDNA Reports And Products",
+    ],
+    href: "#",
+  },
+  {
+    title: "Methylation Genes Report + Wellness Test Bundle",
+    kitIncluded: "*DNA Kit Included",
+    popular: true, // This one is marked as popular
+    price: "$249",
+    description:
+      "Get everything in your Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
+    listItems: [
+      "DNA Test Kit",
+      "Methylation Genes Report",
+      "Nutrition Report",
+      "Fitness Report",
+      "Vitamins & Supplements Report",
+      "Wellness Report",
+      "Personality & Cognition Report",
+      "Skincare Report",
+      "New Traits Weekly",
+      "Genomic Newsletters",
+      "Wellness Goals",
+      "25% Discount On All LifeDNA Reports And Products",
+    ],
+    image: "/path-to-image.jpg", // Replace with your actual image path
+    href: "#",
   },
 ];

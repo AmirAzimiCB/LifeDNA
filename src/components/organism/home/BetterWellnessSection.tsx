@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { BetterWellnessCard } from "@/components/molecule";
-import { RoadMap } from "@/components/types";
+import { RoadMap } from "@/types";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

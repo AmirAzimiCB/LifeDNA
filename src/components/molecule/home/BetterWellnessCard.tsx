@@ -3,7 +3,7 @@ import { Card, Title, Text } from "@/components/atoms";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { RoadMap } from "@/components/types";
+import { RoadMap } from "@/types";
 import { cn } from "@/lib/utils";
 
 export const BetterWellnessCard: React.FC<RoadMap> = ({

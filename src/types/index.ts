@@ -93,3 +93,14 @@ export type ReportCategory = {
 };
 
 export type ReportData = ReportCategory[];
+
+export type ReportCard = {
+  title: string;
+  kitIncluded: string;
+  popular?: boolean;
+  price: string;
+  description: string;
+  listItems: string[];
+  image?: string;
+  href: string;
+};
