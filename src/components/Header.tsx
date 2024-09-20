@@ -18,7 +18,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          <div className="flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <Link
               href="/how-it-works"
               className="text-base font-medium hover:text-gray-900"
@@ -36,12 +36,6 @@ export default function Header() {
               className="text-base font-medium hover:text-gray-900"
             >
               Plans
-            </Link>
-            <Link
-              href="/blog"
-              className="text-base font-medium hover:text-gray-900"
-            >
-              Blog
             </Link>
             <Link
               href="/account"

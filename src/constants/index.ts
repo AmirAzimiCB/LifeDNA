@@ -21,6 +21,7 @@ import {
   Clock,
   Fork,
   BreadIcon,
+  DNAWellness,
 } from "../../public/icons";
 
 export const slides: Slide[] = [
@@ -459,7 +460,7 @@ export const reportCards: ReportCard[] = [
       "Wellness Goals",
       "25% Discount On All LifeDNA Reports And Products",
     ],
-    image: "/path-to-image.jpg", // Replace with your actual image path
+    image: DNAWellness,
     href: "#",
   },
 ];

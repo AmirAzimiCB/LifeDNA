@@ -18,8 +18,10 @@ import ReportBg from "./reportsbg.svg";
 import Fork from "./fork.svg";
 import BreadIcon from "./mingcute_bread-fill.svg";
 import BgDNA from "./bgDNA.svg";
+import DNAWellness from "./DNAWellness.svg";
 
 export {
+  DNAWellness,
   BgDNA,
   BreadIcon,
   Fork,

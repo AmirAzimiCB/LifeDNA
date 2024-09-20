@@ -1,6 +1,9 @@
+"use client";
 import { Card, Text, Title } from "@/components/atoms";
 import { Button } from "@/components/ui/Button";
-import React from "react";
+import { cn } from "@/lib/utils";
+import { ChevronUp } from "lucide-react";
+import Image from "next/image";
 
 interface CardData {
   title: string;
@@ -15,17 +18,29 @@ interface CardData {
 
 interface ReportCardProps {
   card: CardData;
+  isExpanded: boolean;
+  onToggleExpand: () => void;
 }
 
-export const ReportCard: React.FC<ReportCardProps> = ({ card }) => {
+export const ReportCard: React.FC<ReportCardProps> = ({
+  card,
+  isExpanded,
+  onToggleExpand,
+}) => {
   return (
     <Card
       variant="default"
-      className="w-full flex flex-col gap-8 justify-between h-full py-8 px-6"
+      className={cn(
+        "w-full flex flex-col gap-8 justify-between py-8 px-6 transition-all duration-500 ease-in-out",
+        isExpanded ? "h-full" : "h-fit"
+      )}
     >
       <div className="flex flex-col gap-6 h-full">
         <div className="w-full flex flex-col gap-2">
-          <Title variant="medium" className="font-bold">
+          <Title
+            variant="medium"
+            className="font-bold leading-[19.2px] tracking-tight"
+          >
             {card.title}
           </Title>
           <div className="flex justify-between gap-4">
@@ -59,27 +74,43 @@ export const ReportCard: React.FC<ReportCardProps> = ({ card }) => {
           {card.price}
         </Title>
 
-        <Text>{card.description}</Text>
-
-        <div className="flex flex-col gap-[22px]">
-          {card.listItems.map((item, index) => (
-            <div key={index} className="flex gap-3 items-center">
-              <div className="w-2.5 h-2.5 bg-[#00A084] rounded-full flex-shrink-0"></div>
-              <Text variant="smaller" className="font-semibold" key={index}>
-                {item}
-              </Text>
+        <Text className="min-h-[116px]">{card.description}</Text>
+        <div className="flex flex-col gap-8 transition-all duration-500 ease-in-out">
+          <div
+            onClick={onToggleExpand}
+            className="flex items-center justify-between gap-4 w-full"
+          >
+            <Text className="font-semibold">See what’s included</Text>
+            <ChevronUp className={cn(isExpanded ? "rotate-180" : "")} />
+          </div>
+          {isExpanded && (
+            <div className="flex flex-col gap-[22px] transition-all duration-500 ease-in-out">
+              {card.listItems.map((item, index) => (
+                <div key={index} className="flex gap-3 items-center">
+                  <div className="w-2.5 h-2.5 bg-[#00A084] rounded-full flex-shrink-0"></div>
+                  <Text variant="smaller" className="font-semibold" key={index}>
+                    {item}
+                  </Text>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
 
-        {card.image && (
-          <div className="mt-auto mb-4">
-            <img
-              src={card.image}
-              alt={card.title}
-              className="w-full h-auto rounded-md"
-            />
-          </div>
+        {isExpanded && (
+          <>
+            {card.image && (
+              <div className="mt-2">
+                <Image
+                  width={1200}
+                  height={1000}
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full h-auto rounded-md"
+                />
+              </div>
+            )}
+          </>
         )}
       </div>
       <Button>Get My Report Now</Button>
