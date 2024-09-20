@@ -21,8 +21,8 @@ export function LifeDnaReportsFilter() {
       <div className="flex items-center gap-4">
         <div className="p-2 bg-[#41C752] rounded-full flex items-center justify-center">
           <Image
-            src={normalizedData.icon || ""}
-            alt={normalizedData.description}
+            src={normalizedData?.icon || ""}
+            alt={normalizedData?.description}
             width={32}
             height={32}
             className="w-6 h-6 aspect-auto rounded-full"
