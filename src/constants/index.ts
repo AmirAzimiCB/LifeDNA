@@ -22,6 +22,9 @@ import {
   Fork,
   BreadIcon,
   DNAWellness,
+  wellness,
+  skincare,
+  Methylation,
 } from "../../public/icons";
 
 export const slides: Slide[] = [
@@ -109,6 +112,48 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: Personality,
+    href: "/",
+  },
+  {
+    id: 5,
+    title: "Wellness Report",
+    description:
+      "Say goodbye to generic wellness approaches and welcome a new era of personalized DNA insights tailored to optimize your well-being, empowering you to thrive.",
+    items: [
+      "Longevity",
+      "Kidney Stone Predisposition",
+      "Alcohol Consumption",
+      "Diet and DNA Damage",
+      "Motion Sickness",
+    ],
+    buttonText: "See all traits",
+    icon: wellness,
+    href: "/",
+  },
+  {
+    id: 6,
+    title: "Skincare",
+    description:
+      "Safely treat your skin and reveal the best complexion of your life.",
+    items: [
+      "Excessive Skin Dryness",
+      "Acne",
+      "Facial Pigmental Spots",
+      "Skin Tanning / Sun Burning",
+      "Rosacea",
+    ],
+    buttonText: "See all traits",
+    icon: skincare,
+    href: "/",
+  },
+  {
+    id: 7,
+    title: "Methylation Genes Report",
+    description:
+      "Get Personalized Insights Based On Your DNA’s Unique Methylation Gene Mutation.",
+    items: ["MTHFR Gene", "COMT Gene", "VDR Gene", "CBS Gene", "MTR Gene"],
+    buttonText: "See all traits",
+    icon: Methylation,
     href: "/",
   },
 ];
@@ -688,7 +733,7 @@ export const reportData: ReportCategory[] = [
     category: "Wellness",
     description:
       "Take care of your body the smart way: with genetic insights and powerful strategies.",
-    icon: Fork,
+    icon: wellness,
     items: [
       {
         name: "Smoking Behavior & Nicotine Dependence",

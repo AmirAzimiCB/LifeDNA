@@ -20,24 +20,24 @@ export function BetterWellnessSection({
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 826,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 628,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -59,8 +59,8 @@ export function BetterWellnessSection({
   };
 
   return (
-    <div className="relative w-full max-w-[1440px] mx-auto px-8 lg:px-16 h-full">
-      <Slider ref={sliderRef} {...sliderSettings} className="w-full h-full ">
+    <div className="relative w-full max-w-[1440px] mx-auto px-8 lg:px-16 h-full border-none outline-none">
+      <Slider ref={sliderRef} {...sliderSettings} className="">
         {RoadMapData.map((roadMap, index) => (
           <div key={index} className="">
             <BetterWellnessCard
@@ -70,14 +70,14 @@ export function BetterWellnessSection({
               href={roadMap.href}
               icon={roadMap.icon}
               items={roadMap.items}
-              className="min-h-[431px]"
+              className="min-h-[431px] h-auto"
             />
           </div>
         ))}
       </Slider>
 
       {/* Navigation Buttons */}
-      <div className="absolute inset-x-0 flex justify-between items-center top-1/2 transform -translate-y-1/2 px-4">
+      <div className="absolute inset-x-0 flex justify-between items-center top-1/2 transform -translate-y-1/2 lg:px-7 ">
         <button onClick={handlePrev}>
           <ChevronLeft className="w-6 h-6 text-gray-700" />
         </button>

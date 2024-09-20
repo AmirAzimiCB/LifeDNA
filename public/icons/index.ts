@@ -19,8 +19,14 @@ import Fork from "./fork.svg";
 import BreadIcon from "./mingcute_bread-fill.svg";
 import BgDNA from "./bgDNA.svg";
 import DNAWellness from "./DNAWellness.svg";
+import Methylation from "./Methylation.svg";
+import skincare from "./skincare.svg";
+import wellness from "./wellness.svg";
 
 export {
+  Methylation,
+  skincare,
+  wellness,
   DNAWellness,
   BgDNA,
   BreadIcon,
