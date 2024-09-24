@@ -14,35 +14,37 @@ import { LifeDNATabsComponent } from "@/components/organism/home/LifeDNATabsComp
 
 export function HomePage() {
   return (
-    <div className="bg-white flex flex-col gap-[75px] pb-[64px]">
+    <div className="bg-white flex flex-col gap-[75px] pb-16 max-lg:pt-6">
       {/* Hero section */}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-4 lg:gap-8 overflow-hidden max-lg:px-6">
         <HeroSection />
         <Separator />
         <Partners />
       </div>
-      <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-6 text-center">
-          <Title>Explore Your Personalized Roadmap to Better Wellness</Title>
+      <div className="flex flex-col gap-6 lg:gap-8 max-lg:px-6">
+        <div className="flex flex-col gap-3 lg:gap-6 text-center">
+          <Title className="max-lg:max-w-[265px] mx-auto">
+            Explore Your Personalized Roadmap to Better Wellness
+          </Title>
           <Text>
             Explore 8 Powerful Reports, Uncovering Over 130 Unique Traits
           </Text>
         </div>
         <BetterWellnessSection RoadMapData={RoadMapData} />
       </div>
-      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto px-8 lg:px-16">
+      <div className="flex flex-col gap-6 lg:gap-8 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
         <Title className="max-w-[1184px] mx-auto text-center">
           Explore Unique DNA-Personalized Insights for Methylation and Wellness:
           Start Your Journey Now!
         </Title>
-        <Text className="text-center max-w-[1086px] mx-auto">
+        <Text className="text-center max-w-[1086px] mx-auto max-lg:px-8">
           Discover hundreds of genetic insights that have the potential to
           change your life and transform your body. Unlock our best-selling
           Methylation Genes Report and gain powerful insights into your MTHR
           gene and other genes that could be key to unlocking your full genetic
           potential! 
         </Text>
-        <div className="flex flex-col gap-6 text-center">
+        <div className="flex flex-col gap-4 lg:gap-6 text-center max-lg:mt-4">
           <Text className="font-semibold">Works with:</Text>
           <div className="w-full max-w-[636px] mx-auto">
             <Image
@@ -54,7 +56,7 @@ export function HomePage() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4">
           {ReportsData.map((report, index) => (
             <Card
               key={index}
@@ -87,17 +89,23 @@ export function HomePage() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto px-8 lg:px-16">
-        <Title className="text-center">
+      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
+        <Title className="text-center max-sm:max-w-[251px] mx-auto">
           Get started with LifeDNA today in 3 easy steps
         </Title>
         <LifeDNATabsComponent />
-        <Button className="max-w-[418px] mx-auto">
+        <Button className="w-full sm:max-w-[418px] mx-auto">
           I want to transform my wellness!tton
         </Button>
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex items-center justify-center gap-[18px] lg:gap-8">
           <div className="flex items-center gap-2">
-            <Image src={lock} width={16} height={16} alt="icon" />
+            <Image
+              src={lock}
+              width={16}
+              height={16}
+              alt="icon"
+              className="w-4 h-4"
+            />
             <Text variant="smaller">100% Secure</Text>
           </div>
           <div className="flex items-center gap-2">
@@ -110,17 +118,23 @@ export function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 max-w-[1440px] mx-auto px-8 lg:px-16">
-        <Title className="text-center">
+      <div className="flex flex-col gap-6 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
+        <Title className="text-center max-lg:max-w-[244px] mx-auto">
           Here&apos;s what makes LifeDNA a game-changer
         </Title>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {LifeDNAGameChangerData.map((item, index) => (
-            <Card variant="light" key={index} className="flex flex-col gap-6">
-              <Title variant="medium" className="text-2xl">
+            <Card
+              variant="light"
+              key={index}
+              className="flex flex-col gap-4 lg:gap-6"
+            >
+              <Title variant="medium" className="text-xl lg:text-2xl">
                 0{item.id}
               </Title>
-              <Title variant="medium">{item.title}</Title>
+              <Title variant="medium" className="max-lg:text-sm">
+                {item.title}
+              </Title>
               <div className="flex flex-col gap-6">
                 {item.list.map((i, k) => (
                   <Text variant="small" key={k}>
@@ -132,12 +146,12 @@ export function HomePage() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-8 lg:gap-16">
+      <div className="flex flex-col gap-[42px] lg:gap-16">
         <Testimonials />
-        <div className="flex flex-col gap-[42px] max-w-[1440px] mx-auto px-8 lg:px-16">
+        <div className="flex flex-col gap-6 max-w-[1440px] mx-auto px-6 lg:px-16">
           <Title className="text-center">Frequently Asked Questions</Title>
           <Qna />
-          <Text variant="small">
+          <Text variant="small" className="max-sm:text-[10px]">
             *Our reports have not been evaluated by the Food and Drug
             Administration. The contents on our website and our reports are for
             informational purposes only, and are not intended to diagnose any

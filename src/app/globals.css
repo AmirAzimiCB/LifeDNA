@@ -83,6 +83,12 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .slick-dots {
+    gap: 0.5rem !important;
+  }
+}
+
 .slick-dots li {
   margin: 0 !important;
   padding: 0 !important;
@@ -93,4 +99,11 @@
   content: "" !important;
   background: #000;
   border-radius: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .slick-dots li button:before {
+    width: 4px !important;
+    height: 4px !important;
+  }
 }

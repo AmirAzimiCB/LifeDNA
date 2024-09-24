@@ -3,12 +3,19 @@ import { QNAData } from "@/constants";
 
 export function Qna() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-4 lg:gap-6">
       {QNAData.map((item, index) => (
-        <div key={index} className="flex flex-col gap-6">
+        <div key={index} className="flex flex-col gap-4 lg:gap-6">
           <div className="flex flex-col gap-4">
-            <Title variant="smaller">{item.title}</Title>
-            <Text variant="small">{item.description}</Text>
+            <Title
+              variant="smaller"
+              className="max-sm:text-[10px] font-semibold"
+            >
+              {item.title}
+            </Title>
+            <Text variant="small" className="max-sm:text-[10px]">
+              {item.description}
+            </Text>
           </div>
           <Separator />
         </div>

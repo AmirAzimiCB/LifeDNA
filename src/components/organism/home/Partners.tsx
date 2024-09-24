@@ -5,19 +5,25 @@ import Image from "next/image";
 
 export function Partners() {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex justify-center gap-8">
+    <div className="flex flex-col gap-4 lg:gap-8">
+      <div className="flex justify-center gap-4 lg:gap-8">
         <div className="flex items-center space-x-2">
-          <DnaIcon className="w-6 h-6" />
-          <Text className="font-semibold">Over 120 Genetic Hacks</Text>
+          <DnaIcon className="w-4 h-4 lg:w-6 lg:h-6" />
+          <Text className="max-lg:text-[8px] font-semibold">
+            Over 120 Genetic Hacks
+          </Text>
         </div>
         <div className="flex items-center space-x-2">
-          <LockIcon className="w-6 h-6" />
-          <Text className="font-semibold">100% Safe And Secure</Text>
+          <LockIcon className="w-4 h-4 lg:w-6 lg:h-6" />
+          <Text className="max-lg:text-[8px] font-semibold">
+            100% Safe And Secure
+          </Text>
         </div>
         <div className="flex items-center space-x-2">
-          <FlaskConical className="w-6 h-6" />
-          <Text className="font-semibold">Take A DNA Test Or Upload DNA</Text>
+          <FlaskConical className="w-4 h-4 lg:w-6 lg:h-6" />
+          <Text className="max-lg:text-[8px] font-semibold">
+            Take A DNA Test Or Upload DNA
+          </Text>
         </div>
       </div>
       <Separator />

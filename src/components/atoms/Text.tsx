@@ -14,8 +14,8 @@ export const Text: React.FC<TextProps> = ({
 }) => {
   const baseStyles = "text-text-color font-normal text-[#383B42]";
   const variantStyles = {
-    base: "text-[16px] leading-[150%]",
-    small: "text-[14px] leading-[120%]",
+    base: "text-xs lg:text-[16px] leading-[150%]",
+    small: "text-xs lg:text-[14px] leading-[150%] lg:leading-[120%]",
     smaller: "text-[12px] leading-[130%]",
   };
 

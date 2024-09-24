@@ -18,20 +18,20 @@ export function LifeDNATabsComponent() {
       <Tabs.List className="flex justify-center mb-8 border-[0.5px] p-1 border-[#B5B5B5] rounded-full w-fit mx-auto">
         <Tabs.Trigger
           value="have_dna_test"
-          className="px-8 py-2 text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white"
+          className="px-8 py-2 text-[10px] lg:text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
         >
           I Already Have A DNA Test
         </Tabs.Trigger>
         <Tabs.Trigger
           value="no_dna_test"
-          className="px-8 py-2 text-sm capitalize font-normal text-[#383B42]  rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white"
+          className="px-8 py-2 text-[10px] lg:text-sm capitalize font-normal text-[#383B42]  rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
         >
           I Need A DNA Test
         </Tabs.Trigger>
       </Tabs.List>
 
       <Tabs.Content value="have_dna_test">
-        <Wrapper className="p-6 max-lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 w-full h-full bg-[#FCFCFC]">
+        <Wrapper className="p-5 lg:p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 w-full h-full bg-[#FCFCFC]">
           {LifeDNAStepsData.filter((step) => step._key === "have_dna_test").map(
             (step: LifeDNASteps, index: number) => (
               <div
@@ -40,12 +40,15 @@ export function LifeDNATabsComponent() {
               >
                 <div className="h-full flex flex-col gap-3 lg:gap-4 items-center max-lg:justify-center lg:items-start">
                   <Text variant="base">Step {step.step}</Text>
-                  <Text className="text-xl font-semibold leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
+                  <Text className="text-sm max-lg:max-w-[201px] lg:text-xl leading-[120%] font-semibold lg:leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
                     {step.title}
                   </Text>
-                  <Text className="text-center lg:text-left">
-                    {step?.description || ""}
-                  </Text>
+
+                  {step?.description ? (
+                    <Text className="text-center lg:text-left max-lg:mt-3">
+                      {step?.description}
+                    </Text>
+                  ) : null}
                 </div>
                 {step.showIcon ? (
                   <div className="lg:h-full flex items-center justify-center flex-shrink-0">
@@ -65,7 +68,7 @@ export function LifeDNATabsComponent() {
       </Tabs.Content>
 
       <Tabs.Content value="no_dna_test">
-        <Wrapper className="p-6 max-lg:px-10 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 w-full h-full bg-[#FCFCFC]">
+        <Wrapper className=" p-5 lg:p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-14 w-full h-full bg-[#FCFCFC]">
           {LifeDNAStepsData.filter((step) => step._key === "no_dna_test").map(
             (step: LifeDNASteps, index: number) => (
               <div
@@ -74,12 +77,14 @@ export function LifeDNATabsComponent() {
               >
                 <div className="h-full flex flex-col gap-3 lg:gap-4 items-center max-lg:justify-center lg:items-start">
                   <Text variant="base">Step {step.step}</Text>
-                  <Text className="text-xl font-semibold leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
+                  <Text className="text-sm max-lg:max-w-[241px] lg:text-xl leading-[120%] font-semibold lg:leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
                     {step.title}
                   </Text>
-                  <Text className="text-center lg:text-left">
-                    {step?.description || ""}
-                  </Text>
+                  {step?.description ? (
+                    <Text className="text-center lg:text-left max-lg:mt-3">
+                      {step?.description}
+                    </Text>
+                  ) : null}
                 </div>
                 {step.showIcon ? (
                   <div className="lg:h-full flex items-center justify-center flex-shrink-0">

@@ -59,7 +59,7 @@ export function BetterWellnessSection({
   };
 
   return (
-    <div className="relative w-full max-w-[1440px] mx-auto px-8 lg:px-16 h-full border-none outline-none">
+    <div className="relative w-full max-w-[1440px] mx-auto lg:px-16 h-full border-none outline-none">
       <Slider ref={sliderRef} {...sliderSettings} className="">
         {RoadMapData.map((roadMap, index) => (
           <div key={index} className="">
@@ -77,7 +77,7 @@ export function BetterWellnessSection({
       </Slider>
 
       {/* Navigation Buttons */}
-      <div className="absolute inset-x-0 flex justify-between items-center top-1/2 transform -translate-y-1/2 lg:px-7 ">
+      <div className="max-lg:hidden absolute inset-x-0 flex justify-between items-center top-1/2 transform -translate-y-1/2 lg:px-7 ">
         <button onClick={handlePrev}>
           <ChevronLeft className="w-6 h-6 text-gray-700" />
         </button>

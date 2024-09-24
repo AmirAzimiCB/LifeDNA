@@ -23,7 +23,7 @@ export function Testimonials() {
   };
 
   return (
-    <section className="w-full max-h-[437px] h-full relative flex flex-col gap-8 z-20 py-[90px] ">
+    <section className="w-full min-h-[260px] lg:max-h-[437px] h-full transition-all duration-500 ease-in-out relative flex flex-col gap-4 lg:gap-8 z-20 p-6 lg:py-[90px] ">
       <Image
         src={TestimonialBg}
         layout="fill"
@@ -38,16 +38,24 @@ export function Testimonials() {
       </Title>
 
       {/* Display the current testimonial */}
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-6 lg:gap-4">
         <Text className="text-center text-white">
           – {TestimonialsData[currentIndex].name}
         </Text>
-        <Text
-          variant="small"
-          className="max-w-[770px] mx-auto text-center text-white"
-        >
-          “{TestimonialsData[currentIndex].message}”
-        </Text>
+        <div className="flex items-center justify-between gap-4">
+          <button onClick={handlePrev} className="lg:hidden">
+            <ChevronLeft className="w-6 h-6 text-white" />
+          </button>
+          <Text
+            variant="small"
+            className="max-w-[770px] mx-auto text-center text-white"
+          >
+            “{TestimonialsData[currentIndex].message}”
+          </Text>
+          <button onClick={handleNext} className="lg:hidden">
+            <ChevronRight className="w-6 h-6 text-white" />
+          </button>
+        </div>
 
         {/* Display the star rating */}
         <div className="flex items-center justify-center gap-0">
@@ -72,7 +80,7 @@ export function Testimonials() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex items-center justify-center gap-8 -mt-2 z-20">
+      <div className="hidden lg:flex items-center justify-center gap-8 -mt-2 z-20">
         <button onClick={handlePrev} className="p-2">
           <ChevronLeft className="w-6 h-6 text-white" />
         </button>
