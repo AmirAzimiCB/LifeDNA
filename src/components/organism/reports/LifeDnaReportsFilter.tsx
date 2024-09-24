@@ -25,12 +25,12 @@ export function LifeDnaReportsFilter() {
             alt={normalizedData?.description}
             width={32}
             height={32}
-            className="w-6 h-6 aspect-auto rounded-full"
+            className="w-4 h-4 lg:w-6 lg:h-6 aspect-auto rounded-full"
           />
         </div>
         <Text>{normalizedData.description}</Text>
       </div>
-      <div className="rounded-2xl bg-[#FCFCFC] shadow-[0px_0px_19.1px_0px_rgba(0,_0,_0,_0.1)] px-16 py-8 flex flex-col gap-16 ">
+      <div className="rounded-2xl bg-[#FCFCFC] shadow-[0px_0px_19.1px_0px_rgba(0,_0,_0,_0.1)] py-6 px-16 lg:py-8 flex flex-col gap-16 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {normalizedData.items.map((item, index) => (
             <div key={index} className="flex items-center gap-5">
@@ -43,7 +43,7 @@ export function LifeDnaReportsFilter() {
                   className="w-6 h-6 aspect-auto rounded-full"
                 />
               </div>
-              <Text className="font-semibold">{`${item.name}`}</Text>
+              <Text className="font-semibold text-base">{`${item.name}`}</Text>
             </div>
           ))}
         </div>
