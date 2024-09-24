@@ -11,7 +11,7 @@ export function HowItWorksInThreeSteps() {
   const tabs = ["have_dna_test", "no_dna_test"];
 
   return (
-    <Wrapper className="flex flex-col gap-8">
+    <Wrapper className="flex flex-col gap-4 lg:gap-8 max-lg:p-0 max-lg:shadow-none max-lg:bg-white">
       <div className="flex flex-col gap-4">
         <Title className="text-center">Get Started In Three Simple Steps</Title>
         <Text className="font-semibold text-center">
@@ -22,13 +22,13 @@ export function HowItWorksInThreeSteps() {
         <Tabs.List className="flex justify-center mb-8 border-[0.5px] p-1 border-[#B5B5B5] rounded-full w-fit mx-auto">
           <Tabs.Trigger
             value="have_dna_test"
-            className="px-8 py-2 text-xs lg:text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white"
+            className="px-8 py-2.5 text-[10px] lg:text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
           >
             I Already Have A DNA Test
           </Tabs.Trigger>
           <Tabs.Trigger
             value="no_dna_test"
-            className="px-8 py-2 text-xs lg:text-sm capitalize font-normal text-[#383B42]  rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white"
+            className="px-8 py-2.5 text-[10px] lg:text-sm capitalize font-normal text-[#383B42]  rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
           >
             I Need A DNA Test
           </Tabs.Trigger>
@@ -43,7 +43,7 @@ export function HowItWorksInThreeSteps() {
                 key={index}
                 className="flex items-center gap-10 h-full justify-between border-none"
               >
-                <div className="h-full w-full flex flex-col gap-8 items-start">
+                <div className="h-full w-full flex flex-col lg:gap-8 items-start">
                   <div className="flex items-start w-full justify-between gap-4">
                     <div className="flex flex-col gap-2">
                       <Text variant="base">Step {step.step}</Text>
@@ -69,7 +69,7 @@ export function HowItWorksInThreeSteps() {
         <Tabs.Content value="no_dna_test">
           <div className="grid grid-cols-1 gap-8 w-full h-full bg-[#FCFCFC]">
             <Card className="flex items-center gap-10 h-full justify-between border-none">
-              <div className="h-full w-full flex flex-col gap-8 items-start">
+              <div className="h-full w-full flex flex-col gap-7 lg:gap-8 items-start">
                 <div className="flex items-start w-full justify-between gap-4">
                   <div className="flex flex-col gap-2">
                     <Text variant="base">step 1</Text>
@@ -85,7 +85,7 @@ export function HowItWorksInThreeSteps() {
           </div>
         </Tabs.Content>
       </Tabs.Root>
-      <Button>Yes, I want to transform my wellness!</Button>
+      <Button className="mt-4">Yes, I want to transform my wellness!</Button>
     </Wrapper>
   );
 }

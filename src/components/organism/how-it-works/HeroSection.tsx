@@ -4,13 +4,13 @@ import { Text, Title } from "@/components/atoms";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between gap-16">
-      <div className="flex flex-col gap-8">
+    <section className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-16">
+      <div className="flex flex-col gap-4 lg:gap-8">
         <div>
-          <Title className="text-5xl leading-[57.6px] max-w-[590px]">
+          <Title className="lg:text-5xl lg:leading-[57.6px] max-w-[590px]">
             Easy, Quick,
           </Title>
-          <Title className="text-5xl leading-[57.6px] max-w-[590px]">
+          <Title className="lg:text-5xl lg:leading-[57.6px] max-w-[590px]">
             Non-invasive DNA Test.
           </Title>
         </div>
@@ -20,7 +20,7 @@ export function HeroSection() {
             from the comfort of your home. All you need to provide is a small
             saliva sample. It’s simple and non-invasive.
           </Text>
-          <Text variant="small">
+          <Text variant="small" className="font-semibold">
             (DNA kit included Methylation Genes Report + Wellness Test Bundle)
           </Text>
         </div>
@@ -31,7 +31,7 @@ export function HeroSection() {
           alt="how it works"
           width={1600}
           height={1200}
-          className="w-[490px] h-[428px] aspect-auto"
+          className="w-[382px] h-[332px] lg:w-[490px] lg:h-[428px] aspect-auto"
         />
       </div>
     </section>
