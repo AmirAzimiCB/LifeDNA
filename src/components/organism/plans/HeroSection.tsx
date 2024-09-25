@@ -4,7 +4,7 @@ import { Text, Title } from "@/components/atoms";
 
 export function HeroSection() {
   return (
-    <section className="w-full relative px-4 lg:px-[94px] py-16 lg:pb-[156px] flex flex-col gap-[157px] justify-center min-h-[638px] h-full">
+    <section className="w-full relative px-6 lg:px-[94px] py-6 lg:py-16 lg:pb-[156px] flex flex-col gap-[157px] justify-center lg:min-h-[638px] h-full">
       <Image
         src={BgDNA}
         layout="fill"
@@ -13,10 +13,13 @@ export function HeroSection() {
         alt="hero bg"
         className="w-full h-full aspect-auto"
       />
-      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto w-full px-4 lg:px-[94px]">
-        <div>
-          <Title> Transform Your Wellness like Never Before</Title>
-          <Title className="text-xl leading-[200%] max-w-[926px]">
+      <div className="flex flex-col gap-4 lg:gap-8 max-w-[1440px] mx-auto w-full lg:px-[94px]">
+        <div className="max-lg:space-y-4">
+          <Title className="max-sm:max-w-[317px]">
+            {" "}
+            Transform Your Wellness like Never Before
+          </Title>
+          <Title className="text-xs lg:text-xl leading-[150%] lg:leading-[200%] max-w-[926px]">
             Unlock 130+ Insights Into Your Methylation and Wellness to Achieve
             Your Goals Faster
           </Title>
@@ -28,7 +31,7 @@ export function HeroSection() {
           Report. Plus, take the guesswork out of your diet, fitness,
           supplementation, sleep, skin, and wellness.
         </Text>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col max-lg:mt-4 gap-3 lg:gap-6">
           <Text className="font-semibold">Works with:</Text>
           <div className="w-full max-w-[636px]">
             <Image

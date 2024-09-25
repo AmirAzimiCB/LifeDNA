@@ -3,9 +3,9 @@ import { HeroSection, PlanCards } from "@/components/organism/plans";
 
 export function Plans() {
   return (
-    <section className="pb-16">
+    <section className="pb-16 flex flex-col ">
       <HeroSection />
-      <div className="w-full mx-auto max-w-[1440px] px-8 lg:px-16 flex flex-col gap-16">
+      <div className="w-full mx-auto max-w-[1440px] px-8 lg:px-16 flex flex-col gap-16 max-lg:mt-[96px]">
         <PlanCards />
         <Text>
           *Our reports have not been evaluated by the Food and Drug
