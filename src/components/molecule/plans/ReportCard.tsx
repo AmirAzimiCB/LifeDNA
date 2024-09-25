@@ -37,12 +37,17 @@ export const ReportCard: React.FC<ReportCardProps> = ({
     >
       <div className="flex flex-col gap-8 lg:gap-6 h-full">
         <div className="w-full flex flex-col gap-2">
-          <Title
-            variant="medium"
-            className="font-bold max-lg:text-base leading-[19.2px] tracking-tight"
-          >
-            {card.title}
-          </Title>
+          <div className="flex justify-between gap-4">
+            <Title
+              variant="medium"
+              className="font-bold max-lg:text-base leading-[19.2px] tracking-tight"
+            >
+              {card.title}
+            </Title>
+            <Title className="text-2xl lg:hidden max-lg:text-base font-medium leading-[28.8px]">
+              {card.price}
+            </Title>
+          </div>
           <div className="flex justify-between gap-4">
             <Text variant="small" className="font-semibold max-lg:text-[10px]">
               {card.kitIncluded}
@@ -70,7 +75,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
           </div>
         </div>
 
-        <Title className="text-2xl max-lg:text-base font-medium leading-[28.8px]">
+        <Title className="text-2xl max-lg:hidden max-lg:text-base font-medium leading-[28.8px]">
           {card.price}
         </Title>
 
