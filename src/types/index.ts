@@ -5,6 +5,10 @@ export type Slide = {
   title: string;
   description: string;
 };
+export type Partners = {
+  icon: StaticImageData | string;
+  title: string;
+};
 
 export type RoadMap = {
   id?: number;

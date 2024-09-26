@@ -1,7 +1,7 @@
 import Link from "next/link";
 export function MobileNavBar() {
   return (
-    <section className=" bg-white min-h-[332px] w-full p-8">
+    <section className=" bg-white min-h-screen w-full p-8 border-b-[0.75px] border-[#CACACA]">
       <div className="flex flex-col justify-center items-center gap-8">
         <Link
           href="/how-it-works"

@@ -2,6 +2,7 @@ import {
   GameChanger,
   HowItWorksInThreeStepsTypes,
   LifeDNASteps,
+  Partners,
   QNA,
   ReportCard,
   ReportCategory,
@@ -25,6 +26,11 @@ import {
   wellness,
   skincare,
   Methylation,
+  Forbes,
+  Entrepreneur,
+  BusinessJournal,
+  DailyMail,
+  Cnn,
 } from "../../public/icons";
 
 export const slides: Slide[] = [
@@ -45,6 +51,31 @@ export const slides: Slide[] = [
     title: "Wellness",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+  },
+];
+
+// partners
+
+export const PartnersData: Partners[] = [
+  {
+    icon: Forbes,
+    title: "Forbes",
+  },
+  {
+    icon: Entrepreneur,
+    title: "Entrepreneur",
+  },
+  {
+    icon: BusinessJournal,
+    title: "BusinessJournal",
+  },
+  {
+    icon: DailyMail,
+    title: "DailyMail",
+  },
+  {
+    icon: Cnn,
+    title: "Cnn",
   },
 ];
 

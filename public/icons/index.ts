@@ -23,7 +23,22 @@ import Methylation from "./Methylation.svg";
 import skincare from "./skincare.svg";
 import wellness from "./wellness.svg";
 
+// partners
+import Forbes from "./forbes.svg";
+import Entrepreneur from "./entrepreneur.svg";
+import BusinessJournal from "./businessjournal.svg";
+import DailyMail from "./dailymail.svg";
+import Cnn from "./cnn.svg";
+
 export {
+  // partners
+  Forbes,
+  Entrepreneur,
+  BusinessJournal,
+  DailyMail,
+  Cnn,
+
+  // others
   Methylation,
   skincare,
   wellness,

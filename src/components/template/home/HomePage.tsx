@@ -5,6 +5,7 @@ import {
   HeroSection,
   Partners,
   Qna,
+  MobileReportSlider,
 } from "@/components/organism/home";
 import { LifeDNAGameChangerData, ReportsData, RoadMapData } from "@/constants";
 import Image from "next/image";
@@ -32,7 +33,7 @@ export function HomePage() {
         </div>
         <BetterWellnessSection RoadMapData={RoadMapData} />
       </div>
-      <div className="flex flex-col gap-6 lg:gap-8 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
+      <div className="flex flex-col gap-6 lg:gap-8 max-w-[1440px] w-full mx-auto max-lg:px-6 lg:px-16">
         <Title className="max-w-[1184px] mx-auto text-center">
           Explore Unique DNA-Personalized Insights for Methylation and Wellness:
           Start Your Journey Now!
@@ -56,7 +57,7 @@ export function HomePage() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4 max-sm:hidden">
           {ReportsData.map((report, index) => (
             <Card
               key={index}
@@ -88,8 +89,11 @@ export function HomePage() {
             </Card>
           ))}
         </div>
+        <div className="lg:hidden">
+          <MobileReportSlider />
+        </div>
       </div>
-      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
+      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto w-full max-lg:px-6 lg:px-16 max-lg:-mt-8">
         <Title className="text-center max-sm:max-w-[251px] mx-auto">
           Get started with LifeDNA today in 3 easy steps
         </Title>

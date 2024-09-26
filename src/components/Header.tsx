@@ -5,23 +5,29 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { MobileNavBar } from "./organism/header";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <section className="relative">
-      <header className="bg-white shadow-sm">
+      <header
+        className={cn(
+          "bg-white shadow-sm",
+          open ? "" : "border-b-[0.75px] border-[#CACACA]"
+        )}
+      >
         <nav className="px-[5%]" aria-label="Top">
-          <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
+          <div className="w-full py-6 flex items-center justify-between">
             <div className="flex items-center">
               <Link href="/">
                 <span className="sr-only">LifeDNA</span>
                 <Image
-                  className="h-10 w-auto"
-                  src="/images/logo-dark.png"
+                  className="w-[124px] h-[31px]"
+                  src="/images/mainlogo.svg"
                   alt="LifeDNA"
-                  width={40}
-                  height={10}
+                  width={100}
+                  height={100}
                 />
               </Link>
             </div>
