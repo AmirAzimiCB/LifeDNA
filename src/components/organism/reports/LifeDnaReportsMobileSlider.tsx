@@ -6,9 +6,13 @@ import { StaticImageData } from "next/image";
 import { Button } from "@/components/ui/Button";
 type ReportsProps = {
   icon: string | StaticImageData;
-  name: string;
+  name: string | StaticImageData;
 };
-export function LifeDnaReportsMobileSlider({ data }: { data: ReportsProps[] }) {
+export function LifeDnaReportsMobileSlider({
+  data,
+}: {
+  data: ReportsProps[][];
+}) {
   return (
     <div>
       <div className="w-full flex flex-col gap-8">

@@ -1,11 +1,10 @@
 import { Text } from "@/components/atoms";
-import { Button } from "@/components/ui/Button";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 type ReportsProps = {
   icon: string | StaticImageData;
-  name: string;
+  name: string | StaticImageData;
 };
 
 export function LifeDnaReportSliderCard({ data }: { data: ReportsProps[] }) {

@@ -5,11 +5,16 @@ import { useReportFilter } from "@/components/hooks/useReportFilter";
 import { SelectField } from "@/components/molecule";
 import { Button } from "@/components/ui/Button";
 import { reportData, reportOptions } from "@/constants";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { LifeDnaReportsMobileSlider } from "./LifeDnaReportsMobileSlider";
 
-const chunkArray = (array, size: number) => {
-  const chunkedArr = [];
+type ItemType = {
+  icon: string | StaticImageData;
+  name: string | StaticImageData;
+};
+
+const chunkArray = (array: ItemType[], size: number): ItemType[][] => {
+  const chunkedArr: ItemType[][] = [];
   for (let i = 0; i < array.length; i += size) {
     chunkedArr.push(array.slice(i, i + size));
   }
