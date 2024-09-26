@@ -416,7 +416,7 @@ export const QNAData: QNA[] = [
 ];
 
 export const reportOptions: SelectOptions[] = [
-  { value: "nutrition", label: "Nutrition" },
+  { value: "Nutrition", label: "Nutrition" },
   { value: "Vitamins & Supplements", label: "Vitamins & Supplements" },
   { value: "Fitness", label: "Fitness" },
   { value: "Personality & Cognition", label: "Personality & Cognition" },
@@ -426,7 +426,7 @@ export const reportOptions: SelectOptions[] = [
 
 export const reportData: ReportCategory[] = [
   {
-    category: "nutrition",
+    category: "Nutrition",
     description: "Discover the best (and worst) foods for your DNA.",
     icon: Fork,
     items: [
