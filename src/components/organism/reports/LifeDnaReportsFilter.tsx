@@ -6,11 +6,24 @@ import { SelectField } from "@/components/molecule";
 import { Button } from "@/components/ui/Button";
 import { reportData, reportOptions } from "@/constants";
 import Image from "next/image";
+import { LifeDnaReportsMobileSlider } from "./LifeDnaReportsMobileSlider";
+
+const chunkArray = (array, size: number) => {
+  const chunkedArr = [];
+  for (let i = 0; i < array.length; i += size) {
+    chunkedArr.push(array.slice(i, i + size));
+  }
+  return chunkedArr;
+};
 
 export function LifeDnaReportsFilter() {
   const { setSelectedReport, filteredData } = useReportFilter(reportData);
   const defaultOption = reportOptions[0]?.value;
   const normalizedData = filteredData[0];
+
+  const chunkedItems = chunkArray(normalizedData.items, 5);
+
+  console.log("chunkedItems", chunkedItems);
   return (
     <section className="w-full flex flex-col gap-8">
       <SelectField
@@ -30,7 +43,7 @@ export function LifeDnaReportsFilter() {
         </div>
         <Text>{normalizedData.description}</Text>
       </div>
-      <div className="rounded-2xl bg-[#FCFCFC] shadow-[0px_0px_19.1px_0px_rgba(0,_0,_0,_0.1)] py-6 px-16 lg:py-8 flex flex-col gap-16 ">
+      <div className=" max-lg:hidden rounded-2xl bg-[#FCFCFC] shadow-[0px_0px_19.1px_0px_rgba(0,_0,_0,_0.1)] py-6 px-16 lg:py-8 flex flex-col gap-16 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {normalizedData.items.map((item, index) => (
             <div key={index} className="flex items-center gap-5">
@@ -48,6 +61,9 @@ export function LifeDnaReportsFilter() {
           ))}
         </div>
         <Button>Yes, I want to transform my wellness!</Button>
+      </div>
+      <div className="lg:hidden">
+        <LifeDnaReportsMobileSlider data={chunkedItems} />
       </div>
     </section>
   );

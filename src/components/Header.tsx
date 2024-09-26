@@ -63,7 +63,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
-      {open ? <MobileNavBar /> : null}
+      {open ? <MobileNavBar setOpen={setOpen} /> : null}
     </section>
   );
 }
