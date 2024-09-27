@@ -17,7 +17,7 @@ export function HomePage() {
   return (
     <div className="bg-white flex flex-col gap-[75px] pb-16 max-lg:pt-6">
       {/* Hero section */}
-      <div className="flex flex-col gap-4 lg:gap-8 overflow-hidden max-lg:px-6">
+      <div className="flex flex-col gap-4 lg:gap-8 overflow-hidden max-lg:px-6 max-w-[1440px] mx-auto ">
         <HeroSection />
         <Separator />
         <Partners />

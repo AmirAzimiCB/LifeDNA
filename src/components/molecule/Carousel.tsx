@@ -10,6 +10,31 @@ import { Text, Title } from "../atoms";
 export const Carousel: React.FC = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [scrollAmount, setScrollAmount] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  // Handle dragging start
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (scrollContainerRef.current) {
+      setIsDragging(true);
+      setStartX(e.pageX - scrollContainerRef.current.offsetLeft);
+      setScrollLeft(scrollContainerRef.current.scrollLeft);
+    }
+  };
+
+  // Handle dragging move
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !scrollContainerRef.current) return;
+    const x = e.pageX - scrollContainerRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Speed up scrolling
+    scrollContainerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  // Handle dragging end
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
 
   const handlePrev = () => {
     if (scrollContainerRef.current) {
@@ -38,8 +63,12 @@ export const Carousel: React.FC = () => {
       {/* Scroll container */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto max-lg:no-scrollbar gap-4"
+        className="flex overflow-x-auto max-lg:no-scrollbar gap-4 cursor-grab active:cursor-grabbing"
         style={{ scrollBehavior: "smooth" }}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
       >
         {slides.map((slide, index) => (
           <div

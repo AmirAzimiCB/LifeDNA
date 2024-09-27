@@ -20,16 +20,14 @@ export default function Header() {
         <nav className="px-[5%]" aria-label="Top">
           <div className="w-full py-6 flex items-center justify-between">
             <div className="flex items-center">
-              <Link href="/">
-                <span className="sr-only">LifeDNA</span>
-                <Image
-                  className="w-[124px] h-[31px]"
-                  src="/images/mainlogo.svg"
-                  alt="LifeDNA"
-                  width={100}
-                  height={100}
-                />
-              </Link>
+              <span className="sr-only">LifeDNA</span>
+              <Image
+                className="w-[124px] h-[31px]"
+                src="/images/mainlogo.svg"
+                alt="LifeDNA"
+                width={100}
+                height={100}
+              />
             </div>
             <div className="hidden lg:flex items-center space-x-8">
               <Link

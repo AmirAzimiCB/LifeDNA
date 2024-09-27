@@ -33,6 +33,15 @@ import {
   Cnn,
 } from "../../public/icons";
 
+import {
+  vitamins,
+  fitness as FitnessHeroImage,
+  mthfr,
+  skincare as SkinCareHeroImage,
+  sleep as SleepHeroImage,
+  wellness as WellNessHeroImage,
+} from "../../public/svg";
+
 export const slides: Slide[] = [
   {
     icon: "/images/slider-icon-1.svg",
@@ -41,14 +50,38 @@ export const slides: Slide[] = [
       "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
   },
   {
-    icon: "/images/slider-icon-1.svg",
+    icon: vitamins,
     title: "Vitamins",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
   },
   {
-    icon: "/images/slider-icon-1.svg",
+    icon: WellNessHeroImage,
     title: "Wellness",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+  },
+  {
+    icon: mthfr,
+    title: "MTHFR gene",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+  },
+  {
+    icon: FitnessHeroImage,
+    title: "Fitness",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+  },
+  {
+    icon: SleepHeroImage,
+    title: "sleep",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+  },
+  {
+    icon: SkinCareHeroImage,
+    title: "skincare",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
   },
