@@ -21,14 +21,20 @@ const chunkArray = (array: ItemType[], size: number): ItemType[][] => {
   return chunkedArr;
 };
 
-export function LifeDnaReportsFilter() {
+export function LifeDnaReportsFilter({ queryParam }: { queryParam: string }) {
   const { setSelectedReport, filteredData } = useReportFilter(reportData);
-  const defaultOption = reportOptions[0]?.value;
-  const normalizedData = filteredData[0];
+
+  const matchingReport = reportOptions.find(
+    (option) => option.id === Number(queryParam)
+  );
+
+  const defaultOption = matchingReport?.value || reportOptions[0]?.value;
+  const normalizedData =
+    filteredData.find((report) => report.id === Number(queryParam)) ||
+    filteredData[0];
 
   const chunkedItems = chunkArray(normalizedData.items, 5);
 
-  console.log("chunkedItems", chunkedItems);
   return (
     <section className="w-full flex flex-col gap-8">
       <SelectField

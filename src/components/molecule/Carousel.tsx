@@ -78,12 +78,13 @@ export const Carousel: React.FC = () => {
           >
             <div className="bg-[#FBFBFB] rounded-[16px] p-6 min-h-[245px] lg:min-h-[326px] flex flex-col justify-between shadow-lg">
               <div className="flex items-start">
-                <div className="text-white p-1 rounded-full">
+                <div className="text-white">
                   <Image
                     src={slide.icon}
                     alt={slide.title}
                     width={32}
                     height={32}
+                    className="w-8 h-8"
                   />
                 </div>
               </div>

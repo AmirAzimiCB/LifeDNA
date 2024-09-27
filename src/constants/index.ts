@@ -117,6 +117,16 @@ export const PartnersData: Partners[] = [
 export const RoadMapData: RoadMap[] = [
   {
     id: 1,
+    title: "Methylation Genes Report",
+    description:
+      "Get Personalized Insights Based On Your DNA’s Unique Methylation Gene Mutation.",
+    items: ["MTHFR Gene", "COMT Gene", "VDR Gene", "CBS Gene", "MTR Gene"],
+    buttonText: "See all traits",
+    icon: Methylation,
+    href: "/reports?id=1",
+  },
+  {
+    id: 2,
     title: "Nutrition Report",
     description:
       "Take your nutrition to the next level. Achieve sustainable weight loss without starving yourself, spending countless hours at the gym, or wasting time on fad diets.",
@@ -129,10 +139,10 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: Nutrition,
-    href: "/",
+    href: "/reports?id=2",
   },
   {
-    id: 2,
+    id: 3,
     title: "Vitamins and Supplements Report",
     description:
       "Get a clear understanding of which vitamins, minerals, and nutrients you potentially need based on your DNA analysis. ",
@@ -145,10 +155,10 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: Vitamins,
-    href: "/",
+    href: "/reports?id=3",
   },
   {
-    id: 3,
+    id: 4,
     title: "Fitness Report",
     description:
       "Supercharge Your Workout Routine – Level Up Your Exercise with Personalized Fitness Insights.",
@@ -161,10 +171,10 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: Fitness,
-    href: "/",
+    href: "/reports?id=4",
   },
   {
-    id: 4,
+    id: 5,
     title: "Personality & Cognition",
     description: "Discover yourself, your intelligence, personality, and more.",
     items: [
@@ -176,10 +186,10 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: Personality,
-    href: "/",
+    href: "/reports?id=5",
   },
   {
-    id: 5,
+    id: 6,
     title: "Wellness Report",
     description:
       "Say goodbye to generic wellness approaches and welcome a new era of personalized DNA insights tailored to optimize your well-being, empowering you to thrive.",
@@ -192,10 +202,10 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: wellness,
-    href: "/",
+    href: "/reports?id=6",
   },
   {
-    id: 6,
+    id: 7,
     title: "Skincare",
     description:
       "Safely treat your skin and reveal the best complexion of your life.",
@@ -208,17 +218,23 @@ export const RoadMapData: RoadMap[] = [
     ],
     buttonText: "See all traits",
     icon: skincare,
-    href: "/",
+    href: "/reports?id=7",
   },
   {
-    id: 7,
-    title: "Methylation Genes Report",
+    id: 8,
+    title: "Skincare",
     description:
-      "Get Personalized Insights Based On Your DNA’s Unique Methylation Gene Mutation.",
-    items: ["MTHFR Gene", "COMT Gene", "VDR Gene", "CBS Gene", "MTR Gene"],
+      "Safely treat your skin and reveal the best complexion of your life.",
+    items: [
+      "Excessive Skin Dryness",
+      "Acne",
+      "Facial Pigmental Spots",
+      "Skin Tanning / Sun Burning",
+      "Rosacea",
+    ],
     buttonText: "See all traits",
-    icon: Methylation,
-    href: "/",
+    icon: skincare,
+    href: "/reports?id=8",
   },
 ];
 
@@ -449,16 +465,17 @@ export const QNAData: QNA[] = [
 ];
 
 export const reportOptions: SelectOptions[] = [
-  { value: "Nutrition", label: "Nutrition" },
-  { value: "Vitamins & Supplements", label: "Vitamins & Supplements" },
-  { value: "Fitness", label: "Fitness" },
-  { value: "Personality & Cognition", label: "Personality & Cognition" },
-  { value: "Wellness", label: "Wellness" },
-  { value: "Skincare", label: "Skincare" },
+  { id: 2, value: "Nutrition", label: "Nutrition" },
+  { id: 3, value: "Vitamins & Supplements", label: "Vitamins & Supplements" },
+  { id: 4, value: "Fitness", label: "Fitness" },
+  { id: 5, value: "Personality & Cognition", label: "Personality & Cognition" },
+  { id: 6, value: "Wellness", label: "Wellness" },
+  { id: 7, value: "Skincare", label: "Skincare" },
 ];
 
 export const reportData: ReportCategory[] = [
   {
+    id: 2,
     category: "Nutrition",
     description: "Discover the best (and worst) foods for your DNA.",
     icon: Fork,
@@ -484,6 +501,7 @@ export const reportData: ReportCategory[] = [
     ],
   },
   {
+    id: 3,
     category: "Vitamins & Supplements",
     description: "Learn which vitamins, nutrients, and supplements you need.",
     icon: Fork,
@@ -596,6 +614,7 @@ export const reportData: ReportCategory[] = [
     ],
   },
   {
+    id: 4,
     category: "Fitness",
     description: "Personalized workout recommendations based on your DNA.",
     icon: BreadIcon,
@@ -675,6 +694,7 @@ export const reportData: ReportCategory[] = [
     ],
   },
   {
+    id: 5,
     category: "Personality & Cognition",
     description: "Discover yourself, your intelligence, personality, and more.",
     icon: Fork,
@@ -794,6 +814,7 @@ export const reportData: ReportCategory[] = [
     ],
   },
   {
+    id: 6,
     category: "Wellness",
     description:
       "Take care of your body the smart way: with genetic insights and powerful strategies.",
@@ -866,6 +887,7 @@ export const reportData: ReportCategory[] = [
     ],
   },
   {
+    id: 7,
     category: "Skincare",
     description:
       "Safely treat your skin and reveal the best complexion of your life.",

@@ -46,7 +46,9 @@ export function HowItWorksInThreeSteps() {
                 <div className="h-full w-full flex flex-col lg:gap-8 items-start">
                   <div className="flex items-start w-full justify-between gap-4">
                     <div className="flex flex-col gap-2">
-                      <Text variant="base">Step {step.step}</Text>
+                      <Text variant="base" className="capitalize">
+                        Step {step.step}
+                      </Text>
                       <Title>{step.title}</Title>
                     </div>
                     <div className="h-full flex items-start flex-shrink-0">
@@ -69,10 +71,12 @@ export function HowItWorksInThreeSteps() {
         <Tabs.Content value="no_dna_test">
           <div className="grid grid-cols-1 gap-8 w-full h-full bg-[#FCFCFC]">
             <Card className="flex items-center gap-10 h-full justify-between border-none">
-              <div className="h-full w-full flex flex-col gap-7 lg:gap-8 items-start">
+              <div className="h-full w-full flex flex-col gap-7 lg:gap-8 items-start max-w-[482px] mx-auto">
                 <div className="flex items-start w-full justify-between gap-4">
                   <div className="flex flex-col gap-2">
-                    <Text variant="base">step 1</Text>
+                    <Text variant="base" className="capitalize">
+                      step 1
+                    </Text>
                     <Title>Already Taken A DNA test?</Title>
                   </div>
                 </div>

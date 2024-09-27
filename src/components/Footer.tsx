@@ -1,12 +1,12 @@
 import Link from "next/link";
 import {
-  DnaIcon,
   ArrowLeftIcon,
   FacebookIcon,
   TwitterIcon,
   InstagramIcon,
 } from "./Icons";
 import { Text } from "./atoms";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -15,10 +15,15 @@ export default function Footer() {
         <div className="flex flex-col items-center md:flex-row md:justify-between">
           <div className="flex flex-col items-center md:items-start w-full">
             <div className="flex items-center mb-4">
-              <DnaIcon className="w-8 h-8" />
-              <span className="text-2xl font-bold ml-2">LifeDNA</span>
+              <Image
+                src={"/images/footerlogo.svg"}
+                alt="footerlogo"
+                width={400}
+                height={400}
+                className="w-[124px] h-[32px]"
+              />
             </div>
-            <Text className="mb-4 text-center md:text-left text-white">
+            <Text className="mb-6 mt-8 text-center md:text-left text-white">
               Stay Up To Date On The Latest From LifeDNA
             </Text>
             <div className="flex items-center w-full sm:w-[350px] border-b border-white pb-2 mb-4">
@@ -39,56 +44,76 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center md:flex-row md:items-start gap-[42px] md:space-x-16">
-            <div className="mt-8 md:mt-0 flex flex-col items-center justify-center gap-3">
+            <div className="mt-8 md:mt-0 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-3">
               <h3 className="font-bold text-white">Menu</h3>
-              <ul className="flex flex-col gap-3 items-center justify-center">
+              <ul className="flex flex-col gap-3 items-center lg:items-start max-lg:justify-center">
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="/how-it-works"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     How It Works
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="/plans"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     DNA Plans
                   </Link>
                 </li>
+
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
-                    Blogs
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="/reports"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     Research
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="mt-8 md:mt-0 flex flex-col items-center justify-center gap-3">
-              <h3 className="mb-4 font-bold text-white">Support</h3>
-              <ul className="flex flex-col gap-3 items-center justify-center">
+            <div className="mt-8 md:mt-0 flex flex-col max-lg:items-center max-lg:justify-center gap-3">
+              <h3 className="font-bold text-white">Support</h3>
+              <ul className="flex flex-col gap-3 max-lg:items-center max-lg:justify-center">
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="#"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     Contact Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="#"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="#"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="#"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     Data Security
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-white max-lg:text-xs">
+                  <Link
+                    href="#"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
                     Updates Page
                   </Link>
                 </li>

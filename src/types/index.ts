@@ -80,6 +80,7 @@ export type QNA = {
 
 // select
 export type SelectOptions = {
+  id?: number;
   value: string;
   label: StaticImageData | string;
 };
@@ -90,6 +91,7 @@ export type ReportItem = {
 };
 
 export type ReportCategory = {
+  id: number;
   category: string;
   description: string;
   icon: StaticImageData | string;
