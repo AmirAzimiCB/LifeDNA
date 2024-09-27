@@ -7,7 +7,7 @@ export function LatestGeneticResearch() {
     <section className="flex flex-col lg:flex-row gap-6 lg:gap-[42px] max-lg:mt-8">
       <div className="flex flex-col gap-[50px]">
         <div className="flex flex-col max-lg:items-center gap-4 lg:gap-6">
-          <div className="flex flex-col lg:gap-4 max-lg:text-center">
+          <div className="flex flex-col max-lg:text-center lg:leading-[150%]">
             <Title>Most In-depth Reports.</Title>
             <Title>Latest Genetic Research.</Title>
           </div>

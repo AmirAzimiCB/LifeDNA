@@ -32,7 +32,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
       variant="default"
       className={cn(
         "w-full flex flex-col gap-8 justify-between py-8 px-6 transition-all duration-500 ease-in-out",
-        isExpanded ? "h-full" : "h-fit"
+        isExpanded ? "h-full" : "h-fit min-h-[450px]"
       )}
     >
       <div className="flex flex-col gap-8 lg:gap-6 h-full">
@@ -40,7 +40,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
           <div className="flex justify-between gap-4">
             <Title
               variant="medium"
-              className="font-bold max-lg:text-base leading-[19.2px] tracking-tight"
+              className="font-bold max-lg:text-base leading-[19.2px] tracking-tight "
             >
               {card.title}
             </Title>
@@ -49,7 +49,10 @@ export const ReportCard: React.FC<ReportCardProps> = ({
             </Title>
           </div>
           <div className="flex justify-between gap-4">
-            <Text variant="small" className="font-semibold max-lg:text-[10px]">
+            <Text
+              variant="small"
+              className="font-semibold max-lg:text-[10px] text-sm"
+            >
               {card.kitIncluded}
             </Text>
             {card.popular && (
@@ -79,14 +82,16 @@ export const ReportCard: React.FC<ReportCardProps> = ({
           {card.price}
         </Title>
 
-        <Text className="lg:min-h-[116px]">{card.description}</Text>
+        <Text className="lg:min-h-[116px] line-clamp-6">
+          {card.description}
+        </Text>
         <div className="flex flex-col gap-8 transition-all duration-500 ease-in-out">
           <div
             onClick={onToggleExpand}
             className="flex items-center justify-between gap-4 w-full"
           >
             <Text className="font-semibold">See what’s included</Text>
-            <ChevronUp className={cn(isExpanded ? "rotate-180" : "")} />
+            <ChevronUp className={cn(isExpanded ? "" : "rotate-180")} />
           </div>
           {isExpanded && (
             <div className="flex flex-col gap-[22px] transition-all duration-500 ease-in-out">

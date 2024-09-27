@@ -57,10 +57,19 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/plans"
+                    href="https://lifedna.com/dna-blog/"
+                    target="_blank"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     DNA Plans
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/plans"
+                    className="text-white max-lg:text-xs whitespace-nowrap"
+                  >
+                    Blogs
                   </Link>
                 </li>
 
