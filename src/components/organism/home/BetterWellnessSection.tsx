@@ -23,7 +23,7 @@ export function BetterWellnessSection({
     slidesToScroll: 4,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1184,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -70,7 +70,7 @@ export function BetterWellnessSection({
               href={roadMap.href}
               icon={roadMap.icon}
               items={roadMap.items}
-              className="min-h-[431px] h-auto"
+              className="min-h-[505px] h-auto"
             />
           </div>
         ))}

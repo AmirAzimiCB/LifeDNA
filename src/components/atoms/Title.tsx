@@ -17,8 +17,8 @@ export const Title: React.FC<TitleProps> = ({
   const baseStyles = "font-semibold capitalize text-[#383B42]";
   const variantStyles = {
     default: "text-xl lg:text-[32px] leading-[150%] lg:leading-[48px]",
-    smaller: "text-[14px] leading-[120%]",
-    medium: "text-xs lg:text-[16px] leading-[150%]",
+    smaller: "text-base leading-[120%]",
+    medium: "text-base lg:text-[16px] leading-[150%]",
   };
 
   const Component = type;

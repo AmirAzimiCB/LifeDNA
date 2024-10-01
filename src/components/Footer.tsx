@@ -12,8 +12,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#383B42] text-white p-6 lg:py-10 footer">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center md:flex-row md:justify-between">
-          <div className="flex flex-col items-center md:items-start w-full">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-between">
+          <div className="flex flex-col items-center lg:items-start w-full">
             <div className="flex items-center mb-4">
               <Image
                 src={"/images/footerlogo.svg"}
@@ -23,7 +23,7 @@ export default function Footer() {
                 className="w-[124px] h-[32px]"
               />
             </div>
-            <Text className="mb-6 mt-8 text-center md:text-left text-white">
+            <Text className="mb-6 mt-8 text-center lg:text-left text-white">
               Stay Up To Date On The Latest From LifeDNA
             </Text>
             <div className="flex items-center w-full sm:w-[350px] border-b border-white pb-2 mb-4">
@@ -43,7 +43,7 @@ export default function Footer() {
               <InstagramIcon className="w-6 h-6 text-white" />
             </div>
           </div>
-          <div className="flex flex-col items-center md:flex-row md:items-start gap-[42px] md:space-x-16">
+          <div className="flex flex-col items-center lg:flex-row lg:items-start gap-[42px] lg:space-x-16">
             <div className="mt-8 md:mt-0 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-3">
               <h3 className="font-bold text-white">Menu</h3>
               <ul className="flex flex-col gap-3 items-center lg:items-start max-lg:justify-center">

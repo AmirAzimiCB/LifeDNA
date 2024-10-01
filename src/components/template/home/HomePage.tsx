@@ -15,11 +15,13 @@ import { LifeDNATabsComponent } from "@/components/organism/home/LifeDNATabsComp
 
 export function HomePage() {
   return (
-    <div className="bg-white flex flex-col gap-[75px] pb-16 max-lg:pt-6">
+    <div className="bg-white flex flex-col gap-[75px] pb-16 max-lg:pt-6 overflow-hidden">
       {/* Hero section */}
-      <div className="flex flex-col gap-4 lg:gap-8 overflow-hidden max-lg:px-6 max-w-[1440px] mx-auto ">
+      <div className="flex flex-col gap-4 lg:gap-8 overflow-hidden max-w-[1440px] w-full mx-auto ">
         <HeroSection />
-        <Separator />
+        <div className="max-lg:px-6">
+          <Separator />
+        </div>
         <Partners />
       </div>
       <div className="flex flex-col gap-6 lg:gap-8 max-lg:px-6">

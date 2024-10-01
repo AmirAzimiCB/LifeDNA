@@ -33,7 +33,9 @@ export const BetterWellnessCard: React.FC<RoadMap> = ({
           </div>
           <Title variant="smaller">{title}</Title>
         </div>
-        <Text variant="smaller">{description}</Text>
+        <Text variant="smaller" className="line-clamp-5">
+          {description}
+        </Text>
       </div>
       <div className="flex flex-col gap-8">
         <div className=" flex flex-col gap-[22px]">

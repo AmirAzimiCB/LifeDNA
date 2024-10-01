@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Partners() {
   return (
-    <div className="flex flex-col gap-4 lg:gap-8">
+    <div className="flex flex-col gap-4 lg:gap-8 max-lg:px-8">
       <div className="flex justify-center gap-3.5 lg:gap-8 tracking-tight">
         <div className="flex items-center gap-1.5 md:space-x-2">
           <DnaIcon className="w-4 h-4 lg:w-6 lg:h-6" />
