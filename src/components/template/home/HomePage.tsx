@@ -27,25 +27,25 @@ export function HomePage() {
       <div className="flex flex-col gap-6 lg:gap-8 max-lg:px-6">
         <div className="flex flex-col gap-3 lg:gap-6 text-center">
           <Title className="max-lg:max-w-[265px] mx-auto">
-            Explore Your Personalized Roadmap to Better Wellness
+            Uncover Your DNA’s Secrets For Optimal Wellness
           </Title>
           <Text>
-            Explore 8 Powerful Reports, Uncovering Over 130 Unique Traits
+            Explore 8 Powerful Reports, Revealing Over 130 Unique Traits
           </Text>
         </div>
         <BetterWellnessSection RoadMapData={RoadMapData} />
       </div>
       <div className="flex flex-col gap-6 lg:gap-8 max-w-[1440px] w-full mx-auto max-lg:px-6 lg:px-16">
         <Title className="max-w-[1184px] mx-auto text-center">
-          Explore Unique DNA-Personalized Insights for Methylation and Wellness:
-          Start Your Journey Now!
+          Reveal Deep Genetic Insights for a Wellness Journey Designed Just for
+          You
         </Title>
         <Text className="text-center max-w-[1086px] mx-auto max-lg:px-8">
           Discover hundreds of genetic insights that have the potential to
           change your life and transform your body. Unlock our best-selling
-          Methylation Genes Report and gain powerful insights into your MTHR
+          Methylation Genes Report and gain powerful insights into your MTHFR
           gene and other genes that could be key to unlocking your full genetic
-          potential! 
+          potential!
         </Text>
         <div className="flex flex-col gap-4 lg:gap-6 text-center max-lg:mt-4">
           <Text className="font-semibold">Works with:</Text>
@@ -97,11 +97,11 @@ export function HomePage() {
       </div>
       <div className="flex flex-col gap-8 max-w-[1440px] mx-auto w-full max-lg:px-6 lg:px-16 max-lg:-mt-8">
         <Title className="text-center max-sm:max-w-[251px] mx-auto">
-          Get started with LifeDNA today in 3 easy steps
+          Begin Your Wellness Transformation with LifeDNA in 3 Easy Steps
         </Title>
         <LifeDNATabsComponent />
         <Button className="w-full sm:max-w-[418px] mx-auto">
-          I want to transform my wellness!tton
+          I want to transform my wellness!
         </Button>
         <div className="flex items-center justify-center gap-[18px] lg:gap-8">
           <div className="flex items-center gap-2">
@@ -116,17 +116,17 @@ export function HomePage() {
           </div>
           <div className="flex items-center gap-2">
             <Image src={Upload} width={16} height={16} alt="icon" />
-            <Text variant="smaller">Upload your raw data</Text>
+            <Text variant="smaller">Upload Your Raw Data</Text>
           </div>
           <div className="flex items-center gap-2">
             <Image src={ColoredDNA} width={16} height={16} alt="icon" />
-            <Text variant="smaller">Take a DNA test</Text>
+            <Text variant="smaller">Simple And Easy DNA Test</Text>
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-6 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
         <Title className="text-center max-lg:max-w-[244px] mx-auto">
-          Here&apos;s what makes LifeDNA a game-changer
+          What Our Users Are Saying: Real Stories, Real Transformations
         </Title>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {LifeDNAGameChangerData.map((item, index) => (

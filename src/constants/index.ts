@@ -184,43 +184,42 @@ export const slides: Slide[] = [
     icon: "/images/slider-icon-1.svg",
     title: "Nutrition",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+      "Find out how you process macronutrients based on DNA. See how your genes can influence factors like macronutrient metabolism, food intolerances, allergies, and more.",
   },
   {
     icon: vitamins,
     title: "Vitamins",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+      "Make educated choices about supplements that align with your genetic predispositions.",
   },
   {
     icon: WellNessHeroImage,
     title: "Wellness",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+      "Take care of your body the smart way: with genetic insights and powerful strategies.",
   },
   {
     icon: mthfr,
     title: "MTHFR gene",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+      "Get deep insights into your MTHFR, COMT, VDR, MOA-A, and up to 8 other important genes that can impact your wellness.",
   },
   {
     icon: FitnessHeroImage,
     title: "Fitness",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+      "See how to optimize your fitness journey and maximize your progress, recovery, and minimize setbacks based on your DNA.",
   },
   {
     icon: SleepHeroImage,
     title: "sleep",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+      "Better understand how to optimize your natural sleep patterns and habits based on DNA.",
   },
   {
     icon: SkinCareHeroImage,
     title: "skincare",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Turpis vestibulum dictum malesuada tortor.",
+    description: "Understand and optimize your skin like never before. ",
   },
 ];
 
@@ -256,8 +255,14 @@ export const RoadMapData: RoadMap[] = [
     id: 1,
     title: "Methylation Genes Report",
     description:
-      "Get Personalized Insights Based On Your DNA’s Unique Methylation Gene Mutation.",
-    items: ["MTHFR Gene", "COMT Gene", "VDR Gene", "CBS Gene", "MTR Gene"],
+      "Identify potential genetic reasons behind fatigue, mood swings, and other wellness challenges to take control of your well-being.",
+    items: [
+      "MTHFR Gene",
+      "COMT Gene",
+      "CBS Gene",
+      "MTR & MTRR Gene",
+      "+ 8 Other Genes",
+    ],
     buttonText: "See all traits",
     icon: Methylation,
     href: "/reports?id=1",
@@ -266,13 +271,14 @@ export const RoadMapData: RoadMap[] = [
     id: 2,
     title: "Nutrition Report",
     description:
-      "Take your nutrition to the next level. Achieve sustainable weight loss without starving yourself, spending countless hours at the gym, or wasting time on fad diets.",
+      "Take the guesswork out of your diet and support your weight loss journey using your DNA.",
     items: [
-      "Power vs Endurance",
-      "Post Exercise Recovery Rate",
-      "Injury Predisposition",
-      "Blood Pressure and Exercise",
-      "Weight Loss and Exercise",
+      "Carbohydrate Metabolism",
+      "Saturated Fat Metabolism",
+      "Weight Change",
+      "Gluten Sensitivity",
+      "Lactose Tolerance",
+      "+ 13 Other Traits",
     ],
     buttonText: "See all traits",
     icon: Nutrition,
@@ -289,6 +295,7 @@ export const RoadMapData: RoadMap[] = [
       "Probiotic Need",
       "Calcium Levels",
       "Zinc Levels",
+      "+ 20 Other Traits",
     ],
     buttonText: "See all traits",
     icon: Vitamins,
@@ -298,13 +305,14 @@ export const RoadMapData: RoadMap[] = [
     id: 4,
     title: "Fitness Report",
     description:
-      "Supercharge Your Workout Routine – Level Up Your Exercise with Personalized Fitness Insights.",
+      "Optimize your workout routine: level up your exercise with personalized fitness insights.",
     items: [
       "Power vs Endurance",
       "Post Exercise Recovery Rate",
       "Injury Predisposition",
       "Blood Pressure and Exercise",
       "Weight Loss and Exercise",
+      "+ 15 Other Traits",
     ],
     buttonText: "See all traits",
     icon: Fitness,
@@ -313,13 +321,15 @@ export const RoadMapData: RoadMap[] = [
   {
     id: 5,
     title: "Personality & Cognition",
-    description: "Discover yourself, your intelligence, personality, and more.",
+    description:
+      "Better understand your stress triggers and coping mechanisms.",
     items: [
-      "Agreeableness",
-      "Conscientiousness",
-      "Openness",
-      "Extraversion",
-      "Neuroticism",
+      "Creativity",
+      "Depression",
+      "Impulsivity",
+      "Musical Ability",
+      "Intelligence",
+      "+ 20 Other Traits",
     ],
     buttonText: "See all traits",
     icon: Personality,
@@ -336,6 +346,7 @@ export const RoadMapData: RoadMap[] = [
       "Alcohol Consumption",
       "Diet and DNA Damage",
       "Motion Sickness",
+      "+ 10 Other Traits",
     ],
     buttonText: "See all traits",
     icon: wellness,
@@ -343,16 +354,10 @@ export const RoadMapData: RoadMap[] = [
   },
   {
     id: 7,
-    title: "Skincare",
+    title: "Sleep Report",
     description:
-      "Safely treat your skin and reveal the best complexion of your life.",
-    items: [
-      "Excessive Skin Dryness",
-      "Acne",
-      "Facial Pigmental Spots",
-      "Skin Tanning / Sun Burning",
-      "Rosacea",
-    ],
+      "Unlock Insights into your sleep patterns and tips for a better night's rest.",
+    items: ["Chronotype", "Potential For Insomnia", "Melatonin Secretion"],
     buttonText: "See all traits",
     icon: skincare,
     href: "/reports?id=7",
@@ -361,13 +366,14 @@ export const RoadMapData: RoadMap[] = [
     id: 8,
     title: "Skincare",
     description:
-      "Safely treat your skin and reveal the best complexion of your life.",
+      "Optimize your skincare routine based on DNA-based ingredient suggestions and insights.",
     items: [
-      "Excessive Skin Dryness",
       "Acne",
-      "Facial Pigmental Spots",
-      "Skin Tanning / Sun Burning",
-      "Rosacea",
+      "Wrinkles",
+      "Contact Dermatitis",
+      "Excessive Skin Dryness",
+      "Cellulite",
+      "+ 10 Other Traits",
     ],
     buttonText: "See all traits",
     icon: skincare,
@@ -380,32 +386,35 @@ export const RoadMapData: RoadMap[] = [
 export const ReportsData: Reports[] = [
   {
     id: 1,
-    title: "Methylation Genes Report",
+    title: "12 Methylation Genes Report",
     kitIncluded: false,
     price: "$99",
     description:
-      "Feeling drained and struggling with mood swings? Discover the genetic reasons behind these signs with personalized insights based on your MTHFR gene and other unique methylation gene mutations. No DNA Kit Included.",
-    href: "/",
+      "Our 12 Methylation Genes Report provides personalized genetic insights into your MTHFR, COMT, and CBS genes, helping you uncover potential genetic reasons behind fatigue, mood swings, and more.",
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDMETHRV99&checkbox_items%5B%5D=LDNUTREPV37,LDVIREPV37,LDPGCV67&upsells%5B%5D=LDAIOPV97,LDAGREPV67,LDAIOPV57,LDPGCV67&channel=flow&funnel=LDMETH99NEWHOME&pt=cc",
+    target: "_blank",
     buttonText: "Get My Report Now",
   },
   {
     id: 2,
-    title: "Methylation Genes Report + Wellness Report Bundle",
+    title: "12 Methylation Genes Report + Wellness Report Bundle",
     kitIncluded: false,
     price: "$199",
     description:
-      "Everything in your Methylation Genes Report, and more! You’ll unlock more personalized insights beyond your methylation analysis to help you make informed decisions about your well-being.",
-    href: "/",
+      "Everything in your 12 Methylation Genes Report, and more! You’ll unlock over 115 additional personalized trait reports beyond your methylation analysis to help you make informed decisions about your well-being.",
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV100&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETH199HOME&pt=cc",
+    target: "_blank",
     buttonText: "Get My Report Now",
   },
   {
     id: 3,
-    title: "Methylation Genes Report + Wellness Test Bundle",
+    title: "12 Methylation Genes Report + Wellness Test Bundle",
     kitIncluded: true,
     price: "$249",
     description:
-      "Get everything in your Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
-    href: "/",
+      "Get everything in your 12 Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249HOME&pt=cc",
+    target: "_blank",
     buttonText: "Get My Report Now",
   },
 ];
@@ -435,32 +444,33 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     showIcon: false,
     title: "Discover personalized wellness insights from your DNA",
     _key: "have_dna_test",
-    description: "Unlock 120+ traits reports in a few hours.",
+    description: "Unlock 130+ traits reports in a few hours.",
   },
   {
     id: 4,
     step: 1,
     showIcon: true,
-    title: "Order your LifeDNA Test Kit",
+    title: "Order your Methylation Genes Report + Wellness Test Bundle",
     _key: "no_dna_test",
   },
   {
     id: 5,
     step: 2,
     showIcon: true,
-    title: "Collect Your DNA Sample",
+    title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Take a DNA test by swabbing your cheeks and send your sample back to our lab for your DNA analysis.",
+      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
   },
   {
     id: 6,
     step: 3,
     showIcon: false,
-    title: "Get access to your personalized wellness reports in 3 - 5 weeks!",
+    title:
+      "Discover personalized methylation and wellness insights from your DNA!",
     _key: "no_dna_test",
     description:
-      "Unlock 120+ traits reports tailored to you and your unique DNA.",
+      "Unlock 130+ traits reports tailored to you and your unique DNA.",
   },
 ];
 
@@ -469,35 +479,31 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
 export const LifeDNAGameChangerData: GameChanger[] = [
   {
     id: 1,
-    title:
-      "120+ DNA-Tailored Reports Designed To Support Your Overall Well-being",
+    title: "130+ DNA-Tailored Reports for Comprehensive Wellness",
     list: [
-      "Achieve sustainable weight loss without starving yourself, or wasting time on fad diets and ineffective workouts.",
-      "Explore your sleep, skin, as well as your personality traits and stress triggers. ",
+      "Our reports are designed to support multiple aspects of your well-being. Uncover valuable insights about your methylation, food and workout response, supplementation, sleep patterns, potential skincare needs, personality traits, and likely stress triggers.",
     ],
   },
   {
     id: 2,
-    title: "Embark on a Journey of Self-Discovery and Optimization",
+    title: "A Journey of Self-Discovery and Optimization",
     list: [
-      "Dive into undiscovered talents and passions.",
-      "Discover potential genetic predispositions and unlock strategies to better for prepare for wellness challenges. ",
+      "Explore your hidden skills and passions through your unique genetic profile. Identify potential genetic predispositions and gain actionable strategies to overcome wellness challenges before they arise.",
     ],
   },
   {
     id: 3,
-    title: "Accelerate Your Path to Well-being",
+    title: "Achieve Your Goals Faster",
     list: [
-      "Say goodbye to guesswork with your DNA leading the way.",
-      "Embrace personalized recommendations, leaving one-size-fits-all approaches behind. ",
+      "Eliminate the guesswork – let your DNA guide you to optimal wellness. Enjoy personalized diet and fitness suggestions tailored specifically to you, moving beyond one-size-fits-all.",
     ],
   },
   {
     id: 4,
-    title: "Unlock Your DNA Like Never Before",
+    title:
+      "Cutting-Edge Insights That Go Beyond Traditional DNA Wellness Tools",
     list: [
-      "Discover insights that are not offered by other DNA wellness tools.",
-      "Unlock genetic secrets that are typically missed by other DNA testing companies.",
+      "Uncover genetic secrets and wellness strategies that other DNA testing companies can miss.",
     ],
   },
 ];
@@ -564,17 +570,45 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
 export const TestimonialsData: Testimonials[] = [
   {
     id: 1,
-    name: "D. Ramos",
+    name: "Jeff Feller",
     message:
-      "Awesome service that gives a deeper insight into how to better improve your overall well-being. Quick and easy product to use with an excellent customer service team. Thank you LifeDNA for helping me better understand myself!",
+      "Very detailed DNA test results! I went to LifeDNA and got an insane amount of detail for less than half the price. I was very impressed with the findings, the details for each, and all the other little things I could dive into.",
     rating: 5,
   },
   {
     id: 2,
-    name: "D. Ramos",
+    name: "Hila",
     message:
-      "Awesome service that gives a deeper insight into how to better improve your overall well-being.",
-    rating: 4,
+      "Easy to order. Easy to use. Great support and well-designed reports. I highly recommend it.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: "Val",
+    message:
+      "Great opportunity to learn about your genes. I recommend learning more about your body with LifeDNA.",
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: "James Ryan",
+    message:
+      "A total view of you! 10/10. The results match up with what I’ve been told by doctors over the years and have also helped explain various family genetic problems.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Karen P.",
+    message:
+      "This was a very interesting and unique experience! I highly recommend it to everyone who has done the DNA testing. Everything that it discovered were things that I thought were so or maybe didn't even think about, but all of the results were spot on!",
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "Lori C.",
+    message:
+      "Everything was great. The website is easy to navigate and has much useful information.",
+    rating: 5,
   },
 ];
 
@@ -585,19 +619,24 @@ export const QNAData: QNA[] = [
     title:
       "I have already taken a DNA test before. Can I upload my existing raw data?",
     description:
-      "Absolutely! Our system is comppatible with 23andme, Ancestry, My Heritage, Living DNA, and Family Tree DNA data. You simply need to upload your raw file from any at these companies, and your result will be generated in a few hours.",
+      "Absolutely! Our system is compatible with all DNA testing company, like 23andme, Ancestry, My Heritage, Living DNA, and Family Tree DNA. You simply need to upload your raw file from any of these companies, and your result will be generated in a few hours.",
+  },
+  {
+    title: "I have never taken a DNA test before. Can I do a DNA test?",
+    description:
+      "LifeDNA offers a simple, easy-to-use DNA test to help you finally get started on your personalized wellness journey. Unlock your methylation results in just 3-5 weeks!",
   },
   {
     title:
-      "Will this report dianose any diseases or conditions that I may have?",
+      "Will this report diagnose any diseases or conditions that I may have?",
     description:
-      "No, our reports do not diagnose you with any diseases. The LifeDNA Reports primarily provide information on your nutrition, fitness, supplementation wellness, personality, cognition, and skin care, sleep, and methylation.",
+      "No, our reports do not diagnose you with any diseases. The LifeDNA Reports primarily provide information on your methylation, nutrition, fitness, supplementation wellness, personality, cognition, skincare, and sleep.",
   },
   {
     title:
       "Will you sell my data to third parties like insurance companies? how do you protect my data?",
     description:
-      "No. When you upload your DNA to LifeDNA, you keep 100% ownership over your data. We will NEVER sell your data, and we will NEVER share it without your permission. Your data is encrypted, protected, and safe. You can have your DNA information deleted anytime. Just send us a message and we’ll do so right away.",
+      "No. When you upload your DNA to LifeDNA, you keep 100% ownership over your data. We will NEVER sell your data.",
   },
 ];
 
