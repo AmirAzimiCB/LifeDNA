@@ -123,7 +123,9 @@ export const ReportCard: React.FC<ReportCardProps> = ({
           </>
         )}
       </div>
-      <Button>Get My Report Now</Button>
+      <a href={card.href} target="_blank" rel="noopener noreferrer">
+        <Button>Get My Report Now</Button>
+      </a>
     </Card>
   );
 };

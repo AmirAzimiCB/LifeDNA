@@ -17,7 +17,8 @@ export function HeroSection() {
         <div className="max-lg:space-y-4">
           <Title className="max-sm:max-w-[317px]">
             {" "}
-            Transform Your Wellness like Never Before
+            Unlock Deep Insights Into Your MTHFR Gene, Methylation, and Overall
+            Wellness
           </Title>
           <Title className="text-xs lg:text-xl leading-[150%] lg:leading-[200%] max-w-[926px]">
             Unlock 130+ Insights Into Your Methylation and Wellness to Achieve
@@ -25,11 +26,9 @@ export function HeroSection() {
           </Title>
         </div>
         <Text className="max-w-[658px]">
-          Go beyond your basic personalized wellness analysis and gain
-          additional exclusive insights into how your MTHFR gene can shape your
-          energy, mood, and well-being with our ultimate Methylation Genes
-          Report. Plus, take the guesswork out of your diet, fitness,
-          supplementation, sleep, skin, and wellness.
+          Dive into key genes and traits that may influence your potential
+          nutrient deficiencies, cardiovascular well-being, metabolism, and
+          more—going beyond what other DNA tests may reveal.
         </Text>
         <div className="flex flex-col max-lg:mt-4 gap-3 lg:gap-6">
           <Text className="font-semibold">Works with:</Text>

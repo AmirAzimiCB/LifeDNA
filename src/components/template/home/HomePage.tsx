@@ -87,7 +87,9 @@ export function HomePage() {
                 </Text>
                 <Text>{report.description}</Text>
               </div>
-              <Button>{report.buttonText}</Button>
+              <a href={report.href} target="_blank" rel="noopener noreferrer">
+                <Button>{report.buttonText}</Button>
+              </a>
             </Card>
           ))}
         </div>

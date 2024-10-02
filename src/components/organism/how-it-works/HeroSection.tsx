@@ -8,17 +8,15 @@ export function HeroSection() {
       <div className="flex flex-col gap-4 lg:gap-8">
         <div>
           <Title className="lg:text-5xl lg:leading-[57.6px] max-w-[590px]">
-            Easy, Quick,
-          </Title>
-          <Title className="lg:text-5xl lg:leading-[57.6px] max-w-[590px]">
-            Non-invasive DNA Test.
+            Simple, Quick, and Easy: Everything You Need in One DNA Kit
           </Title>
         </div>
         <div className="flex flex-col gap-4 max-w-[696px]">
           <Text>
-            Our saliva collection kit makes it easier for you to take a DNA test
-            from the comfort of your home. All you need to provide is a small
-            saliva sample. It’s simple and non-invasive.
+            Our saliva collection kit allows you to effortlessly take a DNA test
+            from the comfort of your home. Gain unparalleled insights into your
+            methylation and other important wellness traits, and personalized
+            strategies for optimal well-being.
           </Text>
           <Text variant="small" className="font-semibold">
             (DNA kit included Methylation Genes Report + Wellness Test Bundle)

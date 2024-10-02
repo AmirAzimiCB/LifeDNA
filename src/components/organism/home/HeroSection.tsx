@@ -1,6 +1,7 @@
 import { Text, Title } from "@/components/atoms";
 import { Carousel } from "@/components/molecule";
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -30,8 +31,9 @@ export function HeroSection() {
                 <li>● 100% Safe and Secure</li>
                 <li>● Take A DNA Test or Upload RawData</li>
               </ol>
-
-              <Button>Transform My Wellness</Button>
+              <Link href="/plans">
+                <Button>Transform My Wellness</Button>
+              </Link>
             </div>
           </div>
           <div className="w-fit lg:w-3/5 pb-[24px] pt-[58px] lg:py-16 max-lg:pl-6 z-0">

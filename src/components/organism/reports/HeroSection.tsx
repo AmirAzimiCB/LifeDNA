@@ -14,18 +14,21 @@ export function HeroSection() {
       />
       <div className="flex flex-col gap-4 lg:gap-8">
         <div>
-          <Title>Know Your DNA.</Title>
-          <Title>Take Control Of Your Wellness.</Title>
+          <Title>Explore LifeDNA’s Personalized DNA Reports</Title>
         </div>
         <Text className="max-w-[658px]">
-          Whether you want to improve your diet, optimize your workout routine,
-          or learn more about yourself, LifeDNA can help guide your decisions
-          with personalized suggestions based on your unique genetic profile.
+          Have you ever wondered how your DNA impacts your methylation,
+          nutrition, wellness, sleep, skincare, personality, and more? Discover
+          the reports and traits that can guide you in making better choices for
+          your wellness journey, helping you live your best life.
         </Text>
       </div>
       <div className="text-center flex flex-col max-lg:text-center gap-4 ">
-        <Text variant="smaller">Over 120 unique traits</Text>
-        <Title>Explore LifeDNA’s Most Powerful Reports</Title>
+        <Text variant="smaller">Over 130 unique traits</Text>
+        <Title>
+          Here Are The 8 Powerful Reports That Can Help You Truly Transform Your
+          Wellness:
+        </Title>
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { reportData, reportOptions } from "@/constants";
 import Image, { StaticImageData } from "next/image";
 import { LifeDnaReportsMobileSlider } from "./LifeDnaReportsMobileSlider";
+import Link from "next/link";
 
 type ItemType = {
   icon: string | StaticImageData;
@@ -71,7 +72,9 @@ export function LifeDnaReportsFilter({ queryParam }: { queryParam: string }) {
             </div>
           ))}
         </div>
-        <Button>Yes, I want to transform my wellness!</Button>
+        <Link href="/plans">
+          <Button>Explore LifeDNA’s Personalized Methylation Plans </Button>
+        </Link>
       </div>
       <div className="lg:hidden">
         <LifeDnaReportsMobileSlider data={chunkedItems} />

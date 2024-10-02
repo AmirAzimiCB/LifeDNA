@@ -512,55 +512,55 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
   {
     id: 1,
     step: 1,
-    title: "Purchase",
+    title: "Select Your Plan",
     _key: "have_dna_test",
     description:
-      "Get your DNA Test Bundle + Platinum Membership. Our DNA kit takes 3-7 days to get to you.",
+      "Choose between our  Methylation Genes Report and our Methylation Genes Report + Wellness Report Bundle. These plans provide access to your personalized insights within an hour.",
     icon: Basket,
   },
   {
     id: 2,
     step: 2,
-    title: "Swab",
+    title: "Upload  Your Raw Data",
     _key: "have_dna_test",
     description:
-      "Follow the instructions in your kit on how to collect your DNA sample and send it back to our lab. It takes around 5 days to ship your saliva swab back to us.",
+      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
     icon: ParkOutline,
   },
   {
     id: 3,
     step: 3,
-    title: "Explore",
+    title: "Start Optimizing Your Wellness!",
     _key: "have_dna_test",
     description:
-      "It takes 3-5 weeks for your DNA sample to be analyzed in our lab. As soon as your reports are generated, we will send you a notification via email. You will then be able to explore your personalized reports.",
+      "Dive into your actionable DNA insights, kick starting your journey to optimal wellness!",
     icon: Clock,
   },
   {
     id: 4,
     step: 1,
-    title: "Purchase",
+    title: "Select Your Plan",
     _key: "no_dna_test",
     description:
-      "Get your DNA Test Bundle + Platinum Membership. Our DNA kit takes 3-7 days to get to you.",
+      "Get our Methylation Genes Report + Wellness Test Bundle which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days. ",
     icon: Basket,
   },
   {
     id: 5,
     step: 2,
-    title: "Swab",
+    title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Follow the instructions in your kit on how to collect your DNA sample and send it back to our lab. It takes around 5 days to ship your saliva swab back to us.",
+      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 2  weeks.",
     icon: ParkOutline,
   },
   {
     id: 6,
     step: 3,
-    title: "Explore",
+    title: "Start Optimizing Your Wellness!",
     _key: "no_dna_test",
     description:
-      "It takes 3-5 weeks for your DNA sample to be analyzed in our lab. As soon as your reports are generated, we will send you a notification via email. You will then be able to explore your personalized reports.",
+      "Empower your well-being with the guidance of your personalized DNA reports!",
     icon: Clock,
   },
 ];
@@ -1169,11 +1169,11 @@ export const reportData: ReportCategory[] = [
 
 export const reportCards: ReportCard[] = [
   {
-    title: "Methylation Genes Report",
+    title: "12 Methylation Genes Report",
     kitIncluded: "*No DNA Kit Included",
     price: "$99",
     description:
-      "Feeling drained and struggling with mood swings? Discover the genetic reasons behind these signs with personalized insights based on your MTHFR gene and other unique methylation gene mutations. No DNA Kit Included.",
+      "Our 12 Methylation Genes Report covers a wide range of genetic mutations and powerful insights—for less than half the price of other methylation test providers. No DNA Kit Included.",
     listItems: [
       "Methylation Genes Report",
       "MTHFR Gene",
@@ -1189,14 +1189,14 @@ export const reportCards: ReportCard[] = [
       "MTHFD1 Gene",
       "NOS3 Gene",
     ],
-    href: "#",
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDMETHRV99&checkbox_items%5B%5D=LDNUTREPV37,LDVIREPV37,LDPGCV67&upsells%5B%5D=LDAIOPV97,LDAGREPV67,LDAIOPV57,LDPGCV67&channel=flow&funnel=LDMETH99NEWPLANS&pt=cc",
   },
   {
-    title: "Methylation Genes Report + Wellness Report Bundle",
+    title: "12 Methylation Genes Report + Wellness Report Bundle",
     kitIncluded: "*No DNA Kit Included",
     price: "$199",
     description:
-      "Everything in your Methylation Genes Report, and more! You’ll unlock more personalized insights beyond your methylation analysis to help you make informed decisions about your well-being.",
+      "Everything in your 12 Methylation Genes Report, and more! You’ll unlock over 115 additional personalized trait reports beyond your methylation analysis to help you make informed decisions about your well-being.",
     listItems: [
       "Methylation Genes Report",
       "Nutrition Report",
@@ -1210,15 +1210,15 @@ export const reportCards: ReportCard[] = [
       "Wellness Goals",
       "25% Discount On All LifeDNA Reports And Products",
     ],
-    href: "#",
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV100&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETH199PLANS&pt=cc",
   },
   {
-    title: "Methylation Genes Report + Wellness Test Bundle",
+    title: "12 Methylation Genes Report + Wellness Test Bundle",
     kitIncluded: "*DNA Kit Included",
     popular: true, // This one is marked as popular
     price: "$249",
     description:
-      "Get everything in your Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
+      "Get everything in your 12 Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
     listItems: [
       "DNA Test Kit",
       "Methylation Genes Report",
@@ -1234,6 +1234,6 @@ export const reportCards: ReportCard[] = [
       "25% Discount On All LifeDNA Reports And Products",
     ],
     image: DNAWellness,
-    href: "#",
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249PLANS&pt=cc",
   },
 ];
