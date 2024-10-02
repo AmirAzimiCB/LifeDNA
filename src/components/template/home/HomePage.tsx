@@ -12,6 +12,7 @@ import Image from "next/image";
 import { lock, WorksWith, Upload, ColoredDNA } from "../../../../public/icons";
 import { Button } from "@/components/ui/Button";
 import { LifeDNATabsComponent } from "@/components/organism/home/LifeDNATabsComponent";
+import Link from "next/link";
 
 export function HomePage() {
   return (
@@ -102,9 +103,11 @@ export function HomePage() {
           Begin Your Wellness Transformation with LifeDNA in 3 Easy Steps
         </Title>
         <LifeDNATabsComponent />
-        <Button className="w-full sm:max-w-[418px] mx-auto">
-          I want to transform my wellness!
-        </Button>
+        <Link href="/plans">
+          <Button className="w-full sm:max-w-[418px] mx-auto">
+            I want to transform my wellness!
+          </Button>
+        </Link>
         <div className="flex items-center justify-center gap-[18px] lg:gap-8">
           <div className="flex items-center gap-2">
             <Image

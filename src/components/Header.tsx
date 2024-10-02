@@ -51,7 +51,7 @@ export default function Header() {
                 Plans
               </Link>
               <Link
-                href="/account"
+                href="https://my.lifedna.com/"
                 className="inline-block bg-accent-color py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75"
               >
                 My Account
