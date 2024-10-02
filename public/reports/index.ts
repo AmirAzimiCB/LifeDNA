@@ -50,6 +50,7 @@ import VitaminA from "./Vitamin A Levels.svg";
 import Fitness from "./fitness.svg";
 import Muscle from "./Muscle Strength.svg";
 import Lactate from "./Lactate Clearancee.svg";
+import WeightLoss from "./Weight Loss & Exercise.svg";
 import Power from "./Power Vs Endurance.svg";
 import Metabolic from "./Metabolic Rate And Metabolic Syndrome.svg";
 import Aerobic from "./Aerobic Capacity.svg";
@@ -184,6 +185,7 @@ export {
   // fitness
   Fitness,
   Muscle,
+  WeightLoss,
   Lactate,
   Power,
   Metabolic,
