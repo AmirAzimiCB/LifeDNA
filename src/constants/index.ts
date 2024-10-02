@@ -34,12 +34,149 @@ import {
 } from "../../public/icons";
 
 import {
+  // nutrition
+  Sodium,
+  SaturatedFat,
+  GlutenSensitivity,
+  Lactose,
+  Caffeine,
+  Weight,
+  Protein,
+  Peach,
+  Peanut,
+  Sugar,
+  Shrimp,
+  Satiety,
+  Sensitivity,
+  Snacking,
+  Appetite,
+  Preference,
+  Antioxidant,
+
+  // Vitamins & Supplements
+  VitaminsAndSupplements,
+  VitaminC,
+  VitaminE,
+  Zinc,
+  Iron,
+  Cholesterol,
+  Copper,
+  DHA,
+  Liver,
+  VitaminB6,
+  VitaminB12,
+  VitaminB9,
+  CoQ10,
+  Probiotic,
+  Magnesium,
+  Thyroid,
+  Melatonin,
+  Calcium,
+  VitaminD,
+  Phosphorus,
+  VitaminK,
+  Biotin,
+  VitaminB5,
+  Glomerular,
+  Proteinuria,
+  VisualAcuity,
+  VitaminA,
+
+  // fitness
+  Muscle,
+  WeightLoss,
+  Lactate,
+  Power,
+  Metabolic,
+  Aerobic,
+  BloodPressure,
+  HDL,
+  Insulin,
+  Motivation,
+  Exercise,
+  Injury,
+  HandGrip,
+  BoneDensity,
+  Testosterone,
+  PostExercise,
+  ExerciseInduced,
+  Inflammation,
+  Circadian,
+
+  // Personality & Cognition
+  PersonalityAndCognition,
+  Agreeableness,
+  Conscientiousness,
+  Openness,
+  Extraversion,
+  Neuroticism,
+  Loneliness,
+  Resilience,
+  InstantGratification,
+  Fear,
+  Impulsivity,
+  Positive,
+  Harm,
+  Hearing,
+  SensitivityToStimuli,
+  Educational,
+  Hypnotizability,
+  Creativity,
+  Optimism,
+  Emotional,
+  Depression,
+  Maternal,
+  Gambling,
+  Mathematical,
+  Intelligence,
+  Musical,
+  Aggressive,
+  Risk,
+
+  // Wellness
+  Smoking,
+  Alcohol,
+  Insomnia,
+  Appendicitis,
+  Resting,
+  AlcoholAddiction,
+  Inguinal,
+  Motion,
+  Inflammatory,
+  Potential,
+  DNA,
+  Menstrual,
+  Excessive,
+  Kidney,
+  Male,
+  Longevity,
+
+  // Skincare
+  ExcessiveSkin,
+  Acne,
+  Facial,
+  SkinTanning,
+  Rosacea,
+  Stretch,
+  FacialWrinkles,
+  Freckles,
+  Psoriasis,
+  Eczema,
+  Cellulite,
+  Dandruff,
+  SkinGlycation,
+  Varicose,
+  Contact,
+} from "../../public/reports";
+
+import {
   vitamins,
   fitness as FitnessHeroImage,
   mthfr,
   skincare as SkinCareHeroImage,
   sleep as SleepHeroImage,
   wellness as WellNessHeroImage,
+  fitness,
 } from "../../public/svg";
 
 export const slides: Slide[] = [
@@ -481,338 +618,370 @@ export const reportData: ReportCategory[] = [
     icon: Fork,
     items: [
       { name: "Carbohydrate Metabolism", icon: BreadIcon },
-      { name: "Sodium Sensitivity", icon: BreadIcon },
-      { name: "Saturated Fat Metabolism", icon: BreadIcon },
-      { name: "Gluten Sensitivity", icon: BreadIcon },
-      { name: "Lactose Tolerance", icon: BreadIcon },
-      { name: "Caffeine Sensitivity", icon: BreadIcon },
-      { name: "Weight Change", icon: BreadIcon },
-      { name: "Protein Intake", icon: BreadIcon },
-      { name: "Peach Allergy", icon: BreadIcon },
-      { name: "Peanut Allergy", icon: BreadIcon },
-      { name: "Shrimp Allergy", icon: BreadIcon },
-      { name: "Sugar Preference", icon: BreadIcon },
-      { name: "Satiety", icon: BreadIcon },
-      { name: "Sensitivity To Bitter Foods", icon: BreadIcon },
-      { name: "Snacking Behavior", icon: BreadIcon },
-      { name: "Appetite", icon: BreadIcon },
-      { name: "Preference To Fatty Foods", icon: BreadIcon },
-      { name: "Antioxidant Status", icon: BreadIcon },
+      { name: "Sodium Sensitivity", icon: Sodium },
+      { name: "Saturated Fat Metabolism", icon: SaturatedFat },
+      { name: "Gluten Sensitivity", icon: GlutenSensitivity },
+      { name: "Lactose Tolerance", icon: Lactose },
+      { name: "Caffeine Sensitivity", icon: Caffeine },
+      { name: "Weight Change", icon: Weight },
+      { name: "Protein Intake", icon: Protein },
+      { name: "Peach Allergy", icon: Peach },
+      { name: "Peanut Allergy", icon: Peanut },
+      { name: "Shrimp Allergy", icon: Shrimp },
+      { name: "Sugar Preference", icon: Sugar },
+      { name: "Satiety", icon: Satiety },
+      { name: "Sensitivity To Bitter Foods", icon: Sensitivity },
+      { name: "Snacking Behavior", icon: Snacking },
+      { name: "Appetite", icon: Appetite },
+      { name: "Preference To Fatty Foods", icon: Preference },
+      { name: "Antioxidant Status", icon: Antioxidant },
     ],
   },
+
   {
     id: 3,
     category: "Vitamins & Supplements",
     description: "Learn which vitamins, nutrients, and supplements you need.",
-    icon: Fork,
+    icon: VitaminsAndSupplements,
     items: [
       {
         name: "Vitamin C Levels",
-        icon: BreadIcon,
+        icon: VitaminC,
       },
       {
         name: "Vitamin B12 Levels",
-        icon: BreadIcon,
+        icon: VitaminB12,
       },
       {
         name: "Phosphorus Levels",
-        icon: BreadIcon,
+        icon: Phosphorus,
       },
       {
         name: "Vitamin E Levels",
-        icon: BreadIcon,
+        icon: VitaminE,
       },
       {
         name: "Vitamin B9 (Folate Levels)",
-        icon: BreadIcon,
+        icon: VitaminB9,
       },
       {
         name: "Vitamin K Levels",
-        icon: BreadIcon,
+        icon: VitaminK,
       },
       {
         name: "Zinc Levels",
-        icon: BreadIcon,
+        icon: Zinc,
       },
       {
         name: "CoQ10 Levels",
-        icon: BreadIcon,
+        icon: CoQ10,
       },
       {
         name: "Glomerular Filtration Rate",
-        icon: BreadIcon,
+        icon: Glomerular,
       },
       {
         name: "Iron Levels",
-        icon: BreadIcon,
+        icon: Iron,
       },
       {
         name: "Probiotic Need",
-        icon: BreadIcon,
+        icon: Probiotic,
       },
       {
         name: "Proteinuria",
-        icon: BreadIcon,
+        icon: Proteinuria,
       },
       {
         name: "Cholesterol Levels",
-        icon: BreadIcon,
+        icon: Cholesterol,
       },
       {
         name: "Magnesium Levels",
-        icon: BreadIcon,
+        icon: Magnesium,
       },
       {
         name: "Visual Acuity",
-        icon: BreadIcon,
+        icon: VisualAcuity,
       },
       {
         name: "Copper Levels",
-        icon: BreadIcon,
+        icon: Copper,
       },
       {
         name: "Thyroid Function",
-        icon: BreadIcon,
+        icon: Thyroid,
       },
       {
         name: "Vitamin A Levels",
-        icon: BreadIcon,
+        icon: VitaminA,
       },
       {
         name: "DHA Levels",
-        icon: BreadIcon,
+        icon: DHA,
       },
       {
         name: "Melatonin Levels",
-        icon: BreadIcon,
+        icon: Melatonin,
       },
       {
         name: "Biotin Levels",
-        icon: BreadIcon,
+        icon: Biotin,
       },
       {
         name: "Liver Enzyme Levels",
-        icon: BreadIcon,
+        icon: Liver,
       },
       {
         name: "Calcium Levels",
-        icon: BreadIcon,
+        icon: Calcium,
       },
       {
         name: "Vitamin B5 Levels",
-        icon: BreadIcon,
+        icon: VitaminB5,
       },
       {
         name: "Vitamin B6 Levels",
-        icon: BreadIcon,
+        icon: VitaminB6,
       },
       {
         name: "Vitamin D Levels",
-        icon: BreadIcon,
+        icon: VitaminD,
       },
       // Add more fitness items...
     ],
   },
+
   {
     id: 4,
     category: "Fitness",
     description: "Personalized workout recommendations based on your DNA.",
-    icon: BreadIcon,
+    icon: fitness,
     items: [
       {
-        name: "Lactate Clearance",
-        icon: BreadIcon,
+        name: "Vitamin C Levels",
+        icon: VitaminC,
       },
       {
-        name: "Power vs Endurance",
-        icon: BreadIcon,
+        name: "Vitamin E Levels",
+        icon: VitaminE,
       },
       {
-        name: "Metabolic Rate and Metabolic Syndrome",
-        icon: BreadIcon,
+        name: "Zinc Levels",
+        icon: Zinc,
       },
       {
-        name: "Aerobic Capacity",
-        icon: BreadIcon,
+        name: "Iron Levels",
+        icon: Iron,
+      },
+      {
+        name: "Cholesterol Levels",
+        icon: Cholesterol,
       },
       {
         name: "Muscle Strength",
-        icon: BreadIcon,
+        icon: Muscle,
       },
       {
         name: "Weight Loss & Exercise",
-        icon: BreadIcon,
+        icon: WeightLoss,
+      },
+      {
+        name: "Copper Levels",
+        icon: Copper,
+      },
+      {
+        name: "Lactate Clearance",
+        icon: Lactate,
+      },
+      {
+        name: "Power Vs Endurance",
+        icon: Power,
+      },
+      {
+        name: "Metabolic Rate And Metabolic Syndrome",
+        icon: Metabolic,
+      },
+      {
+        name: "Aerobic Capacity",
+        icon: Aerobic,
       },
       {
         name: "Blood Pressure & Exercise",
-        icon: BreadIcon,
+        icon: BloodPressure,
       },
       {
         name: "HDL Cholesterol & Exercise",
-        icon: BreadIcon,
-      },
-      {
-        name: "Testosterone",
-        icon: BreadIcon,
+        icon: HDL,
       },
       {
         name: "Insulin Sensitivity & Exercise",
-        icon: BreadIcon,
+        icon: Insulin,
       },
       {
-        name: "Post-Exercise Recovery Rate",
-        icon: BreadIcon,
+        name: "Motivation To Exercise",
+        icon: Motivation,
       },
       {
-        name: "Motivation to Exercise",
-        icon: BreadIcon,
-      },
-      {
-        name: "Exercise-Induced Ischemia",
-        icon: BreadIcon,
-      },
-      {
-        name: "Inflammation & Pain Tolerance",
-        icon: BreadIcon,
-      },
-      {
-        name: "Circadian Rhythm",
-        icon: BreadIcon,
+        name: "Exercise Heart Rate Profile",
+        icon: Exercise,
       },
       {
         name: "Injury Predisposition",
-        icon: BreadIcon,
+        icon: Injury,
       },
       {
         name: "Hand Grip Strength",
-        icon: BreadIcon,
+        icon: HandGrip,
       },
       {
         name: "Bone Density & Fracture Risk",
-        icon: BreadIcon,
+        icon: BoneDensity,
+      },
+      {
+        name: "Testosterone",
+        icon: Testosterone,
+      },
+      {
+        name: "Bone Density & Fracture Risk",
+        icon: BoneDensity,
+      },
+      {
+        name: "Post-Exercise Recovery Rate",
+        icon: PostExercise,
+      },
+      {
+        name: "Exercise-Induced Ischemia",
+        icon: ExerciseInduced,
+      },
+      {
+        name: "Inflammation & Pain Tolerance",
+        icon: Inflammation,
+      },
+      {
+        name: "Circadian Rhythm",
+        icon: Circadian,
       },
     ],
   },
+
   {
     id: 5,
     category: "Personality & Cognition",
     description: "Discover yourself, your intelligence, personality, and more.",
-    icon: Fork,
+    icon: PersonalityAndCognition,
     items: [
       {
         name: "Agreeableness",
-        icon: BreadIcon,
-      },
-      {
-        name: "Fear of Pain",
-        icon: BreadIcon,
-      },
-      {
-        name: "Emotional Support Seeking",
-        icon: BreadIcon,
+        icon: Agreeableness,
       },
       {
         name: "Conscientiousness",
-        icon: BreadIcon,
-      },
-      {
-        name: "Positive Affectivity",
-        icon: BreadIcon,
-      },
-      {
-        name: "Depression",
-        icon: BreadIcon,
+        icon: Conscientiousness,
       },
       {
         name: "Openness",
-        icon: BreadIcon,
-      },
-      {
-        name: "Harm Avoidance",
-        icon: BreadIcon,
-      },
-      {
-        name: "Maternal Sensitivity",
-        icon: BreadIcon,
+        icon: Openness,
       },
       {
         name: "Extraversion",
-        icon: BreadIcon,
-      },
-      {
-        name: "Hearing Function",
-        icon: BreadIcon,
-      },
-      {
-        name: "Hearing Function",
-        icon: BreadIcon,
+        icon: Extraversion,
       },
       {
         name: "Neuroticism",
-        icon: BreadIcon,
-      },
-      {
-        name: "Sensitivity to Stimuli",
-        icon: BreadIcon,
-      },
-      {
-        name: "Gambling",
-        icon: BreadIcon,
+        icon: Neuroticism,
       },
       {
         name: "Loneliness",
-        icon: BreadIcon,
-      },
-      {
-        name: "Educational Attainment",
-        icon: BreadIcon,
-      },
-      {
-        name: "Mathematical Ability",
-        icon: BreadIcon,
+        icon: Loneliness,
       },
       {
         name: "Resilience",
-        icon: BreadIcon,
-      },
-      {
-        name: "Hypnotizability",
-        icon: BreadIcon,
-      },
-      {
-        name: "Intelligence",
-        icon: BreadIcon,
+        icon: Resilience,
       },
       {
         name: "Instant Gratification",
-        icon: BreadIcon,
-      },
-      {
-        name: "Creativity",
-        icon: BreadIcon,
-      },
-      {
-        name: "Musical Ability",
-        icon: BreadIcon,
-      },
-      {
-        name: "Risk-taking",
-        icon: BreadIcon,
-      },
-      {
-        name: "Optimism",
-        icon: BreadIcon,
+        icon: InstantGratification,
       },
       {
         name: "Impulsivity",
-        icon: BreadIcon,
+        icon: Impulsivity,
+      },
+      {
+        name: "Fear Of Pain",
+        icon: Fear,
+      },
+      {
+        name: "Positive Affectivity",
+        icon: Positive,
+      },
+      {
+        name: "Harm Avoidance",
+        icon: Harm,
+      },
+      {
+        name: "Hearing Function",
+        icon: Hearing,
+      },
+      {
+        name: "Sensitivity to Stimuli",
+        icon: SensitivityToStimuli,
+      },
+      {
+        name: "Educational Attainment",
+        icon: Educational,
+      },
+      {
+        name: "Hypnotizability",
+        icon: Hypnotizability,
+      },
+      {
+        name: "Creativity",
+        icon: Creativity,
+      },
+      {
+        name: "Optimism",
+        icon: Optimism,
+      },
+      {
+        name: "Emotional Support Seeking",
+        icon: Emotional,
+      },
+      {
+        name: "Depression",
+        icon: Depression,
+      },
+      {
+        name: "Maternal Sensitivity",
+        icon: Maternal,
+      },
+      {
+        name: "Gambling",
+        icon: Gambling,
+      },
+      {
+        name: "Mathematical Ability",
+        icon: Mathematical,
+      },
+      {
+        name: "Intelligence",
+        icon: Intelligence,
+      },
+      {
+        name: "Musical Ability",
+        icon: Musical,
       },
       {
         name: "Aggressive Behavior",
-        icon: BreadIcon,
+        icon: Aggressive,
+      },
+      {
+        name: "Risk-taking",
+        icon: Risk,
       },
     ],
   },
+
   {
     id: 6,
     category: "Wellness",
@@ -822,136 +991,138 @@ export const reportData: ReportCategory[] = [
     items: [
       {
         name: "Smoking Behavior & Nicotine Dependence",
-        icon: BreadIcon,
-      },
-      {
-        name: "Inguinal Hernia",
-        icon: BreadIcon,
-      },
-      {
-        name: "Excessive Sweating",
-        icon: BreadIcon,
+        icon: Smoking,
       },
       {
         name: "Alcohol Consumption",
-        icon: BreadIcon,
-      },
-      {
-        name: "Motion Sickness",
-        icon: BreadIcon,
-      },
-      {
-        name: "Kidney Stone Predisposition",
-        icon: BreadIcon,
+        icon: Alcohol,
       },
       {
         name: "Insomnia",
-        icon: BreadIcon,
-      },
-      {
-        name: "Inflammatory Response",
-        icon: BreadIcon,
-      },
-      {
-        name: "Male Pattern Baldness",
-        icon: BreadIcon,
+        icon: Insomnia,
       },
       {
         name: "Appendicitis",
-        icon: BreadIcon,
-      },
-      {
-        name: "Potential for Cannabis Dependence",
-        icon: BreadIcon,
-      },
-      {
-        name: "Longevity",
-        icon: BreadIcon,
+        icon: Appendicitis,
       },
       {
         name: "Resting Heart Rate",
-        icon: BreadIcon,
-      },
-      {
-        name: "DNA Damage & Detoxification Ability",
-        icon: BreadIcon,
+        icon: Resting,
       },
       {
         name: "Alcohol Addiction",
-        icon: BreadIcon,
+        icon: AlcoholAddiction,
+      },
+      {
+        name: "Inguinal Hernia",
+        icon: Inguinal,
+      },
+      {
+        name: "Motion Sickness",
+        icon: Motion,
+      },
+      {
+        name: "Inflammatory Response",
+        icon: Inflammatory,
+      },
+      {
+        name: "Potential For Cannabis Dependence",
+        icon: Potential,
+      },
+      {
+        name: "DNA Damage & Detoxification Ability",
+        icon: DNA,
       },
       {
         name: "Menstrual Cycle Length",
-        icon: BreadIcon,
+        icon: Menstrual,
+      },
+      {
+        name: "Excessive Sweating",
+        icon: Excessive,
+      },
+      {
+        name: "Kidney Stone Predisposition",
+        icon: Kidney,
+      },
+      {
+        name: "Male Pattern Baldness",
+        icon: Male,
+      },
+      {
+        name: "Longevity",
+        icon: Longevity,
       },
     ],
   },
+
   {
     id: 7,
     category: "Skincare",
     description:
       "Safely treat your skin and reveal the best complexion of your life.",
-    icon: Fork,
+    icon: skincare,
     items: [
       {
         name: "Excessive Skin Dryness",
-        icon: BreadIcon,
-      },
-      {
-        name: "Stretch Marks",
-        icon: BreadIcon,
-      },
-      {
-        name: "Cellulite",
-        icon: BreadIcon,
+        icon: ExcessiveSkin,
       },
       {
         name: "Acne",
-        icon: BreadIcon,
-      },
-      {
-        name: "Facial Wrinkles",
-        icon: BreadIcon,
-      },
-      {
-        name: "Dandruff",
-        icon: BreadIcon,
+        icon: Acne,
       },
       {
         name: "Facial Pigmental Spots",
-        icon: BreadIcon,
+        icon: Facial,
       },
       {
-        name: "Freckles",
-        icon: BreadIcon,
-      },
-      {
-        name: "Skin Glycation",
-        icon: BreadIcon,
-      },
-      {
-        name: "Skin Tanning/Sun Burning",
-        icon: BreadIcon,
-      },
-      {
-        name: "Psoriasis",
-        icon: BreadIcon,
-      },
-      {
-        name: "Varicose Veins",
-        icon: BreadIcon,
+        name: "Skin Tanning / Sun Burning",
+        icon: SkinTanning,
       },
       {
         name: "Rosacea",
-        icon: BreadIcon,
+        icon: Rosacea,
+      },
+      {
+        name: "Stretch Marks",
+        icon: Stretch,
+      },
+      {
+        name: "Facial Wrinkles",
+        icon: FacialWrinkles,
+      },
+      {
+        name: "Freckles",
+        icon: Freckles,
+      },
+      {
+        name: "Psoriasis",
+        icon: Psoriasis,
       },
       {
         name: "Eczema",
-        icon: BreadIcon,
+        icon: Eczema,
+      },
+
+      {
+        name: "Cellulite",
+        icon: Cellulite,
+      },
+      {
+        name: "Dandruff",
+        icon: Dandruff,
+      },
+      {
+        name: "Skin Glycation",
+        icon: SkinGlycation,
+      },
+      {
+        name: "Varicose Veins",
+        icon: Varicose,
       },
       {
         name: "Contact Dermatitis",
-        icon: BreadIcon,
+        icon: Contact,
       },
     ],
   },
