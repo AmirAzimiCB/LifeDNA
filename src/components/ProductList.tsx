@@ -36,7 +36,7 @@ export default function ProductList() {
         return;
       }
 
-      const data = JSON.parse(responseBody); // Parse the response body
+      const data = await response.json(); // Parse the response body
       setProducts(data.products.edges);
       setLoading(false); // Set loading to false
     }
@@ -45,29 +45,6 @@ export default function ProductList() {
 
   if (loading) return <div>Loading...</div>; // Show loading state
   if (error) return <div>{error}</div>; // Show error message
-
-  const hardcodedProducts = [
-    {
-      node: {
-        id: "1",
-        title: "Sample Product",
-        priceRange: { minVariantPrice: { amount: "29.99" } },
-        images: {
-          edges: [
-            {
-              node: {
-                originalSrc: "/placeholder.png",
-                altText: "Sample Image",
-              },
-            },
-          ],
-        },
-      },
-    },
-  ];
-
-  // Replace setProducts(data.products.edges) with:
-  setProducts(hardcodedProducts);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

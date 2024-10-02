@@ -11,6 +11,13 @@ const shopifyClient = new GraphQLClient(
   }
 );
 
+// Log the environment variables
+console.log("Shopify Store Domain:", process.env.SHOPIFY_STORE_DOMAIN);
+console.log(
+  "Shopify Storefront Access Token:",
+  process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN
+);
+
 export async function GET() {
   const query = `
     {
