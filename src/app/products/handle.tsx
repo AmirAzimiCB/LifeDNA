@@ -1,53 +1,64 @@
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image from "next/image"; // Ensure you import Image
+
+// Define or import the Product type
+interface Product {
+  name: string;
+  imageUrl: string;
+  // Add other properties as needed
+}
 
 export default function ProductPage() {
   const router = useRouter();
-  const { handle } = router.query; // Get the product handle from the URL
-  const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { handle: productHandle } = router.query; // Get the product handle from the URL
+  const [product, setProduct] = useState<Product | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch product data based on productHandle
+  const fetchProductData = useCallback(async () => {
+    if (!productHandle) return; // Exit if productHandle is not available
+    setLoading(true);
+    try {
+      const response = await fetch(`/api/products/${productHandle}`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      setProduct(data);
+    } catch (err: unknown) {
+      // Specify the type of err as unknown
+      if (err instanceof Error) {
+        setError(err.message); // Use err.message if err is an instance of Error
+      } else {
+        setError("An unknown error occurred"); // Fallback for unknown error types
+      }
+    } finally {
+      setLoading(false);
+    }
+  }, [productHandle]); // Include productHandle in the dependency array
 
   useEffect(() => {
-    if (handle) {
-      async function fetchProduct() {
-        const response = await fetch(`/api/products/${handle}`);
-        if (!response.ok) {
-          setError("Failed to load product.");
-          setLoading(false);
-          return;
-        }
-        const data = await response.json();
-        setProduct(data.product);
-        setLoading(false);
-      }
-      fetchProduct();
-    }
-  }, [handle]);
+    fetchProductData(); // Call fetchProductData when productHandle changes
+  }, [fetchProductData]); // Use fetchProductData in the dependency array
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
-
+  // Example usage of loading and product
   return (
-    <div className="container mx-auto p-6">
+    <div>
+      {loading && <p>Loading...</p>} {/* Display loading message */}
+      {error && <p>Error: {error}</p>} {/* Display error if exists */}
       {product && (
-        <>
-          <h1 className="text-2xl font-bold">{product.title}</h1>
+        <div>
+          <h1>{product.name}</h1> {/* Display product name */}
           <Image
-            src={product.images[0]?.originalSrc || "/placeholder.png"}
-            alt={product.title}
-            width={600}
-            height={600}
-          />
-          <p className="text-lg">
-            ${parseFloat(product.priceRange.minVariantPrice.amount).toFixed(2)}
-          </p>
-          <p>{product.description}</p>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
-            Add to Cart
-          </button>
-        </>
+            src={product.imageUrl}
+            alt={product.name}
+            width={500}
+            height={500}
+          />{" "}
+          {/* Use Image component */}
+        </div>
       )}
     </div>
   );
