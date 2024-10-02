@@ -38,10 +38,7 @@ export function Testimonials() {
       </Title>
 
       {/* Display the current testimonial */}
-      <div className="flex flex-col gap-6 lg:gap-4">
-        <Text className="text-center text-white">
-          – {TestimonialsData[currentIndex].name}
-        </Text>
+      <div className="flex flex-col gap-2 lg:gap-4">
         <div className="flex items-center justify-between gap-4">
           <button onClick={handlePrev} className="lg:hidden">
             <ChevronLeft className="w-6 h-6 text-white" />
@@ -77,6 +74,9 @@ export function Testimonials() {
             )
           )}
         </div>
+        <Text className="text-center italic text-white">
+          – {TestimonialsData[currentIndex].name}
+        </Text>
       </div>
 
       {/* Navigation Buttons */}

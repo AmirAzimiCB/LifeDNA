@@ -70,7 +70,7 @@ export function HomePage() {
                 <div className="flex flex-col gap-1.5">
                   <Title
                     variant="smaller"
-                    className="text-base leading-[19.2px] font-bold capitalize  tracking-tight"
+                    className="text-xl leading-[1.3em] font-bold capitalize  tracking-tight"
                   >
                     {report.title}
                   </Title>
@@ -82,7 +82,7 @@ export function HomePage() {
                 </div>
                 <Text
                   variant="base"
-                  className="text-2xl leading-[120%] font-medium"
+                  className="text-xl leading-[120%] font-medium"
                 >
                   {report.price}
                 </Text>
@@ -162,7 +162,7 @@ export function HomePage() {
         <div className="flex flex-col gap-6 max-w-[1440px] mx-auto px-6 lg:px-16">
           <Title className="text-center">Frequently Asked Questions</Title>
           <Qna />
-          <Text variant="small" className="max-sm:text-[10px]">
+          <Text variant="small" className="max-sm:text-[12px]">
             *Our reports have not been evaluated by the Food and Drug
             Administration. The contents on our website and our reports are for
             informational purposes only, and are not intended to diagnose any

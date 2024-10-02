@@ -8,13 +8,13 @@ type Props = {
 
 export function MobileReportCard({ report }: Props) {
   return (
-    <Card className="flex flex-col justify-between gap-6 p-5 w-full min-h-[240px]">
+    <Card className="flex flex-col justify-between gap-6 p-5 w-full min-h-[320px]">
       <div className="flex flex-col gap-8">
         <div className="flex justify-between gap-4">
           <div className="flex flex-col gap-[2px] lg:gap-1.5">
             <Title
               variant="smaller"
-              className="text-xs leading-[19.2px] font-bold capitalize  tracking-tight"
+              className="text-lg leading-[19.2px] font-bold capitalize  tracking-tight"
             >
               {report.title}
             </Title>
@@ -30,7 +30,7 @@ export function MobileReportCard({ report }: Props) {
           </div>
           <Text
             variant="base"
-            className="text-base lg:text-2xl leading-[120%] font-medium"
+            className="text-xl lg:text-2xl leading-[120%] font-medium"
           >
             {report.price}
           </Text>

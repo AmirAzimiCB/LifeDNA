@@ -70,7 +70,7 @@ export function BetterWellnessSection({
               href={roadMap.href}
               icon={roadMap.icon}
               items={roadMap.items}
-              className="min-h-[505px] h-auto"
+              className="min-h-[550px] h-auto"
             />
           </div>
         ))}

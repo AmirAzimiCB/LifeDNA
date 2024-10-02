@@ -36,10 +36,10 @@ export const Carousel: React.FC = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="embla__slide flex-shrink-0 w-full max-w-[318px] lg:max-w-[254px]"
+              className="embla__slide flex-shrink-0 w-full max-w-[318px] lg:max-w-[275px]"
               style={{ scrollSnapAlign: "start" }}
             >
-              <div className="bg-[#FBFBFB] rounded-[16px] p-6 min-h-[245px] lg:min-h-[326px] flex flex-col justify-between shadow-lg">
+              <div className="bg-[#FBFBFB] rounded-[16px] p-6 min-h-[345px] lg:min-h-[420px] flex flex-col justify-between shadow-lg">
                 <div className="flex items-start">
                   <div className="text-white">
                     <Image

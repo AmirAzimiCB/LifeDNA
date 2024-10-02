@@ -9,11 +9,11 @@ export function Qna() {
           <div className="flex flex-col gap-4">
             <Title
               variant="smaller"
-              className="max-sm:text-[10px] font-semibold"
+              className="max-sm:text-[16px] font-semibold"
             >
               {item.title}
             </Title>
-            <Text variant="small" className="max-sm:text-[10px]">
+            <Text variant="small" className="max-sm:text-[16px]">
               {item.description}
             </Text>
           </div>
