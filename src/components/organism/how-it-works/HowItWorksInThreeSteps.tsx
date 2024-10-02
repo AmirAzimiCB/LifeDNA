@@ -15,7 +15,7 @@ export function HowItWorksInThreeSteps() {
     <Wrapper className="flex flex-col gap-4 lg:gap-8 max-lg:p-0 max-lg:shadow-none max-lg:bg-white">
       <div className="flex flex-col gap-4">
         <Title className="text-center">
-          Whether You've Already Taken a DNA Test or Need One - You Can
+          Whether You&apos;ve Already Taken a DNA Test or Need One - You Can
           Kickstart Your Wellness Journey with LifeDNA
         </Title>
         <Text className="font-semibold text-center">

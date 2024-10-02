@@ -392,7 +392,7 @@ export const ReportsData: Reports[] = [
     description:
       "Our 12 Methylation Genes Report provides personalized genetic insights into your MTHFR, COMT, and CBS genes, helping you uncover potential genetic reasons behind fatigue, mood swings, and more.",
     href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDMETHRV99&checkbox_items%5B%5D=LDNUTREPV37,LDVIREPV37,LDPGCV67&upsells%5B%5D=LDAIOPV97,LDAGREPV67,LDAIOPV57,LDPGCV67&channel=flow&funnel=LDMETH99NEWHOME&pt=cc",
-    target: "_blank",
+
     buttonText: "Get My Report Now",
   },
   {
@@ -403,7 +403,7 @@ export const ReportsData: Reports[] = [
     description:
       "Everything in your 12 Methylation Genes Report, and more! You’ll unlock over 115 additional personalized trait reports beyond your methylation analysis to help you make informed decisions about your well-being.",
     href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV100&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETH199HOME&pt=cc",
-    target: "_blank",
+
     buttonText: "Get My Report Now",
   },
   {
@@ -414,7 +414,7 @@ export const ReportsData: Reports[] = [
     description:
       "Get everything in your 12 Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
     href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249HOME&pt=cc",
-    target: "_blank",
+
     buttonText: "Get My Report Now",
   },
 ];
