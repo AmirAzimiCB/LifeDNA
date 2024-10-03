@@ -48,6 +48,7 @@ import VitaminA from "./Vitamin A Levels.svg";
 
 // Fitness
 import Fitness from "./fitness.svg";
+import Reportfitness from "./reportfitness.svg";
 import Muscle from "./Muscle Strength.svg";
 import Lactate from "./Lactate Clearancee.svg";
 import WeightLoss from "./Weight Loss & Exercise.svg";
@@ -183,6 +184,7 @@ export {
   VitaminA,
 
   // fitness
+  Reportfitness,
   Fitness,
   Muscle,
   WeightLoss,

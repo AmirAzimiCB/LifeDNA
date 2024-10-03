@@ -21,7 +21,7 @@ export function PlanMobileSliderCard({
         variant="default"
         className={cn(
           "w-full flex flex-col gap-8 justify-between py-8 px-6 transition-all duration-500 ease-in-out",
-          isExpanded ? "h-full" : "min-h-[365px] h-fit"
+          isExpanded ? "h-full" : "min-h-[420px] h-fit"
         )}
       >
         <div className="flex flex-col gap-8 lg:gap-6 h-full">
@@ -38,10 +38,7 @@ export function PlanMobileSliderCard({
               </Title>
             </div>
             <div className="flex justify-between gap-4">
-              <Text
-                variant="small"
-                className="font-semibold max-lg:text-[10px]"
-              >
+              <Text variant="small" className="font-medium max-lg:text-sm">
                 {card.kitIncluded}
               </Text>
               {card.popular && (
@@ -107,14 +104,17 @@ export function PlanMobileSliderCard({
                     height={1000}
                     src={card.image}
                     alt={card.title}
-                    className="w-full h-auto rounded-md"
+                    className="w-full rounded-md object-center"
                   />
                 </div>
               )}
             </>
           )}
         </div>
-        <Button>Get My Report Now</Button>
+
+        <a href={card.href} target="_blank" rel="noopener noreferrer">
+          <Button>Get My Report Now</Button>
+        </a>
       </Card>
     </div>
   );

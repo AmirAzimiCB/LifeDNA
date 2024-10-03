@@ -40,7 +40,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
           <div className="flex justify-between gap-4">
             <Title
               variant="medium"
-              className="font-bold max-lg:text-base leading-[19.2px]  "
+              className="font-bold max-lg:text-base leading-[19.2px] tracking-tighter"
             >
               {card.title}
             </Title>

@@ -138,7 +138,6 @@ import {
   // Wellness
   Smoking,
   Alcohol,
-  Insomnia,
   Appendicitis,
   Resting,
   AlcoholAddiction,
@@ -169,6 +168,7 @@ import {
   SkinGlycation,
   Varicose,
   Contact,
+  Reportfitness,
 } from "../../public/reports";
 
 import {
@@ -178,7 +178,6 @@ import {
   skincare as SkinCareHeroImage,
   sleep as SleepHeroImage,
   wellness as WellNessHeroImage,
-  fitness,
 } from "../../public/svg";
 
 export const slides: Slide[] = [
@@ -525,7 +524,7 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
     title: "Select Your Plan",
     _key: "have_dna_test",
     description:
-      "Choose between our  Methylation Genes Report and our Methylation Genes Report + Wellness Report Bundle. These plans provide access to your personalized insights within an hour.",
+      "Choose between our  12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle. These plans provide access to your personalized insights within an hour.",
     icon: Basket,
   },
   {
@@ -552,7 +551,7 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
     title: "Select Your Plan",
     _key: "no_dna_test",
     description:
-      "Get our Methylation Genes Report + Wellness Test Bundle which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days. ",
+      "Get our 12 Methylation Genes Report + Wellness Test Bundle which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
     icon: Basket,
   },
   {
@@ -805,39 +804,15 @@ export const reportData: ReportCategory[] = [
     id: 4,
     category: "Fitness",
     description: "Personalized workout recommendations based on your DNA.",
-    icon: fitness,
+    icon: Reportfitness,
     items: [
       {
-        name: "Vitamin C Levels",
-        icon: VitaminC,
-      },
-      {
-        name: "Vitamin E Levels",
-        icon: VitaminE,
-      },
-      {
-        name: "Zinc Levels",
-        icon: Zinc,
-      },
-      {
-        name: "Iron Levels",
-        icon: Iron,
-      },
-      {
-        name: "Cholesterol Levels",
-        icon: Cholesterol,
-      },
-      {
-        name: "Muscle Strength",
+        name: "Muscle Hypertrophy ",
         icon: Muscle,
       },
       {
         name: "Weight Loss & Exercise",
         icon: WeightLoss,
-      },
-      {
-        name: "Copper Levels",
-        icon: Copper,
       },
       {
         name: "Lactate Clearance",
@@ -848,7 +823,7 @@ export const reportData: ReportCategory[] = [
         icon: Power,
       },
       {
-        name: "Metabolic Rate And Metabolic Syndrome",
+        name: "Metabolic Syndrome",
         icon: Metabolic,
       },
       {
@@ -872,7 +847,7 @@ export const reportData: ReportCategory[] = [
         icon: Motivation,
       },
       {
-        name: "Exercise Heart Rate Profile",
+        name: "Exercise Heart Rate Recovery",
         icon: Exercise,
       },
       {
@@ -890,10 +865,6 @@ export const reportData: ReportCategory[] = [
       {
         name: "Testosterone",
         icon: Testosterone,
-      },
-      {
-        name: "Bone Density & Fracture Risk",
-        icon: BoneDensity,
       },
       {
         name: "Post-Exercise Recovery Rate",
@@ -1046,10 +1017,7 @@ export const reportData: ReportCategory[] = [
         name: "Alcohol Consumption",
         icon: Alcohol,
       },
-      {
-        name: "Insomnia",
-        icon: Insomnia,
-      },
+
       {
         name: "Appendicitis",
         icon: Appendicitis,
@@ -1079,7 +1047,7 @@ export const reportData: ReportCategory[] = [
         icon: Potential,
       },
       {
-        name: "DNA Damage & Detoxification Ability",
+        name: "Diet and DNA Damage",
         icon: DNA,
       },
       {
@@ -1087,7 +1055,7 @@ export const reportData: ReportCategory[] = [
         icon: Menstrual,
       },
       {
-        name: "Excessive Sweating",
+        name: "Excessive Sweating (Hyperhidrosis)”",
         icon: Excessive,
       },
       {
@@ -1125,7 +1093,7 @@ export const reportData: ReportCategory[] = [
         icon: Facial,
       },
       {
-        name: "Skin Tanning / Sun Burning",
+        name: "Skin Tanning vs. Sunburning",
         icon: SkinTanning,
       },
       {
@@ -1158,7 +1126,7 @@ export const reportData: ReportCategory[] = [
         icon: Cellulite,
       },
       {
-        name: "Dandruff",
+        name: "Dandruff (Seborrheic Dermatitis)",
         icon: Dandruff,
       },
       {

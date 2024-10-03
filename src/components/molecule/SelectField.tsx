@@ -80,7 +80,7 @@ export function SelectField({
                   key={option.value}
                   value={option.value}
                   className={cn(
-                    "px-4 py-2 text-[10px] text-[#1A1A1A] cursor-pointer hover:bg-[#41c752] hover:text-white hover:font-bold outline-none border-none",
+                    "px-4 py-2 text-[14px] text-[#1A1A1A] cursor-pointer hover:bg-[#41c752] hover:text-white hover:font-bold outline-none border-none",
                     selectedValue === option.value ? "font-medium" : ""
                   )}
                 >
