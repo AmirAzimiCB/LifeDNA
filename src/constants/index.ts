@@ -424,7 +424,7 @@ export const ReportsData: Reports[] = [
       "Get everything in your 12 Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
     href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249HOME&pt=cc",
 
-    buttonText: "Get My Report Now",
+    buttonText: "Get My DNA Test Now",
   },
 ];
 
