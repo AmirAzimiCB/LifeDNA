@@ -21,15 +21,20 @@ const PrivacyPolicy = () => {
       </Text>
       <Text variant="paragraph">
         Please see our{" "}
-        <span className="text-[#41c752]">Privacy Notice for EU Residents</span>{" "}
+        <a
+          href={"/privacy-policy-eea-uk-and-switzerland"}
+          className="text-[#41c752]"
+        >
+          Privacy Notice for EU Residents
+        </a>{" "}
         if you are an individual located in the European Economic Area (EEA),
         United Kingdom (UK) or Switzerland.
       </Text>
       <Text variant="paragraph">
         If you are a resident of California, please see{" "}
-        <span className="text-[#41c752]">
+        <a href="/privacy-policy-california" className="text-[#41c752]">
           our Privacy Notice for California Residents.
-        </span>
+        </a>
       </Text>
       <Title type="h2" className="font-normal text-sm" variant="smaller">
         This policy applies to information we collect:
@@ -102,9 +107,9 @@ const PrivacyPolicy = () => {
         California residents under 18 years of age may have additional rights
         regarding the collection and sale of their personal information. For
         more information, please see our{" "}
-        <span className="text-[#41c752]">
+        <a href="/privacy-policy-california" className="text-[#41c752]">
           Privacy Policy for California Residents.
-        </span>
+        </a>
       </Text>
       <Text variant="paragraph">
         Information We Collect about You and How We Collect It
@@ -168,7 +173,12 @@ const PrivacyPolicy = () => {
         </li>
         <li className="ml-6 lg:ml-8">
           Information related to participating in our{" "}
-          <span className="text-[#41c752]">Research Program. </span>
+          <a
+            href="https://auth.lifedna.com/login?response_type=code&client_id=3iea8lao63paniv06qnfo9s3t3&scope=&redirect_uri=https%3A%2F%2Fmy.lifedna.com%2Fdashboard&code_challenge=Bep-d8-iHmQEAkLpcWtLFwCb_licYlLIdHMmfb984-0&code_challenge_method=S256"
+            className="text-[#41c752]"
+          >
+            Research Program.{" "}
+          </a>
         </li>
         <li className="ml-6 lg:ml-8">
           When you provide the saliva sample for us to perform services, we may
@@ -320,11 +330,18 @@ const PrivacyPolicy = () => {
         </li>
         <li className="ml-6 lg:ml-8">
           For research purposes. See{" "}
-          <span className="text-[#41c752]">Research Program.</span>
+          <a
+            href="https://auth.lifedna.com/login?response_type=code&client_id=3iea8lao63paniv06qnfo9s3t3&scope=&redirect_uri=https%3A%2F%2Fmy.lifedna.com%2Fdashboard&code_challenge=Bep-d8-iHmQEAkLpcWtLFwCb_licYlLIdHMmfb984-0&code_challenge_method=S256"
+            className="text-[#41c752]"
+          >
+            Research Program.
+          </a>
         </li>
         <li className="ml-6 lg:ml-8">
           To give us feedback or{" "}
-          <span className="text-[#41c752]">contact us.</span>
+          <a href="/contact" className="text-[#41c752]">
+            contact us.
+          </a>
         </li>
         <li className="ml-6 lg:ml-8">
           In any other way we may describe when you provide the information.
@@ -393,7 +410,12 @@ const PrivacyPolicy = () => {
           participate in our Research Program, we will ask you to provide
           consent by opting-in. For more information regarding participating in
           research, see{" "}
-          <span className="text-[#41c752]">Research Program.</span>
+          <a
+            href="https://auth.lifedna.com/login?response_type=code&client_id=3iea8lao63paniv06qnfo9s3t3&scope=&redirect_uri=https%3A%2F%2Fmy.lifedna.com%2Fdashboard&code_challenge=Bep-d8-iHmQEAkLpcWtLFwCb_licYlLIdHMmfb984-0&code_challenge_method=S256"
+            className="text-[#41c752]"
+          >
+            Research Program.
+          </a>
         </li>
         <li className="ml-6 lg:ml-8">
           To a buyer or other successor in the event of a merger, divestiture,
@@ -409,8 +431,10 @@ const PrivacyPolicy = () => {
         </li>
         <li className="ml-6 lg:ml-8">
           To enforce or apply our{" "}
-          <span className="text-[#41c752]">Terms of Services </span>and other
-          agreements, including for billing and collection purposes.
+          <a href="/terms-conditions" className="text-[#41c752]">
+            Terms of Services{" "}
+          </a>
+          and other agreements, including for billing and collection purposes.
         </li>
         <li className="ml-6 lg:ml-8">
           If we believe disclosure is necessary or appropriate to protect the
@@ -498,9 +522,9 @@ const PrivacyPolicy = () => {
           resident, California law may provide you with additional rights
           regarding our use of your personal information. To learn more about
           your California privacy rights, click{" "}
-          <span className="text-[#41c752]">
+          <a href="/privacy-policy-california" className="text-[#41c752]">
             Privacy Notice for California Residents.
-          </span>{" "}
+          </a>{" "}
           California’s “shine the Light” law (Civil Code Section § 1798.83)
           permits users of our App that are California residents to request
           certain information regarding our disclosure of personal information
@@ -568,10 +592,9 @@ const PrivacyPolicy = () => {
         <br />
         <li className="ml-4 lg:ml-5">Honolulu, HI 96814</li>
         <br />
-        <li className="ml-4 lg:ml-5">By email at:</li>{" "}
         <li className="ml-4 lg:ml-5">
-          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com</a>
-        </li>
+          By email at: <a href="mailto:aloha@lifedna.com">aloha@lifedna.com</a>
+        </li>{" "}
         <br />
         <li className="ml-4 lg:ml-5">
           By calling our toll-free number: (877) 543-3362
