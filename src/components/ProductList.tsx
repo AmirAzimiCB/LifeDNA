@@ -31,9 +31,12 @@ export default function ProductList({
   console.log("Products:", products);
 
   // Ensure products is an array
-  if (!Array.isArray(products)) {
-    return <p>No products available.</p>; // Handle the case when products is not an array
+  if (!Array.isArray(products) || products.length === 0) {
+    return <p>No products available.</p>; // Handle the case when products is not an array or is empty
   }
+
+  // Additional logging as per instructions
+  console.log("Products being passed to ProductList:", products);
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
