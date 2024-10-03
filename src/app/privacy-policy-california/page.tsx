@@ -3,7 +3,7 @@ import React from "react";
 
 const PrivacyPolicyCA = () => {
   return (
-    <div className="flex flex-col gap-6 max-w-[1440px] mx-auto w-full px-4 py-16 lg:p-16">
+    <div className="flex flex-col gap-6 max-w-[1440px] mx-auto w-full px-6 py-16 lg:p-16">
       <Title type="h1" variant="default" className="text-[34px] font-normal">
         Privacy Notice for California Residents
       </Title>
