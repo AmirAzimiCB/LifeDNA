@@ -108,7 +108,6 @@ import {
   // Personality & Cognition
   PersonalityAndCognition,
   Agreeableness,
-  Conscientiousness,
   Openness,
   Extraversion,
   Neuroticism,
@@ -169,6 +168,7 @@ import {
   Varicose,
   Contact,
   Reportfitness,
+  Conscientiousness,
 } from "../../public/reports";
 
 import {
@@ -650,19 +650,43 @@ export const QNAData: QNA[] = [
 ];
 
 export const reportOptions: SelectOptions[] = [
+  { id: 1, value: "Methylation ", label: "Methylation " },
   { id: 2, value: "Nutrition", label: "Nutrition" },
   { id: 3, value: "Vitamins & Supplements", label: "Vitamins & Supplements" },
   { id: 4, value: "Fitness", label: "Fitness" },
-  { id: 5, value: "Personality & Cognition", label: "Personality & Cognition" },
   { id: 6, value: "Wellness", label: "Wellness" },
-  { id: 7, value: "Skincare", label: "Skincare" },
+  { id: 7, value: "Sleep", label: "Sleep" },
+  { id: 8, value: "Skincare", label: "Skincare" },
+  { id: 5, value: "Personality & Cognition", label: "Personality & Cognition" },
 ];
 
 export const reportData: ReportCategory[] = [
   {
+    id: 1,
+    category: "Methylation ",
+    description:
+      "Learn how different genes can affect your methylation process, a vital chemical reaction that influences many aspects of your wellness, such as energy, mood, inflammation, and gene expression.  ",
+    icon: Fork,
+    items: [
+      { name: "COMT", icon: BreadIcon },
+      { name: "MTHFR", icon: Sodium },
+      { name: "VDR", icon: SaturatedFat },
+      { name: "MAO-A", icon: GlutenSensitivity },
+      { name: "ACAT", icon: Lactose },
+      { name: "MTR & MTRR", icon: Caffeine },
+      { name: "BHMT", icon: Weight },
+      { name: "AHCY", icon: Protein },
+      { name: "CBS", icon: Peach },
+      { name: "SHMT1", icon: Peanut },
+      { name: "NOS3", icon: Shrimp },
+      { name: "MTHFD1", icon: Sugar },
+    ],
+  },
+  {
     id: 2,
     category: "Nutrition",
-    description: "Discover the best (and worst) foods for your DNA.",
+    description:
+      "Discover how your DNA can affect your metabolism, food preferences, sensitivities, and dietary needs.  ",
     icon: Fork,
     items: [
       { name: "Carbohydrate Metabolism", icon: BreadIcon },
@@ -689,7 +713,8 @@ export const reportData: ReportCategory[] = [
   {
     id: 3,
     category: "Vitamins & Supplements",
-    description: "Learn which vitamins, nutrients, and supplements you need.",
+    description:
+      "Find out how your DNA can influence your predisposition toward deficiencies in different vitamins and minerals. Get tailored suggestions for the best supplements to help support your wellness.",
     icon: VitaminsAndSupplements,
     items: [
       {
@@ -803,11 +828,12 @@ export const reportData: ReportCategory[] = [
   {
     id: 4,
     category: "Fitness",
-    description: "Personalized workout recommendations based on your DNA.",
+    description:
+      "Discover how your DNA can affect your injury likelihood, muscle strength, endurance, and recovery. Get personalized suggestions on how to achieve your fitness goals.",
     icon: Reportfitness,
     items: [
       {
-        name: "Muscle Hypertrophy ",
+        name: "Muscle Strength ",
         icon: Muscle,
       },
       {
@@ -867,6 +893,10 @@ export const reportData: ReportCategory[] = [
         icon: Testosterone,
       },
       {
+        name: "Muscle Hypertrophy",
+        icon: Reportfitness,
+      },
+      {
         name: "Post-Exercise Recovery Rate",
         icon: PostExercise,
       },
@@ -875,7 +905,7 @@ export const reportData: ReportCategory[] = [
         icon: ExerciseInduced,
       },
       {
-        name: "Inflammation & Pain Tolerance",
+        name: "Inflammation and Exercise",
         icon: Inflammation,
       },
       {
@@ -888,23 +918,21 @@ export const reportData: ReportCategory[] = [
   {
     id: 5,
     category: "Personality & Cognition",
-    description: "Discover yourself, your intelligence, personality, and more.",
+    description:
+      "Explore how your DNA can shape your personality, intelligence, creativity, and mental abilities. Get insights into your potential genetic strengths and weaknesses.",
     icon: PersonalityAndCognition,
     items: [
       {
         name: "Agreeableness",
         icon: Agreeableness,
       },
-      {
-        name: "Conscientiousness",
-        icon: Conscientiousness,
-      },
+
       {
         name: "Openness",
         icon: Openness,
       },
       {
-        name: "Extraversion",
+        name: "Extroversion vs Introversion",
         icon: Extraversion,
       },
       {
@@ -999,6 +1027,14 @@ export const reportData: ReportCategory[] = [
         name: "Risk-taking",
         icon: Risk,
       },
+      {
+        name: "Cognitive Control",
+        icon: Conscientiousness,
+      },
+      {
+        name: "Morningness",
+        icon: Circadian,
+      },
     ],
   },
 
@@ -1006,7 +1042,7 @@ export const reportData: ReportCategory[] = [
     id: 6,
     category: "Wellness",
     description:
-      "Take care of your body the smart way: with genetic insights and powerful strategies.",
+      "Understand how your DNA can impact your well-being, longevity, personal habits, and more. Get tips on how to improve your overall wellness and happiness.",
     icon: wellness,
     items: [
       {
@@ -1043,7 +1079,7 @@ export const reportData: ReportCategory[] = [
         icon: Inflammatory,
       },
       {
-        name: "Potential For Cannabis Dependence",
+        name: "Cannabis Dependence and Mental Health",
         icon: Potential,
       },
       {
@@ -1074,10 +1110,10 @@ export const reportData: ReportCategory[] = [
   },
 
   {
-    id: 7,
+    id: 8,
     category: "Skincare",
     description:
-      "Safely treat your skin and reveal the best complexion of your life.",
+      "Learn how your DNA can influence your skin type, aging, sun sensitivity, likelihood of severe acne, and more. Get personalized suggestions for the best skincare ingredients and routines.",
     icon: skincare,
     items: [
       {
@@ -1140,6 +1176,27 @@ export const reportData: ReportCategory[] = [
       {
         name: "Contact Dermatitis",
         icon: Contact,
+      },
+    ],
+  },
+  {
+    id: 7,
+    category: "Sleep",
+    description:
+      "Discover the profound impact your DNA can have on your sleep patterns, quality, and overall well-being. Receive personalized suggestions on optimal sleep hygiene practices based on your genetic profile. ",
+    icon: SleepReport,
+    items: [
+      {
+        name: "Chronotype",
+        icon: Circadian,
+      },
+      {
+        name: "Melatonin Secretion",
+        icon: Acne,
+      },
+      {
+        name: "Potential for Insomnia",
+        icon: Potential,
       },
     ],
   },
