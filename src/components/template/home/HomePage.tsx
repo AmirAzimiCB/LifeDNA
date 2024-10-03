@@ -103,8 +103,8 @@ export function HomePage() {
           Begin Your Wellness Transformation with LifeDNA in 3 Easy Steps
         </Title>
         <LifeDNATabsComponent />
-        <Link href="/plans">
-          <Button className="w-full sm:max-w-[418px] mx-auto">
+        <Link href="/plans" className="text-center">
+          <Button className="w-full sm:max-w-[418px] mx-auto ">
             I want to transform my wellness!
           </Button>
         </Link>

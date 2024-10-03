@@ -32,7 +32,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
       variant="default"
       className={cn(
         "w-full flex flex-col gap-8 justify-between py-8 px-6 transition-all duration-500 ease-in-out",
-        isExpanded ? "h-full" : "h-fit min-h-[450px]"
+        isExpanded ? "h-full" : "h-fit min-h-[480px]"
       )}
     >
       <div className="flex flex-col gap-8 lg:gap-6 h-full">
@@ -40,7 +40,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
           <div className="flex justify-between gap-4">
             <Title
               variant="medium"
-              className="font-bold max-lg:text-base leading-[19.2px] tracking-tight "
+              className="font-bold max-lg:text-base leading-[19.2px]  "
             >
               {card.title}
             </Title>
@@ -88,7 +88,7 @@ export const ReportCard: React.FC<ReportCardProps> = ({
         <div className="flex flex-col gap-8 transition-all duration-500 ease-in-out">
           <div
             onClick={onToggleExpand}
-            className="flex items-center justify-between gap-4 w-full"
+            className="flex items-center justify-between gap-4 w-full cursor-pointer"
           >
             <Text className="font-semibold">See what’s included</Text>
             <ChevronUp className={cn(isExpanded ? "" : "rotate-180")} />
