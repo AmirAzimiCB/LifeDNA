@@ -31,6 +31,8 @@ import {
   BusinessJournal,
   DailyMail,
   Cnn,
+  PersonalityHome,
+  SleepReport,
 } from "../../public/icons";
 
 import {
@@ -181,6 +183,12 @@ import {
 
 export const slides: Slide[] = [
   {
+    icon: mthfr,
+    title: "Methylation",
+    description:
+      "Get deep insights into your MTHFR, COMT, VDR, MOA-A, and up to 8 other important genes that can impact your wellness.",
+  },
+  {
     icon: "/images/slider-icon-1.svg",
     title: "Nutrition",
     description:
@@ -188,21 +196,9 @@ export const slides: Slide[] = [
   },
   {
     icon: vitamins,
-    title: "Vitamins",
+    title: "Vitamins & Supplements",
     description:
       "Make educated choices about supplements that align with your genetic predispositions.",
-  },
-  {
-    icon: WellNessHeroImage,
-    title: "Wellness",
-    description:
-      "Take care of your body the smart way: with genetic insights and powerful strategies.",
-  },
-  {
-    icon: mthfr,
-    title: "MTHFR gene",
-    description:
-      "Get deep insights into your MTHFR, COMT, VDR, MOA-A, and up to 8 other important genes that can impact your wellness.",
   },
   {
     icon: FitnessHeroImage,
@@ -210,6 +206,13 @@ export const slides: Slide[] = [
     description:
       "See how to optimize your fitness journey and maximize your progress, recovery, and minimize setbacks based on your DNA.",
   },
+  {
+    icon: WellNessHeroImage,
+    title: "Wellness",
+    description:
+      "Take care of your body the smart way: with genetic insights and powerful strategies.",
+  },
+
   {
     icon: SleepHeroImage,
     title: "sleep",
@@ -220,6 +223,12 @@ export const slides: Slide[] = [
     icon: SkinCareHeroImage,
     title: "skincare",
     description: "Understand and optimize your skin like never before. ",
+  },
+  {
+    icon: PersonalityHome,
+    title: "Personality & Cognition ",
+    description:
+      "Discover yourself, your genetic intelligence, personality predispositions, natural talents, and more.",
   },
 ];
 
@@ -318,23 +327,7 @@ export const RoadMapData: RoadMap[] = [
     icon: Fitness,
     href: "/reports?id=4",
   },
-  {
-    id: 5,
-    title: "Personality & Cognition",
-    description:
-      "Better understand your stress triggers and coping mechanisms.",
-    items: [
-      "Creativity",
-      "Depression",
-      "Impulsivity",
-      "Musical Ability",
-      "Intelligence",
-      "+ 20 Other Traits",
-    ],
-    buttonText: "See all traits",
-    icon: Personality,
-    href: "/reports?id=5",
-  },
+
   {
     id: 6,
     title: "Wellness Report",
@@ -359,7 +352,7 @@ export const RoadMapData: RoadMap[] = [
       "Unlock Insights into your sleep patterns and tips for a better night's rest.",
     items: ["Chronotype", "Potential For Insomnia", "Melatonin Secretion"],
     buttonText: "See all traits",
-    icon: skincare,
+    icon: SleepReport,
     href: "/reports?id=7",
   },
   {
@@ -378,6 +371,23 @@ export const RoadMapData: RoadMap[] = [
     buttonText: "See all traits",
     icon: skincare,
     href: "/reports?id=8",
+  },
+  {
+    id: 5,
+    title: "Personality & Cognition",
+    description:
+      "Better understand your stress triggers and coping mechanisms.",
+    items: [
+      "Creativity",
+      "Depression",
+      "Impulsivity",
+      "Musical Ability",
+      "Intelligence",
+      "+ 20 Other Traits",
+    ],
+    buttonText: "See all traits",
+    icon: Personality,
+    href: "/reports?id=5",
   },
 ];
 
@@ -426,7 +436,8 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 1,
     step: 1,
     showIcon: true,
-    title: "Purchase your LifeDNA Reports",
+    title:
+      "Purchase your 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle",
     _key: "have_dna_test",
   },
   {
@@ -442,7 +453,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 3,
     step: 3,
     showIcon: false,
-    title: "Discover personalized wellness insights from your DNA",
+    title: "Discover personalized wellness insights from your DNA!",
     _key: "have_dna_test",
     description: "Unlock 130+ traits reports in a few hours.",
   },
@@ -450,7 +461,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 4,
     step: 1,
     showIcon: true,
-    title: "Order your Methylation Genes Report + Wellness Test Bundle",
+    title: "Order your 12 Methylation Genes Report + Wellness Test Bundle",
     _key: "no_dna_test",
   },
   {
@@ -469,8 +480,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title:
       "Discover personalized methylation and wellness insights from your DNA!",
     _key: "no_dna_test",
-    description:
-      "Unlock 130+ traits reports tailored to you and your unique DNA.",
+    description: "Unlock up to 130+ trait reports.",
   },
 ];
 

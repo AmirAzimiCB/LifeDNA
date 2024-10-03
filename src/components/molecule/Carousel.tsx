@@ -10,7 +10,7 @@ import useEmblaCarousel from "embla-carousel-react";
 // Custom horizontal scrolling component with Embla
 export const Carousel: React.FC = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
+    loop: true,
     align: "start",
   });
 

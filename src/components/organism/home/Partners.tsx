@@ -10,19 +10,19 @@ export function Partners() {
       <div className="flex justify-center gap-3.5 lg:gap-8 tracking-tight">
         <div className="flex items-center gap-1.5 md:space-x-2">
           <DnaIcon className="w-4 h-4 lg:w-6 lg:h-6" />
-          <Text className="max-lg:text-[8px] font-semibold">
+          <Text className="max-lg:text-[10px] font-semibold">
             Over 120 Genetic Hacks
           </Text>
         </div>
         <div className="flex items-center gap-1.5 md:space-x-2">
           <LockIcon className="w-4 h-4 lg:w-6 lg:h-6" />
-          <Text className="max-lg:text-[8px] font-semibold">
+          <Text className="max-lg:text-[10px] font-semibold">
             100% Safe And Secure
           </Text>
         </div>
         <div className="flex items-center gap-1.5 md:space-x-2">
           <FlaskConical className="w-4 h-4 lg:w-6 lg:h-6" />
-          <Text className="max-lg:text-[8px] font-semibold">
+          <Text className="max-lg:text-[10px] font-semibold">
             Take A DNA Test Or Upload DNA
           </Text>
         </div>

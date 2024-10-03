@@ -23,7 +23,7 @@ export function Testimonials() {
   };
 
   return (
-    <section className="w-full min-h-[260px] lg:max-h-[437px] h-full transition-all duration-500 ease-in-out relative flex flex-col gap-4 lg:gap-8 z-20 p-6 lg:py-[90px] ">
+    <section className="w-full h-[360px] lg:h-[437px] transition-all duration-500 ease-in-out relative flex flex-col gap-4 lg:gap-8 z-20 p-6 lg:py-[90px] ">
       <Image
         src={TestimonialBg}
         layout="fill"
@@ -34,7 +34,7 @@ export function Testimonials() {
       />
       <div className="bg-[#07606EA6] absolute inset-0 -z-10"></div>
       <Title className="text-center text-white">
-        Discover Why Customers Love LifeDNA
+        What Our Users Are Saying: Real Stories, Real Transformations
       </Title>
 
       {/* Display the current testimonial */}

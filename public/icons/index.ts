@@ -22,6 +22,8 @@ import DNAWellness from "./DNAWellness.svg";
 import Methylation from "./Methylation.svg";
 import skincare from "./skincare.svg";
 import wellness from "./wellness.svg";
+import PersonalityHome from "./Personality & Cognitionhome.svg";
+import SleepReport from "./sleepReport.svg";
 
 // partners
 import Forbes from "./forbes.svg";
@@ -39,6 +41,8 @@ export {
   Cnn,
 
   // others
+  SleepReport,
+  PersonalityHome,
   Methylation,
   skincare,
   wellness,

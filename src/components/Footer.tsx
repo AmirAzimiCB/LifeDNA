@@ -96,7 +96,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/terms-conditions"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     Terms & Conditions
@@ -104,7 +104,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/privacy-policy"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     Privacy Policy

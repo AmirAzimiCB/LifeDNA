@@ -75,14 +75,18 @@ export function HomePage() {
                     {report.title}
                   </Title>
                   {report.kitIncluded ? (
-                    <Text variant="small">*DNA kit included</Text>
+                    <Text variant="small" className="text-base">
+                      *DNA kit included
+                    </Text>
                   ) : (
-                    <Text variant="small">*no DNA kit included</Text>
+                    <Text variant="small" className="text-base">
+                      *no DNA kit included
+                    </Text>
                   )}
                 </div>
                 <Text
                   variant="base"
-                  className="text-xl leading-[120%] font-medium"
+                  className="!text-xl leading-[120%] font-medium"
                 >
                   {report.price}
                 </Text>
@@ -131,7 +135,7 @@ export function HomePage() {
       </div>
       <div className="flex flex-col gap-6 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
         <Title className="text-center max-lg:max-w-[244px] mx-auto">
-          What Our Users Are Saying: Real Stories, Real Transformations
+          Discover Why LifeDNA is a Game-Changer for Your Wellness Journey
         </Title>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {LifeDNAGameChangerData.map((item, index) => (
