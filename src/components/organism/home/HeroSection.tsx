@@ -26,11 +26,7 @@ export function HeroSection() {
                 strategies to fast-track your wellness journey and supercharge
                 your goals.
               </Text>
-              <ol>
-                <li>● Over 130 DNA-Tailored Strategies</li>
-                <li>● 100% Safe and Secure</li>
-                <li>● Take A DNA Test or Upload RawData</li>
-              </ol>
+
               <Link href="/plans">
                 <Button>Transform My Wellness</Button>
               </Link>
