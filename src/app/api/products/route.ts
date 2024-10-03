@@ -11,6 +11,32 @@ const shopifyClient = new GraphQLClient(
   }
 );
 
+// Define the expected response type
+interface ShopifyProductResponse {
+  products: {
+    edges: {
+      node: {
+        id: string;
+        title: string;
+        handle: string;
+        priceRange: {
+          minVariantPrice: {
+            amount: string;
+          };
+        };
+        images: {
+          edges: {
+            node: {
+              originalSrc: string;
+              altText: string;
+            };
+          }[];
+        };
+      };
+    }[];
+  };
+}
+
 // Log the environment variables
 console.log("Shopify Store Domain:", process.env.SHOPIFY_STORE_DOMAIN);
 console.log(
@@ -21,7 +47,7 @@ console.log(
 export async function GET() {
   const query = `
     {
-      products(first: 10) {
+      products(first: 20) {
         edges {
           node {
             id
@@ -47,9 +73,9 @@ export async function GET() {
   `;
 
   try {
-    const data = await shopifyClient.request(query);
+    const data: ShopifyProductResponse = await shopifyClient.request(query);
     console.log("Fetched data:", data); // Log the fetched data
-    return NextResponse.json(data);
+    return NextResponse.json(data.products.edges.map((edge) => edge.node)); // Return only the products array
   } catch (error) {
     console.error("Error fetching products:", error); // Log the error
     return NextResponse.json(

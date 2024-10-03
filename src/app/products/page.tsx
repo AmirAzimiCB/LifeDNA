@@ -27,8 +27,9 @@ export default function ProductsPage() {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch("/api/products"); // Adjust the API endpoint as needed
+      const response = await fetch("/api/products");
       const data = await response.json();
+      console.log("API Response:", data); // Log the API response
       setProducts(data); // Assuming the data is an array of ProductNode
     };
 
