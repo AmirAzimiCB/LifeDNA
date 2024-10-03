@@ -112,7 +112,7 @@ export function HomePage() {
             I want to transform my wellness!
           </Button>
         </Link>
-        <div className="flex items-center justify-center gap-[18px] lg:gap-8">
+        <div className="flex flex-col md:flex-row  items-center justify-center gap-4 lg:gap-8">
           <div className="flex items-center gap-2">
             <Image
               src={lock}

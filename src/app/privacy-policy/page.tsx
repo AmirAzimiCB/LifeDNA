@@ -337,7 +337,7 @@ const PrivacyPolicy = () => {
         We may also use your information to contact you about our own products
         and services that may be of interest to you. If you do not want us to
         use your information in this way, please reach out to us at
-        aloha@lifedna.com.
+        <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a>
       </Text>
       <Text variant="paragraph">Disclosure of Your Information</Text>
       <Text variant="paragraph">
@@ -464,7 +464,7 @@ const PrivacyPolicy = () => {
           unaffiliated or non-agent third parties for promotional purposes, you
           can opt out by clicking the relevant opt-out links in the
           communications you receive from us, or reach out to us at
-          aloha@lifedna.com.{" "}
+          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a>
         </li>
         <li className="ml-6 lg:ml-8">
           <span className="font-semibold">
@@ -473,7 +473,8 @@ const PrivacyPolicy = () => {
           If you do not wish to have your email address used by the Company to
           promote our own or third parties’ products or services, you can opt
           out by following the relevant opt-out links in the communication, or
-          by sending us an email stating your request to aloha@lifedna.com.
+          by sending us an email stating your request to{" "}
+          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a>
         </li>
         <li className="ml-6 lg:ml-8">
           <span className="font-semibold">
@@ -482,14 +483,15 @@ const PrivacyPolicy = () => {
           </span>{" "}
           You can review and change your personal information by logging into
           the Services and visiting your account profile page. You may also send
-          us an email at aloha@lifedna.com to request access to, correct, or
-          delete any personal information that you have provided to us. We
-          cannot delete your personal information except by also deleting your
-          user account. We may not accommodate a request to change information
-          if we believe the change would violate any law or legal requirement or
-          cause the information to be incorrect. California residents may have
-          additional personal information rights and choices. Please see Your
-          California Privacy Rights for more information.
+          us an email at{" "}
+          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a> to request
+          access to, correct, or delete any personal information that you have
+          provided to us. We cannot delete your personal information except by
+          also deleting your user account. We may not accommodate a request to
+          change information if we believe the change would violate any law or
+          legal requirement or cause the information to be incorrect. California
+          residents may have additional personal information rights and choices.
+          Please see Your California Privacy Rights for more information.
         </li>
         <li className="ml-6 lg:ml-8">
           Your California Privacy Rights <br /> If you are a California
@@ -503,8 +505,9 @@ const PrivacyPolicy = () => {
           permits users of our App that are California residents to request
           certain information regarding our disclosure of personal information
           to third parties for their direct marketing purposes. To make such a
-          request, please send an email to aloha@lifedna.com or write us at:
-          1050 Queen St., 100, Honolulu, Hawaii 96814.
+          request, please send an email to{" "}
+          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a> or write us
+          at: 1050 Queen St., 100, Honolulu, Hawaii 96814.
         </li>
       </ul>
       <Text variant="paragraph">Data Security</Text>
@@ -560,7 +563,7 @@ const PrivacyPolicy = () => {
         To ask questions or comment about this privacy policy and our privacy
         practices, contact us at:
       </Text>
-      <address className="flex flex-col list-disc text-sm font-normal normal-case mb-6">
+      <address className="flex flex-col list-disc text-lg font-normal normal-case mb-6">
         <li className="ml-4 lg:ml-5">1050 Queen St., 100</li>
         <br />
         <li className="ml-4 lg:ml-5">Honolulu, HI 96814</li>

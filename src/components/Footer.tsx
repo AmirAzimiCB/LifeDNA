@@ -112,7 +112,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/data-security"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     Data Security
