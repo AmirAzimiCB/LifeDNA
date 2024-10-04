@@ -6,7 +6,7 @@ import {
 
 export function HowItWorks() {
   return (
-    <section className="p-6 pb-16 lg:p-16 max-w-[1440px] mx-auto flex flex-col gap-8 lg:gap-[52px]">
+    <section className="p-6 pb-16 lg:p-16 lg:px-[42px] max-w-[1440px] mx-auto flex flex-col gap-8 lg:gap-[52px]">
       <HeroSection />
       <HowItWorksInThreeSteps />
       <LatestGeneticResearch />

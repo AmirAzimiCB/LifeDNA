@@ -6,7 +6,6 @@ import {
   QNA,
   ReportCard,
   ReportCategory,
-  Reports,
   RoadMap,
   SelectOptions,
   Slide,
@@ -391,40 +390,77 @@ export const RoadMapData: RoadMap[] = [
 ];
 
 // reports data
-
-export const ReportsData: Reports[] = [
+export const ReportsData: ReportCard[] = [
   {
     id: 1,
     title: "12 Methylation Genes Report",
-    kitIncluded: false,
+    kitIncluded: "*No DNA Kit Included",
     price: "$99",
     description:
-      "Our 12 Methylation Genes Report provides personalized genetic insights into your MTHFR, COMT, and CBS genes, helping you uncover potential genetic reasons behind fatigue, mood swings, and more.",
-    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDMETHRV99&checkbox_items%5B%5D=LDNUTREPV37,LDVIREPV37,LDPGCV67&upsells%5B%5D=LDAIOPV97,LDAGREPV67,LDAIOPV57,LDPGCV67&channel=flow&funnel=LDMETH99NEWHOME&pt=cc",
-
-    buttonText: "Get My Report Now",
+      "Our 12 Methylation Genes Report covers a wide range of genetic mutations and powerful insights—for less than half the price of other methylation test providers. No DNA Kit Included.",
+    listItems: [
+      "Methylation Genes Report",
+      "MTHFR Gene",
+      "COMT Gene",
+      "VDR Gene",
+      "CBS Gene",
+      "MTR Gene",
+      "BHMT Gene",
+      "SHMT Gene",
+      "AHCY Gene",
+      "ACAT Gene",
+      "MAO A Gene",
+      "MTHFD1 Gene",
+      "NOS3 Gene",
+    ],
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDMETHRV99&checkbox_items%5B%5D=LDNUTREPV37,LDVIREPV37,LDPGCV67&upsells%5B%5D=LDAIOPV97,LDAGREPV67,LDAIOPV57,LDPGCV67&channel=flow&funnel=LDMETH99NEWPLANS&pt=cc",
   },
   {
     id: 2,
     title: "12 Methylation Genes Report + Wellness Report Bundle",
-    kitIncluded: false,
+    kitIncluded: "*No DNA Kit Included",
     price: "$199",
     description:
       "Everything in your 12 Methylation Genes Report, and more! You’ll unlock over 115 additional personalized trait reports beyond your methylation analysis to help you make informed decisions about your well-being.",
-    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV100&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETH199HOME&pt=cc",
-
-    buttonText: "Get My Report Now",
+    listItems: [
+      "Methylation Genes Report",
+      "Nutrition Report",
+      "Fitness Report",
+      "Vitamins & Supplements Report",
+      "Wellness Report",
+      "Personality & Cognition Report",
+      "Skincare Report",
+      "New Traits Weekly",
+      "Genomic Newsletters",
+      "Wellness Goals",
+      "25% Discount On All LifeDNA Reports And Products",
+    ],
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV100&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETH199PLANS&pt=cc",
   },
   {
     id: 3,
     title: "12 Methylation Genes Report + Wellness Test Bundle",
-    kitIncluded: true,
+    kitIncluded: "*DNA Kit Included",
+    popular: true, // This one is marked as popular
     price: "$249",
     description:
       "Get everything in your 12 Methylation Genes Report + Wellness Report Bundle, along with a DNA kit.",
-    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249HOME&pt=cc",
-
-    buttonText: "Get My Report Now",
+    listItems: [
+      "DNA Test Kit",
+      "Methylation Genes Report",
+      "Nutrition Report",
+      "Fitness Report",
+      "Vitamins & Supplements Report",
+      "Wellness Report",
+      "Personality & Cognition Report",
+      "Skincare Report",
+      "New Traits Weekly",
+      "Genomic Newsletters",
+      "Wellness Goals",
+      "25% Discount On All LifeDNA Reports And Products",
+    ],
+    image: DNAWellness,
+    href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249PLANS&pt=cc",
   },
 ];
 

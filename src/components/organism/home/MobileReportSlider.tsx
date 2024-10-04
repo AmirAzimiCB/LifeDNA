@@ -2,14 +2,14 @@
 
 import { Slider } from "@/components/molecule";
 import { ReportsData } from "@/constants";
-import { MobileReportCard } from "./MobileReportCard";
+import { ReportCards } from "./ReportCards";
 
 export function MobileReportSlider() {
   return (
     <div className="w-full">
       <Slider
         items={ReportsData}
-        renderItem={(report) => <MobileReportCard report={report} />}
+        renderItem={(report) => <ReportCards card={report} />}
       />
     </div>
   );

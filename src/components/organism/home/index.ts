@@ -5,3 +5,4 @@ export * from "./Testimonials";
 export * from "./Qna";
 export * from "./MobileReportCard";
 export * from "./MobileReportSlider";
+export * from "./ReportCards";

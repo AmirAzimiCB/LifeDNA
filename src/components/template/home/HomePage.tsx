@@ -6,6 +6,7 @@ import {
   Partners,
   Qna,
   MobileReportSlider,
+  ReportCards,
 } from "@/components/organism/home";
 import { LifeDNAGameChangerData, ReportsData, RoadMapData } from "@/constants";
 import Image from "next/image";
@@ -36,17 +37,17 @@ export function HomePage() {
         </div>
         <BetterWellnessSection RoadMapData={RoadMapData} />
       </div>
-      <div className="flex flex-col gap-6 lg:gap-8 max-w-[1440px] w-full mx-auto max-lg:px-6 lg:px-16">
+      <div className="flex flex-col gap-6 lg:gap-8 max-w-[1440px] w-full mx-auto max-lg:px-6 lg:px-[42px]">
         <Title className="max-w-[1184px] mx-auto text-center">
-          Reveal Deep Genetic Insights for a Wellness Journey Designed Just for
-          You
+          Explore Unique DNA-Personalized Insights for Methylation and Wellness:
+          Start Your Journey Now!
         </Title>
         <Text className="text-center max-w-[1086px] mx-auto max-lg:px-8">
           Discover hundreds of genetic insights that have the potential to
           change your life and transform your body. Unlock our best-selling
-          Methylation Genes Report and gain powerful insights into your MTHFR
+          Methylation Genes Report and gain powerful insights into your MTHR
           gene and other genes that could be key to unlocking your full genetic
-          potential!
+          potential! 
         </Text>
         <div className="flex flex-col gap-4 lg:gap-6 text-center max-lg:mt-4">
           <Text className="font-semibold">Works with:</Text>
@@ -60,49 +61,16 @@ export function HomePage() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4 max-sm:hidden">
-          {ReportsData.map((report, index) => (
-            <Card
-              key={index}
-              className="flex flex-col justify-between gap-6 px-6"
-            >
-              <div className="flex flex-col gap-6">
-                <div className="flex flex-col gap-1.5">
-                  <Title
-                    variant="smaller"
-                    className="text-xl leading-[1.3em] font-bold capitalize  tracking-tight"
-                  >
-                    {report.title}
-                  </Title>
-                  {report.kitIncluded ? (
-                    <Text variant="small" className="text-base">
-                      *DNA kit included
-                    </Text>
-                  ) : (
-                    <Text variant="small" className="text-base">
-                      *no DNA kit included
-                    </Text>
-                  )}
-                </div>
-                <Text
-                  variant="base"
-                  className="!text-xl leading-[120%] font-medium"
-                >
-                  {report.price}
-                </Text>
-                <Text>{report.description}</Text>
-              </div>
-              <a href={report.href} target="_blank" rel="noopener noreferrer">
-                <Button>{report.buttonText}</Button>
-              </a>
-            </Card>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4 max-sm:hidden">
+          {ReportsData.map((report, index) => {
+            return <ReportCards card={report} key={index} />;
+          })}
         </div>
         <div className="lg:hidden">
           <MobileReportSlider />
         </div>
       </div>
-      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto w-full max-lg:px-6 lg:px-16 max-lg:-mt-8">
+      <div className="flex flex-col gap-8 max-w-[1440px] mx-auto w-full max-lg:px-6 lg:px-[42px] max-lg:-mt-8">
         <Title className="text-center max-sm:max-w-[251px] mx-auto">
           Begin Your Wellness Transformation with LifeDNA in 3 Easy Steps
         </Title>
@@ -133,7 +101,7 @@ export function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 max-w-[1440px] mx-auto max-lg:px-6 lg:px-16">
+      <div className="flex flex-col gap-6 max-w-[1440px] mx-auto max-lg:px-6 lg:px-[42px]">
         <Title className="text-center max-lg:max-w-[244px] mx-auto">
           Discover Why LifeDNA is a Game-Changer for Your Wellness Journey
         </Title>
@@ -163,7 +131,7 @@ export function HomePage() {
       </div>
       <div className="flex flex-col gap-[42px] lg:gap-16">
         <Testimonials />
-        <div className="flex flex-col gap-6 max-w-[1440px] mx-auto px-6 lg:px-16">
+        <div className="flex flex-col gap-6 max-w-[1440px] mx-auto px-6 lg:px-[42px]">
           <Title className="text-center">Frequently Asked Questions</Title>
           <Qna />
           <Text variant="small" className="max-sm:text-[12px]">

@@ -25,11 +25,13 @@ export type RoadMap = {
 export type Reports = {
   id?: number;
   title: string;
-  kitIncluded?: boolean;
+  kitIncluded: string;
+  popular?: boolean;
   price: string;
   description: string;
+  listItems: string[];
+  image?: string;
   href: string;
-  buttonText: string;
 };
 
 // get started with lifedna
@@ -101,6 +103,7 @@ export type ReportCategory = {
 export type ReportData = ReportCategory[];
 
 export type ReportCard = {
+  id?: number;
   title: string;
   kitIncluded: string;
   popular?: boolean;
