@@ -1,5 +1,5 @@
 import { Card, Title, Text } from "@/components/atoms";
-import { Button } from "@/components/ui/Button";
+// import { Button } from "@/components/ui/Button";
 import { Reports } from "@/types";
 
 type Props = {
@@ -37,7 +37,7 @@ export function MobileReportCard({ report }: Props) {
         </div>
         <Text>{report.description}</Text>
       </div>
-      <Button>{report.buttonText}</Button>
+      {/* <Button>{report.buttonText}</Button> */}
     </Card>
   );
 }
