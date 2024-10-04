@@ -22,7 +22,7 @@ export function ReportCards({ card }: { card: Reports }) {
         variant="default"
         className={cn(
           "w-full flex flex-col justify-between overflow-hidden p-0 transition-all duration-500 ease-in-out border-[1.5px]",
-          isExpanded ? "h-full" : "h-fit min-h-[480px]",
+          isExpanded ? "h-fit" : "h-fit min-h-[480px]",
           first && "border-[#41c752]",
           second && "border-[#00a084]",
           third && "border-[#07606e]"
@@ -81,27 +81,49 @@ export function ReportCards({ card }: { card: Reports }) {
               <ChevronUp className={cn(isExpanded ? "" : "rotate-180")} />
             </div>
             {isExpanded && (
-              <div className="flex flex-col gap-[22px] transition-all duration-500 ease-in-out">
-                {card.listItems.map((item, index) => (
-                  <div key={index} className="flex gap-3 items-center">
-                    <div className="w-2.5 h-2.5 bg-[#00A084] rounded-full flex-shrink-0"></div>
-                    <Text
-                      variant="smaller"
-                      className="font-semibold"
-                      key={index}
-                    >
-                      {item}
-                    </Text>
+              <>
+                {first ? (
+                  <div className="flex flex-col gap-[22px] transition-all duration-500 ease-in-out">
+                    {card.listItems.map((item, index) => (
+                      <div
+                        key={index}
+                        className={cn(
+                          "flex items-center gap-3",
+                          index !== 0 && " pl-6"
+                        )}
+                      >
+                        <div className="w-2.5 h-2.5 bg-[#00A084] rounded-full flex-shrink-0"></div>
+
+                        <Text variant="smaller" className="font-semibold">
+                          {item}
+                        </Text>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                ) : (
+                  <div className="flex flex-col gap-[22px] transition-all duration-500 ease-in-out pl-2">
+                    {card.listItems.map((item, index) => (
+                      <div key={index} className="flex gap-3 items-center">
+                        <div className="w-2.5 h-2.5 bg-[#00A084] rounded-full flex-shrink-0"></div>
+                        <Text
+                          variant="smaller"
+                          className="font-semibold"
+                          key={index}
+                        >
+                          {item}
+                        </Text>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </>
             )}
           </div>
 
           {isExpanded && (
             <>
               {card.image && (
-                <div className="mt-2">
+                <div className="mt-2 px-6">
                   <Image
                     width={1200}
                     height={1000}
@@ -127,7 +149,7 @@ export function ReportCards({ card }: { card: Reports }) {
               third && "bg-[#07606e]"
             )}
           >
-            Get My Report Now
+            {third ? "Get My DNA Report Now" : "Get My DNA Report"}
           </Button>
         </a>
         {card.popular ? (
