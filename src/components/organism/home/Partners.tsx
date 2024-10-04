@@ -11,7 +11,7 @@ export function Partners() {
         <div className="flex items-center gap-1.5 md:space-x-2">
           <DnaIcon className="w-4 h-4 lg:w-6 lg:h-6" />
           <Text className="max-lg:text-[16px] font-semibold">
-            Over 120 Genetic Hacks
+            Over 130 DNA-Tailored Strategies
           </Text>
         </div>
         <div className="flex items-center gap-1.5 md:space-x-2">
@@ -23,7 +23,7 @@ export function Partners() {
         <div className="flex items-center gap-1.5 md:space-x-2">
           <FlaskConical className="w-4 h-4 lg:w-6 lg:h-6" />
           <Text className="max-lg:text-[16px] font-semibold">
-            Take A DNA Test Or Upload DNA
+            Take A DNA Test or Upload RawData
           </Text>
         </div>
       </div>
