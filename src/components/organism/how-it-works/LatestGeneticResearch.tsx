@@ -13,14 +13,19 @@ export function LatestGeneticResearch() {
               Unlocking Your DNA to Create Your Unique Wellness Blueprint
             </Title>
           </div>
-          <Text className="max-lg:max-w-[238px] max-lg:mx-auto max-lg:text-center lg:max-w-[512px]">
+          <Text className=" max-lg:mx-auto max-lg:text-center lg:max-w-[512px]">
             Our Genomics Research Team has developed our reports over several
             years, drawing from over 500 peer-reviewed studies for comprehensive
-            and detailed insights. Genomics is a journey of constant discovery,
-            we&apos;re right there with you. LifeDNA evolves alongside the
-            latest research and developments, staying on top of cutting-edge
-            research. Our commitment to continuous enhancement means our reports
-            aren&apos;t just scientifically solid they also capture the most
+            and detailed insights.
+          </Text>
+          <Text className=" max-lg:mx-auto max-lg:text-center lg:max-w-[512px]">
+            Genomics is a journey of constant discovery, and we&apos;re right
+            there with you. LifeDNA evolves alongside the latest research and
+            developments, staying on top of cutting-edge research.
+          </Text>
+          <Text className="max-lg:mx-auto max-lg:text-center lg:max-w-[512px]">
+            Our commitment to continuous enhancement means our reports
+            aren&apos;t just scientifically solid – they also capture the most
             recent breakthroughs in genetics.
           </Text>
         </div>

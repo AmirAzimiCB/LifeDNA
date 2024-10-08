@@ -8,7 +8,8 @@ export function MobileReportSlider() {
   return (
     <div className="w-full">
       <Slider
-        items={ReportsData}
+        items={[...ReportsData].reverse()}
+        className=""
         renderItem={(report) => <ReportCards card={report} />}
       />
     </div>

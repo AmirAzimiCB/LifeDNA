@@ -16,7 +16,7 @@ export function HeroSection() {
             Our saliva collection kit allows you to effortlessly take a DNA test
             from the comfort of your home. Gain unparalleled insights into your
             methylation and other important wellness traits, and personalized
-            strategies for optimal well-being.
+            strategies for optimal well-being
           </Text>
           <Text variant="small" className="font-semibold">
             (DNA kit included Methylation Genes Report + Wellness Test Bundle)

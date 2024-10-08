@@ -972,6 +972,10 @@ export const reportData: ReportCategory[] = [
         icon: Extraversion,
       },
       {
+        name: "Morningness",
+        icon: Circadian,
+      },
+      {
         name: "Neuroticism",
         icon: Neuroticism,
       },
@@ -1067,10 +1071,6 @@ export const reportData: ReportCategory[] = [
         name: "Cognitive Control",
         icon: Conscientiousness,
       },
-      {
-        name: "Morningness",
-        icon: Circadian,
-      },
     ],
   },
 
@@ -1127,7 +1127,7 @@ export const reportData: ReportCategory[] = [
         icon: Menstrual,
       },
       {
-        name: "Excessive Sweating (Hyperhidrosis)”",
+        name: "Excessive Sweating”",
         icon: Excessive,
       },
       {

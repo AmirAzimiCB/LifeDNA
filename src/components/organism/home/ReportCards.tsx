@@ -149,7 +149,7 @@ export function ReportCards({ card }: { card: Reports }) {
               third && "bg-[#07606e]"
             )}
           >
-            {third ? "Get My DNA Report Now" : "Get My DNA Report"}
+            {third ? "Get My DNA Test Now" : "Get My Report Now "}
           </Button>
         </a>
         {card.popular ? (

@@ -26,13 +26,13 @@ export function HowItWorksInThreeSteps() {
         <Tabs.List className="flex justify-center mb-8 border-[0.5px] p-1 border-[#B5B5B5] rounded-full w-fit mx-auto">
           <Tabs.Trigger
             value="have_dna_test"
-            className="px-8 py-2.5 text-[10px] lg:text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
+            className="px-8 py-2.5 text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
           >
             I Already Have Done A DNA Test
           </Tabs.Trigger>
           <Tabs.Trigger
             value="no_dna_test"
-            className="px-8 py-2.5 text-[10px] lg:text-sm capitalize font-normal text-[#383B42]  rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
+            className="px-8 py-2.5 text-sm capitalize font-normal text-[#383B42]  rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
           >
             I Have Never Done A DNA Test
           </Tabs.Trigger>
