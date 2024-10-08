@@ -8,7 +8,7 @@ export function PlanMobileSlider() {
     <div>
       <div className="w-full flex flex-col gap-8">
         <Slider
-          items={ReportsData}
+          items={[...ReportsData].reverse()}
           renderItem={(data) => <ReportCards key={data.id} card={data} />}
         />
       </div>
