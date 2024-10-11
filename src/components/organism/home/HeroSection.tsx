@@ -7,10 +7,10 @@ export function HeroSection() {
   return (
     <>
       <div className="relative bg-white overflow-hidden ">
-        <div className="lg:flex lg:items-center lg:justify-center my-14">
-          <div className="relative z-10 bg-white lg:pl-[5%] lg:pr-[5%] lg:w-1/2 flex max-lg:px-6 items-center justify-center">
-            <div className="flex flex-col gap-4 lg:gap-6">
-              <div className="flex flex-col gap-2 lg:gap-2">
+        <div className="lg:flex lg:items-center lg:justify-center my-14 bg-white">
+          <div className="relative z-10 bg-white lg:pl-[5%] lg:pr-[5%] lg:w-1/2 flex max-lg:px-6 items-center justify-center h-full">
+            <div className="flex flex-col gap-4 lg:gap-6 h-full">
+              <div className="flex flex-col gap-2 lg:gap-2 h-full">
                 <Title type="h2" variant="medium">
                   Tap Into The Power of Your DNA
                 </Title>
@@ -32,7 +32,7 @@ export function HeroSection() {
               </Link>
             </div>
           </div>
-          <div className="w-fit lg:w-3/5 pb-[24px] pt-[58px] lg:py-16 max-lg:pl-6 z-0">
+          <div className="w-full lg:w-3/5 pb-[16px] pt-[58px] lg:py-16 max-lg:pl-6 z-0 bg-white lg:overflow-hidden px-4">
             <Carousel />
           </div>
         </div>

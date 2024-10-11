@@ -31,7 +31,7 @@ export function ReportCards({ card }: { card: Reports }) {
         <div className="flex flex-col gap-6 lg:gap-8 h-full mb-6 lg:mb-8">
           <div
             className={cn(
-              "w-full flex flex-col gap-2 p-5 items-center justify-center",
+              "w-full flex flex-col gap-2 p-5 items-center justify-center min-h-32",
               first && "bg-[#41c752]",
               second && "bg-[#00a084]",
               third && "bg-[#07606e]"
@@ -40,7 +40,7 @@ export function ReportCards({ card }: { card: Reports }) {
             <div className={cn("flex justify-between gap-4")}>
               <Title
                 variant="medium"
-                className="font-bold text-base leading-[19.2px] tracking-tighter text-center text-white"
+                className="font-bold !text-xl leading-[19.2px] tracking-tighter text-center text-white"
               >
                 {card.title}
               </Title>
@@ -149,7 +149,7 @@ export function ReportCards({ card }: { card: Reports }) {
               third && "bg-[#07606e]"
             )}
           >
-            {third ? "Get My DNA Test Now" : "Get My Report Now "}
+            {third ? "Get My Reports Now" : "Get My Reports Now"}
           </Button>
         </a>
         {card.popular ? (

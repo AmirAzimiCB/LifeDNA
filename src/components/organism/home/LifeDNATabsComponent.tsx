@@ -45,9 +45,10 @@ export function LifeDNATabsComponent() {
                   </Text>
 
                   {step?.description ? (
-                    <Text className="text-center lg:text-left max-lg:mt-3">
-                      {step?.description}
-                    </Text>
+                    <Text
+                      className="text-center lg:text-left max-lg:mt-3"
+                      htmlContent={step.description}
+                    />
                   ) : null}
                 </div>
                 {step.showIcon ? (
@@ -81,9 +82,10 @@ export function LifeDNATabsComponent() {
                     {step.title}
                   </Text>
                   {step?.description ? (
-                    <Text className="text-center lg:text-left max-lg:mt-3">
-                      {step?.description}
-                    </Text>
+                    <Text
+                      className="text-center lg:text-left max-lg:mt-3"
+                      htmlContent={step.description}
+                    />
                   ) : null}
                 </div>
                 {step.showIcon ? (

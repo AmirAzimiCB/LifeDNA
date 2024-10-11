@@ -4,6 +4,7 @@ export type Slide = {
   icon: string;
   title: string;
   description: string;
+  color: string;
 };
 export type Partners = {
   icon: StaticImageData | string;

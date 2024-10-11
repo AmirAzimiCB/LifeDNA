@@ -4,5 +4,6 @@ import mthfr from "./mthfr.svg";
 import skincare from "./skincare.svg";
 import sleep from "./sleep.svg";
 import wellness from "./wellness.svg";
+import Nutrition from "./Nutrition.svg";
 
-export { vitamins, fitness, mthfr, skincare, sleep, wellness };
+export { vitamins, fitness, mthfr, skincare, sleep, wellness, Nutrition };

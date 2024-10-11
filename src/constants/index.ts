@@ -174,6 +174,7 @@ import {
   vitamins,
   fitness as FitnessHeroImage,
   mthfr,
+  Nutrition as NutritionIcon,
   skincare as SkinCareHeroImage,
   sleep as SleepHeroImage,
   wellness as WellNessHeroImage,
@@ -183,30 +184,35 @@ export const slides: Slide[] = [
   {
     icon: mthfr,
     title: "Methylation",
+    color: "#355578",
     description:
       "Get deep insights into your MTHFR, COMT, VDR, MOA-A, and up to 8 other important genes that can impact your wellness.",
   },
   {
-    icon: "/images/slider-icon-1.svg",
+    icon: NutritionIcon,
     title: "Nutrition",
+    color: "#77bf6f",
     description:
       "Find out how you process macronutrients based on DNA. See how your genes can influence factors like macronutrient metabolism, food intolerances, allergies, and more.",
   },
   {
     icon: vitamins,
     title: "Vitamins & Supplements",
+    color: "#5fb2e1",
     description:
       "Make educated choices about supplements that align with your genetic predispositions.",
   },
   {
     icon: FitnessHeroImage,
     title: "Fitness",
+    color: "#f08e4e",
     description:
       "See how to optimize your fitness journey and maximize your progress, recovery, and minimize setbacks based on your DNA.",
   },
   {
     icon: WellNessHeroImage,
     title: "Wellness",
+    color: "#ba4d43",
     description:
       "Take care of your body the smart way: with genetic insights and powerful strategies.",
   },
@@ -214,17 +220,20 @@ export const slides: Slide[] = [
   {
     icon: SleepHeroImage,
     title: "sleep",
+    color: "#8d70da",
     description:
       "Better understand how to optimize your natural sleep patterns and habits based on DNA.",
   },
   {
     icon: SkinCareHeroImage,
     title: "skincare",
+    color: "#2f5074",
     description: "Understand and optimize your skin like never before. ",
   },
   {
-    icon: PersonalityHome,
+    icon: Personality,
     title: "Personality & Cognition ",
+    color: "#ba4d43",
     description:
       "Discover yourself, your genetic intelligence, personality predispositions, natural talents, and more.",
   },
@@ -474,7 +483,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title: "Select Your Plan",
     _key: "have_dna_test",
     description:
-      "Choose between our  12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle. These plans provide access to your personalized insights within hours.",
+      "Choose between our <a target='_blank' href='https://my.lifedna.com/payments?line_items_added%5B%5D=LDMETHRV99&checkbox_items%5B%5D=LDNUTREPV37,LDVIREPV37,LDPGCV67&upsells%5B%5D=LDAIOPV97,LDAGREPV67,LDAIOPV57,LDPGCV67&channel=flow&funnel=LDMETH99NEWPLANS&pt=cc'>12 Methylation Genes Report</a> and our <a>12 Methylation Genes Report + Wellness Report Bundle.</a> These plans provide access to your personalized insights within hours.",
   },
   {
     id: 2,
@@ -501,7 +510,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title: "Select Your Plan",
     _key: "no_dna_test",
     description:
-      "Get our 12 Methylation Genes Report + Wellness Test Bundle which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
+      "Get our <a target='_blank' href='https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV100&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETH199PLANS&pt=cc' >12 Methylation Genes Report + Wellness Test</a> Bundle which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
   },
   {
     id: 5,

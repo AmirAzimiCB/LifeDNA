@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Title, Text } from "@/components/atoms";
 import { TestimonialsData } from "@/constants";
 import Image from "next/image";
-import { TestimonialBg } from "../../../../public/icons";
+import { testimonialBG } from "../../../../public/icons";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function Testimonials() {
@@ -25,7 +25,7 @@ export function Testimonials() {
   return (
     <section className="w-full h-[360px] lg:h-[437px] transition-all duration-500 ease-in-out relative flex flex-col gap-4 lg:gap-8 z-20 p-6 lg:py-[90px] ">
       <Image
-        src={TestimonialBg}
+        src={testimonialBG}
         layout="fill"
         objectFit="cover"
         objectPosition="center"

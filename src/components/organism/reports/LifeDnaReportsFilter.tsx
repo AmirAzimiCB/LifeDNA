@@ -44,7 +44,7 @@ export function LifeDnaReportsFilter({ queryParam }: { queryParam: string }) {
         defaultValue={defaultOption}
       />
       <div className="flex items-center gap-4">
-        <div className="p-2 bg-[#41C752] rounded-full flex items-center justify-center">
+        <div className="p-2 bg-[#41C752] rounded-full flex items-center justify-center flex-shrink-0">
           <Image
             src={normalizedData?.icon || ""}
             alt={normalizedData?.description}
@@ -59,7 +59,7 @@ export function LifeDnaReportsFilter({ queryParam }: { queryParam: string }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {normalizedData.items.map((item, index) => (
             <div key={index} className="flex items-center gap-5">
-              <div className="p-2 bg-[#41C752] rounded-full flex items-center justify-center">
+              <div className="p-2 bg-[#cef2d3] rounded-full flex items-center justify-center textgreen">
                 <Image
                   src={item.icon || ""}
                   alt={`${item.name}`}

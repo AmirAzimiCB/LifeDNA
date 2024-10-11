@@ -4,13 +4,15 @@ import { cn } from "@/lib/utils";
 interface TextProps {
   variant?: "base" | "small" | "smaller" | "paragraph" | "terms";
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
+  htmlContent?: string;
 }
 
 export const Text: React.FC<TextProps> = ({
   variant = "base",
   className,
   children,
+  htmlContent,
 }) => {
   const baseStyles = "text-text-color font-normal text-[#383B42]";
   const variantStyles = {
@@ -20,10 +22,14 @@ export const Text: React.FC<TextProps> = ({
     paragraph: "text-sm leading-[130%]",
     terms: "text-lg leading-[130%] text-[#7A7A7A]",
   };
-
-  return (
+  return htmlContent ? (
+    <p
+      className={cn(baseStyles, variantStyles[variant], "highlight", className)}
+      dangerouslySetInnerHTML={{ __html: htmlContent }}
+    />
+  ) : (
     <p className={cn(baseStyles, variantStyles[variant], className)}>
-      {children}
+      {children} {/* Render regular children */}
     </p>
   );
 };

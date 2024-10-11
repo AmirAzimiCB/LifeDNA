@@ -18,7 +18,7 @@ import ReportBg from "./reportsbg.svg";
 import Fork from "./fork.svg";
 import BreadIcon from "./mingcute_bread-fill.svg";
 import BgDNA from "./bgDNA.svg";
-import DNAWellness from "./DNAWellness.svg";
+import DNAWellness from "./DNAWellness.png";
 import Methylation from "./Methylation.svg";
 import skincare from "./skincare.svg";
 import wellness from "./wellness.svg";
@@ -32,6 +32,8 @@ import BusinessJournal from "./businessjournal.svg";
 import DailyMail from "./dailymail.svg";
 import Cnn from "./cnn.svg";
 
+import testimonialBG from "./testimonialBG.jpg";
+
 export {
   // partners
   Forbes,
@@ -42,6 +44,7 @@ export {
 
   // others
   SleepReport,
+  testimonialBG,
   PersonalityHome,
   Methylation,
   skincare,
