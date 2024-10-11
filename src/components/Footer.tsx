@@ -96,7 +96,7 @@ export default function Footer() {
               <ul className="flex flex-col gap-3 max-lg:items-center max-lg:justify-center">
                 <li>
                   <Link
-                    href="#"
+                    href="/contact"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     Contact Us
