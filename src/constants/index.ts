@@ -30,7 +30,6 @@ import {
   BusinessJournal,
   DailyMail,
   Cnn,
-  PersonalityHome,
   SleepReport,
 } from "../../public/icons";
 

@@ -14,6 +14,7 @@ import { lock, WorksWith, Upload, ColoredDNA } from "../../../../public/icons";
 import { Button } from "@/components/ui/Button";
 import { LifeDNATabsComponent } from "@/components/organism/home/LifeDNATabsComponent";
 import Link from "next/link";
+import { Reports } from "@/types";
 
 export function HomePage() {
   return (
@@ -63,7 +64,7 @@ export function HomePage() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4 max-sm:hidden">
           {ReportsData.map((report, index) => {
-            return <ReportCards card={report} key={index} />;
+            return <ReportCards card={report as Reports} key={index} />;
           })}
         </div>
         <div className="lg:hidden">

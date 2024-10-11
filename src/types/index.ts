@@ -97,7 +97,7 @@ export type ReportCategory = {
   id: number;
   category: string;
   description: string;
-  icon: StaticImageData | string;
+  icon?: StaticImageData | string;
   items: ReportItem[];
 };
 
@@ -111,6 +111,6 @@ export type ReportCard = {
   price: string;
   description: string;
   listItems: string[];
-  image?: string;
+  image?: string | StaticImageData;
   href: string;
 };
