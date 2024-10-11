@@ -471,33 +471,37 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 1,
     step: 1,
     showIcon: true,
-    title:
-      "Purchase your 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle",
+    title: "Select Your Plan",
     _key: "have_dna_test",
+    description:
+      "Choose between our  12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle. These plans provide access to your personalized insights within hours.",
   },
   {
     id: 2,
     step: 2,
     showIcon: true,
-    title: "Upload your existing DNA Test",
+    title: "Upload  Your Raw Data",
     _key: "have_dna_test",
     description:
-      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
+      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
   },
   {
     id: 3,
     step: 3,
     showIcon: false,
-    title: "Discover personalized wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness!",
     _key: "have_dna_test",
-    description: "Unlock 130+ traits reports in a few hours.",
+    description:
+      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
   },
   {
     id: 4,
     step: 1,
     showIcon: true,
-    title: "Order your 12 Methylation Genes Report + Wellness Test Bundle",
+    title: "Select Your Plan",
     _key: "no_dna_test",
+    description:
+      "Get our 12 Methylation Genes Report + Wellness Test Bundle which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
   },
   {
     id: 5,
@@ -506,16 +510,16 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
+      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
   },
   {
     id: 6,
     step: 3,
     showIcon: false,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness!",
     _key: "no_dna_test",
-    description: "Unlock up to 130+ trait reports.",
+    description:
+      "Empower your well-being with the guidance of your personalized DNA reports!",
   },
 ];
 

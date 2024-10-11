@@ -4,7 +4,7 @@ import { Text, Title } from "@/components/atoms";
 
 export function HeroSection() {
   return (
-    <section className="w-full relative px-6 lg:px-[94px] py-6 lg:py-16 lg:pb-[156px] flex flex-col gap-[157px] justify-center lg:min-h-[638px] h-full">
+    <section className="w-full relative px-6 lg:px-[94px] py-6 pb-8 flex flex-col gap-[157px] justify-center lg:min-h-[438px] h-full">
       <Image
         src={BgDNA}
         layout="fill"
