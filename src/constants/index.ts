@@ -1131,7 +1131,7 @@ export const reportData: ReportCategory[] = [
         icon: Menstrual,
       },
       {
-        name: "Excessive Sweating”",
+        name: "Excessive Sweating",
         icon: Excessive,
       },
       {
