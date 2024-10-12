@@ -57,7 +57,8 @@ export const Carousel: React.FC = () => {
                 style={{
                   scrollSnapAlign: "start",
 
-                  paddingRight: index === slides.length - 1 && "24px",
+                  paddingRight:
+                    index === slides.length - 1 ? "24px" : undefined,
                 }}
               >
                 <div
