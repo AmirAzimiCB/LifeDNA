@@ -62,12 +62,12 @@ export function HomePage() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4 max-sm:hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-lg:mt-4 max-sm:hidden mt-12">
           {ReportsData.map((report, index) => {
             return <ReportCards card={report as Reports} key={index} />;
           })}
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden mt-14">
           <MobileReportSlider />
         </div>
       </div>
