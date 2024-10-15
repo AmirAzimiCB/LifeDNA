@@ -59,13 +59,13 @@ export function LifeDnaReportsFilter({ queryParam }: { queryParam: string }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {normalizedData.items.map((item, index) => (
             <div key={index} className="flex items-center gap-5">
-              <div className="p-2 bg-[#cef2d3] rounded-full flex items-center justify-center textgreen">
+              <div className="p-2 bg-[#07606e] rounded-full flex items-center justify-center textgreen">
                 <Image
                   src={item.icon || ""}
                   alt={`${item.name}`}
                   width={32}
                   height={32}
-                  className="w-6 h-6 aspect-auto rounded-full"
+                  className="w-6 h-6 aspect-auto rounded-es-full"
                 />
               </div>
               <Text className="font-semibold text-base">{`${item.name}`}</Text>
