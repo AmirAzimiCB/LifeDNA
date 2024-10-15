@@ -1,5 +1,5 @@
-import { Card, Title, Text } from "@/components/atoms";
-import { Button } from "@/components/ui/button";
+import { Card, Title } from "@/components/atoms";
+import { Button } from "@/components/ui/Button";
 import { Link } from "lucide-react";
 
 const researchData = [
@@ -53,11 +53,7 @@ export default function ResearchPage() {
             <Title>{item.title}</Title>
             <Card>
               <p className="text-sm text-gray-600 mb-2">{item.content}</p>
-              <Button
-                variant="outline"
-                size="sm"
-                className="flex items-center gap-2"
-              >
+              <Button variant="primary" className="flex items-center gap-2">
                 <Link className="h-4 w-4" />
                 <a
                   href={item.link}
