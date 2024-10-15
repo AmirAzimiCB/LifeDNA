@@ -1,15 +1,15 @@
-import { Text, Title, Card } from "@/components/atoms";
+import { Text, Title, Wrapper } from "@/components/atoms";
 import React from "react";
 
 const Updates = () => {
   return (
     <div className="flex flex-col gap-6 max-w-[1440px] mx-auto w-full px-6 py-16 lg:p-16">
-      <Card type="h1" className="text-6xl font-semibold">
+      <Wrapper type="h1" className="text-6xl font-semibold">
         LifeDNA Updates
-      </Card>
-      <Text variant="terms" className="">
-        Last updated: <span style={{ color: "#289a96" }}>March 22, 2024</span>
-      </Text>
+        <Text variant="terms" className="mt-4">
+          Last updated: <span style={{ color: "#289a96" }}>March 22, 2024</span>
+        </Text>
+      </Wrapper>
 
       <UpdateCard
         title="LifeDNA's Removing 3ML Feature Toggle"
@@ -307,7 +307,7 @@ function UpdateCard({
   content: React.ReactNode;
 }) {
   return (
-    <Card>
+    <Wrapper>
       <Title type="h4" className="text-xl font-semibold">
         {title}
       </Title>
@@ -317,7 +317,7 @@ function UpdateCard({
       <Text variant="terms" className="mt-2">
         {content}
       </Text>
-    </Card>
+    </Wrapper>
   );
 }
 
