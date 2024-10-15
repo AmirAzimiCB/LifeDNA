@@ -75,7 +75,8 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="https://auth.lifedna.com/login?response_type=code&client_id=3iea8lao63paniv06qnfo9s3t3&scope=&redirect_uri=https%3A%2F%2Fmy.lifedna.com%2Fdashboard&code_challenge=Bep-d8-iHmQEAkLpcWtLFwCb_licYlLIdHMmfb984-0&code_challenge_method=S256"
+                    href="/research"
+                    target="_self"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     Research
@@ -128,7 +129,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/updates"
                     className="text-white max-lg:text-xs whitespace-nowrap"
                   >
                     Updates Page
