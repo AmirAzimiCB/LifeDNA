@@ -1,5 +1,4 @@
 import { Card, Title } from "@/components/atoms";
-import { Button } from "@/components/ui/Button";
 import { Link } from "lucide-react";
 
 const researchData = [
@@ -50,20 +49,20 @@ export default function ResearchPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {researchData.map((item, index) => (
           <Card key={index} className="bg-white drop-shadow-xl">
-            <Title>{item.title}</Title>
+            <Title className="mb-4">{item.title}</Title>
             <Card>
               <p className="text-sm text-gray-600 mb-2">{item.content}</p>
-              <Button variant="primary" className="flex items-center gap-2">
-                <Link className="h-4 w-4" />
+              <div className="flex items-center gap-2">
+                <Link className="h-4 w-4 text-green-600 font-bold" />
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-600"
+                  className="text-green-600 font-bold"
                 >
                   Read more
                 </a>
-              </Button>
+              </div>
             </Card>
           </Card>
         ))}
