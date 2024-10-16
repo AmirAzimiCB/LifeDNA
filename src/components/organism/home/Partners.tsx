@@ -23,23 +23,23 @@ export function Partners() {
         <div className="flex items-center gap-1.5 md:space-x-2">
           <FlaskConical className="w-4 h-4 lg:w-6 lg:h-6" />
           <Text className="max-lg:text-[16px] font-semibold">
-            Take A DNA Test or Upload RawData
+            Take A DNA Test or Upload Raw Data
           </Text>
         </div>
       </div>
       <Separator />
-      <div className="flex justify-center gap-8">
+      <div className="lg:flex  justify-center gap-8">
         {PartnersData.map((partner, key) => (
           <div
             key={key}
-            className="lg:px-3.5 py-1.5 lg:py-5 flex items-center justify-center"
+            className="lg:px-3.5 py-5 lg:py-5 flex items-center justify-center"
           >
             <Image
               src={partner.icon}
               alt={partner.title}
               width={100}
-              height={40}
-              className="w-full"
+              height={50}
+              className="w-auto h-auto"
             />
           </div>
         ))}

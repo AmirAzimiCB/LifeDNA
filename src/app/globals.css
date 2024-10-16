@@ -166,3 +166,7 @@
 .highlight a {
   color: #41c752;
 }
+
+.icon img {
+  max-width: none !important;
+}

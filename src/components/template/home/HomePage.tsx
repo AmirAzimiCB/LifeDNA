@@ -90,7 +90,7 @@ export function HomePage() {
               alt="icon"
               className="w-4 h-4"
             />
-            <Text variant="smaller">100% Secure</Text>
+            <Text variant="smaller">100% Safe & Secure</Text>
           </div>
           <div className="flex items-center gap-2">
             <Image src={Upload} width={16} height={16} alt="icon" />

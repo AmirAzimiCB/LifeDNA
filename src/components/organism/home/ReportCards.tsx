@@ -144,7 +144,7 @@ export function ReportCards({ card }: { card: Reports }) {
                   <Image
                     width={1200}
                     height={1000}
-                    src={card.image}
+                    src={"/images/DNAWellness2.png"}
                     alt={card.title}
                     className="w-full h-auto rounded-md"
                   />
@@ -166,7 +166,11 @@ export function ReportCards({ card }: { card: Reports }) {
               third && "bg-[#07606e]"
             )}
           >
-            {third ? "Get My Reports Now" : "Get My Reports Now"}
+            {third
+              ? "Get My DNA Test Now"
+              : second
+              ? "Get My Reports Now"
+              : "Get My Report Now"}
           </Button>
         </a>
       </Card>

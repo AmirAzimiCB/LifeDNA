@@ -53,7 +53,18 @@ export function HowItWorksInThreeSteps() {
                       <Text variant="base" className="capitalize">
                         Step {step.step}
                       </Text>
-                      <Title>{step.title}</Title>
+                      <Text>
+                        <Text
+                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[140%] font-semibold lg:leading-8 text-center lg:text-left lg:max-w-[340px] w-full"
+                          htmlContent={step.title}
+                        />
+                      </Text>
+                      {step?.description ? (
+                        <Text
+                          className="text-center lg:text-left max-lg:mt-3"
+                          htmlContent={step.description}
+                        />
+                      ) : null}
                     </div>
                     <div className="h-full flex items-start flex-shrink-0">
                       <Image
@@ -65,7 +76,6 @@ export function HowItWorksInThreeSteps() {
                       />
                     </div>
                   </div>
-                  <Text>{step?.description || ""}</Text>
                 </div>
               </Card>
             ))}
@@ -87,7 +97,18 @@ export function HowItWorksInThreeSteps() {
                       <Text variant="base" className="capitalize">
                         Step {step.step}
                       </Text>
-                      <Title>{step.title}</Title>
+                      <Text className="">
+                        <Text
+                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[120%] font-semibold lg:leading-8 text-center lg:text-left lg:max-w-[340px] w-full"
+                          htmlContent={step.title}
+                        />
+                      </Text>
+                      {step?.description ? (
+                        <Text
+                          className="text-center lg:text-left max-lg:mt-3"
+                          htmlContent={step.description}
+                        />
+                      ) : null}
                     </div>
                     <div className="h-full flex items-start flex-shrink-0">
                       <Image
@@ -99,15 +120,14 @@ export function HowItWorksInThreeSteps() {
                       />
                     </div>
                   </div>
-                  <Text>{step?.description || ""}</Text>
                 </div>
               </Card>
             ))}
           </div>
         </Tabs.Content>
       </Tabs.Root>
-      <Link href="/plans">
-        <Button className="mt-4">Yes, I want to transform my wellness!</Button>
+      <Link href="/plans" className="mt-4 max-w-[400px] w-full mx-auto ">
+        <Button className="mt-4 ">Yes, I want to transform my wellness!</Button>
       </Link>
     </Wrapper>
   );

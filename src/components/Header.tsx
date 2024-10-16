@@ -23,11 +23,11 @@ export default function Header() {
               <Link href="/" className="flex items-center">
                 <span className="sr-only">LifeDNA</span>
                 <Image
-                  className="w-[124px] h-[31px]"
-                  src="/images/mainlogo.svg"
+                  className="w-[150px] h-auto"
+                  src="/images/logo-dark.png"
                   alt="LifeDNA"
-                  width={100}
-                  height={100}
+                  width={2500}
+                  height={1500}
                 />
               </Link>
             </div>

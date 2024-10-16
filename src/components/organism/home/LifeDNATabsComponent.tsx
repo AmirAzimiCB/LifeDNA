@@ -20,7 +20,7 @@ export function LifeDNATabsComponent() {
           value="have_dna_test"
           className="px-8 py-2 text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
         >
-          I Already Have A DNA Test
+          I Have Already Done A DNA Test
         </Tabs.Trigger>
         <Tabs.Trigger
           value="no_dna_test"
@@ -41,7 +41,10 @@ export function LifeDNATabsComponent() {
                 <div className="h-full flex flex-col gap-3 lg:gap-4 items-center max-lg:justify-center lg:items-start">
                   <Text variant="base">Step {step.step}</Text>
                   <Text className="text-sm max-lg:max-w-[201px] lg:text-xl leading-[120%] font-semibold lg:leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
-                    {step.title}
+                    <Text
+                      className="text-sm max-lg:max-w-[201px] lg:text-xl leading-[120%] font-semibold lg:leading-6 text-center lg:text-left lg:max-w-[340px] w-full"
+                      htmlContent={step.title}
+                    />
                   </Text>
 
                   {step?.description ? (
@@ -79,7 +82,10 @@ export function LifeDNATabsComponent() {
                 <div className="h-full flex flex-col gap-3 lg:gap-4 items-center max-lg:justify-center lg:items-start">
                   <Text variant="base">Step {step.step}</Text>
                   <Text className="text-sm max-lg:max-w-[241px] lg:text-xl leading-[120%] font-semibold lg:leading-6 text-center lg:text-left lg:max-w-[340px] w-full">
-                    {step.title}
+                    <Text
+                      className="text-sm max-lg:max-w-[241px] lg:text-xl leading-[120%] font-semibold lg:leading-6 text-center lg:text-left lg:max-w-[340px] w-full"
+                      htmlContent={step.title}
+                    />
                   </Text>
                   {step?.description ? (
                     <Text

@@ -16,11 +16,11 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-start w-full">
             <div className="flex items-center mb-4">
               <Image
-                src={"/images/footerlogo.svg"}
+                src={"/images/logo-light.png"}
                 alt="footerlogo"
-                width={400}
-                height={400}
-                className="w-[124px] h-[32px]"
+                width={2500}
+                height={1500}
+                className="w-[150px] h-auto"
               />
             </div>
             <Text className="mb-6 mt-8 text-center lg:text-left text-white">
