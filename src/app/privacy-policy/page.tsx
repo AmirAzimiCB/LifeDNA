@@ -15,9 +15,10 @@ const PrivacyPolicy = () => {
         are committed to protecting it through our compliance with this policy.
         This policy describes the types of information we may collect from you
         or that you may provide when you visit the website lifedna.com, our
-        platform at my.lifedna.com, or mobile app (our “Services“) and our
-        practices for collecting, using, maintaining, protecting, and disclosing
-        that information.
+        platform at my.lifedna.com, or mobile app (our
+        <span className="font-semibold"> “Services“</span>) and our practices
+        for collecting, using, maintaining, protecting, and disclosing that
+        information.
       </Text>
       <Text variant="paragraph">
         Please see our{" "}
@@ -89,14 +90,15 @@ const PrivacyPolicy = () => {
         from or about a child under 18, please contact us at:
       </Text>
       <address className="flex flex-col list-disc text-sm font-normal normal-case mb-6">
-        <li className="ml-4 lg:ml-5">1050 Queen St., 100</li>
-        <br />
-        <li className="ml-4 lg:ml-5">Honolulu, HI 96814</li>
-        <br />
-        <li className="ml-4 lg:ml-5">By email at:</li>{" "}
         <li className="ml-4 lg:ml-5">
-          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com</a>
+          1050 Queen St., 100, <br />
+          <span className="ml-4">Honolulu, HI 96814</span>
         </li>
+        <br />
+        <li className="ml-4 lg:ml-5">
+          By email at: <a href="mailto:aloha@lifedna.com">aloha@lifedna.com </a>
+          OR
+        </li>{" "}
         <br />
         <li className="ml-4 lg:ml-5">
           By calling our toll-free number: (877) 543-3362
@@ -133,6 +135,11 @@ const PrivacyPolicy = () => {
         <li className="ml-6 lg:ml-8">
           That you provide on the test tube that contains your saliva (such as
           your year of birth and sex).
+        </li>
+        <li className="ml-6 lg:ml-8">
+          Relevant information you provide may include information such as any
+          disease conditions, health-related information, traits, ethnicity,
+          family history, or anything else you provide to us.
         </li>
         <li className="ml-6 lg:ml-8">
           That is about you but individually that does not identify you. Such
@@ -305,10 +312,7 @@ const PrivacyPolicy = () => {
         <li className="ml-6 lg:ml-8">
           To sign up for our services by creating an account.
         </li>
-        <li className="ml-6 lg:ml-8">
-          To provide you with information, products, or services that you
-          request from us.
-        </li>
+
         <li className="ml-6 lg:ml-8">
           To fulfill any other purpose for which you provide it.
         </li>
@@ -354,7 +358,7 @@ const PrivacyPolicy = () => {
         We may also use your information to contact you about our own products
         and services that may be of interest to you. If you do not want us to
         use your information in this way, please reach out to us at
-        <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a>
+        <a href="mailto:aloha@lifedna.com"> aloha@lifedna.com.</a>
       </Text>
       <Text variant="paragraph">Disclosure of Your Information</Text>
       <Text variant="paragraph">
@@ -400,6 +404,7 @@ const PrivacyPolicy = () => {
           For any other purpose disclosed by us when you provide the
           information.
         </li>
+        <li className="ml-6 lg:ml-8">With your consent</li>
       </ul>
       <Text variant="paragraph">
         We may also disclose your personal information:
@@ -417,14 +422,7 @@ const PrivacyPolicy = () => {
             Research Program.
           </a>
         </li>
-        <li className="ml-6 lg:ml-8">
-          To a buyer or other successor in the event of a merger, divestiture,
-          restructuring, reorganization, dissolution, or other sale or transfer
-          of some or all of LifeDNA Inc.’s assets, whether as a going concern or
-          as part of bankruptcy, liquidation, or similar proceeding, in which
-          personal information held by LifeDNA Inc. about our Services’ users is
-          among the assets transferred.
-        </li>
+
         <li className="ml-6 lg:ml-8">
           To comply with any court order, law, or legal process, including to
           respond to any government or regulatory request.
@@ -450,7 +448,7 @@ const PrivacyPolicy = () => {
       </Text>
       <ul className="list-disc text-sm font-normal flex flex-col gap-6 mb-6">
         <li className="ml-6 lg:ml-8">Public databases.</li>
-        <li className="ml-6 lg:ml-8">nsurance companies or employers.</li>
+        <li className="ml-6 lg:ml-8">Insurance companies or employers.</li>
         <li className="ml-6 lg:ml-8">Law enforcement or regulatory.</li>
       </ul>
       <Text variant="paragraph" className="font-semibold underline">
@@ -488,7 +486,7 @@ const PrivacyPolicy = () => {
           unaffiliated or non-agent third parties for promotional purposes, you
           can opt out by clicking the relevant opt-out links in the
           communications you receive from us, or reach out to us at
-          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a>
+          <a href="mailto:aloha@lifedna.com"> aloha@lifedna.com.</a>
         </li>
         <li className="ml-6 lg:ml-8">
           <span className="font-semibold">
@@ -508,7 +506,7 @@ const PrivacyPolicy = () => {
           You can review and change your personal information by logging into
           the Services and visiting your account profile page. You may also send
           us an email at{" "}
-          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a> to request
+          <a href="mailto:aloha@lifedna.com"> aloha@lifedna.com.</a> to request
           access to, correct, or delete any personal information that you have
           provided to us. We cannot delete your personal information except by
           also deleting your user account. We may not accommodate a request to
@@ -530,7 +528,7 @@ const PrivacyPolicy = () => {
           certain information regarding our disclosure of personal information
           to third parties for their direct marketing purposes. To make such a
           request, please send an email to{" "}
-          <a href="mailto:aloha@lifedna.com">aloha@lifedna.com.</a> or write us
+          <a href="mailto:aloha@lifedna.com"> aloha@lifedna.com.</a> or write us
           at: 1050 Queen St., 100, Honolulu, Hawaii 96814.
         </li>
       </ul>
@@ -574,13 +572,13 @@ const PrivacyPolicy = () => {
       <Text variant="paragraph">
         It is our policy to post any changes we make to our privacy policy on
         this page with a notice that the privacy policy has been updated on the
-        LifeDNA updates page. If we make material changes to how we treat our
-        users’ personal information, we will notify you by email to the email
-        address specified in your account. The date the privacy policy was last
-        revised is identified at the top of the page. You are responsible for
-        ensuring we have an up-to-date active and deliverable email address for
-        you, and for periodically visiting our website and this privacy policy
-        to check for any changes.
+        <a href="/updates">LifeDNA updates page</a>. If we make material changes
+        to how we treat our users’ personal information, we will notify you by
+        email to the email address specified in your account. The date the
+        privacy policy was last revised is identified at the top of the page.
+        You are responsible for ensuring we have an up-to-date active and
+        deliverable email address for you, and for periodically visiting our
+        website and this privacy policy to check for any changes.
       </Text>
       <Text variant="paragraph">Contact Information</Text>
       <Text variant="paragraph">
@@ -588,16 +586,19 @@ const PrivacyPolicy = () => {
         practices, contact us at:
       </Text>
       <address className="flex flex-col list-disc text-lg font-normal normal-case mb-6">
-        <li className="ml-4 lg:ml-5">1050 Queen St., 100</li>
-        <br />
-        <li className="ml-4 lg:ml-5">Honolulu, HI 96814</li>
+        <li className="ml-4 lg:ml-5">
+          1050 Queen St., 100
+          <br />
+          <span className="ml-6">Honolulu, HI 96814</span>
+        </li>
         <br />
         <li className="ml-4 lg:ml-5">
-          By email at: <a href="mailto:aloha@lifedna.com">aloha@lifedna.com</a>
+          By email at:{" "}
+          <a href="mailto:privacy@lifedna.com">privacy@lifedna.com</a> Or
         </li>{" "}
         <br />
         <li className="ml-4 lg:ml-5">
-          By calling our toll-free number: (877) 543-3362
+          Via calling our toll-free number: (877) 543-3362
         </li>
       </address>
       <Text variant="paragraph">

@@ -10,17 +10,21 @@ const TermsAndConditions = () => {
       <Title type="h2" className="text-[34px] font-semibold lg:mt-6">
         Terms of Use
       </Title>
-      <Text variant="terms" className="lg:mt-6">
+      <Text variant="terms" className="lg:mt-6 font-bold">
         Last Updated: March 22, 2024
       </Text>
       <Text variant="terms">
-        We are pleased to offer you access to the www.LifeDNA.com website, its
-        associated mobile applications (“Apps”), and their features and services
-        (collectively, the “Service”) operated by LifeDNA, Inc. (“Company” or
-        “LifeDNA”) conditioned on your acceptance without modification of the
-        following Terms of Use. The Service provides an online platform that
-        uses DNA to provide personalized insights, recommendations and products
-        (“Products”) uniquely tailored to you and your individual needs.
+        We are pleased to offer you access to the{" "}
+        <a href="http://www.LifeDNA.com" className="font-bold">
+          www.LifeDNA.com
+        </a>{" "}
+        website, its associated mobile applications (“Apps”), and their features
+        and services (collectively, the “Service”) operated by LifeDNA, Inc.
+        (“Company” or “LifeDNA”) conditioned on your acceptance without
+        modification of the following Terms of Use. The Service provides an
+        online platform that uses DNA to provide personalized insights,
+        recommendations and products (“Products”) uniquely tailored to you and
+        your individual needs.
       </Text>
       <Text variant="terms">
         The following Terms of Use for the Service is a legal contract between
@@ -560,7 +564,7 @@ const TermsAndConditions = () => {
       </Text>
       <Text variant="terms">
         a. ACKNOWLEDGMENT. YOU EXPRESSLY ACKNOWLEDGE THAT AS USED IN THIS
-        SECTION, AND SECTIONS 16 AND 17 BELOW, THE TERM COMPANY INCLUDES
+        SECTION 15, AND SECTIONS 16 AND 17 BELOW, THE TERM COMPANY INCLUDES
         COMPANY’S PARENT, SUBSIDIARY, AFFILIATED AND OTHER RELATED COMPANIES
         (INCLUDING THOSE WHICH SHARE SUBSTANTIALLY COMMON OWNERSHIP) AND EACH OF
         THEIR OFFICERS, DIRECTORS, EMPLOYEES, SHAREHOLDERS, MEMBERS, AGENTS AND
@@ -672,34 +676,34 @@ const TermsAndConditions = () => {
         Millennium Copyright Act (“DMCA”) by providing our Copyright Agent with
         the following information in writing.
       </Text>
-      <Text variant="terms">
+      <Text variant="terms" className="ml-6">
         i. A physical or electronic signature of a person authorized to act on
         behalf of the owner of an exclusive right that is allegedly infringed;
       </Text>
-      <Text variant="terms">
+      <Text variant="terms" className="ml-6">
         ii. Identification of the copyrighted work claimed to have been
         infringed, or, if multiple copyrighted works are covered by a single
         notification, a representative listing of such works or a link or URL to
         all such works;
       </Text>
-      <Text variant="terms">
+      <Text variant="terms" className="ml-6">
         iii. Identification of the material that is claimed to be infringing or
         to be the subject of infringing activity on the Service and that is to
         be removed or access to which is to be disabled, including the link or
         URL for all such material on the Service;
       </Text>
-      <Text variant="terms">
+      <Text variant="terms" className="ml-6">
         iv. Information reasonably sufficient to permit Company to contact the
         complaining party, such as an address, telephone number, and, if
         available, an electronic mail address at which the complaining party may
         be contacted;
       </Text>
-      <Text variant="terms">
+      <Text variant="terms" className="ml-6">
         v. A statement that the complaining party has a good faith belief that
         use of the material in the manner complained of is not authorized by the
         copyright owner, its agent, or the law; and
       </Text>
-      <Text variant="terms">
+      <Text variant="terms" className="ml-6">
         vi. A statement that the information in the notification is accurate,
         and under penalty of perjury, that the complaining party is authorized
         to act on behalf of the owner of an exclusive right that is allegedly
@@ -816,7 +820,8 @@ const TermsAndConditions = () => {
           1050 Queen St. #100, Honolulu, HI 96814.
         </span>
       </Text>
-      <Text variant="terms" className="font-semibold">
+      <hr className="w-full h-[2px] bg-gray-600" />{" "}
+      <Text variant="terms" className="font-semibold borde">
         LifeDNA Application Consent
       </Text>
       <Text variant="terms" className="font-semibold">
@@ -1070,6 +1075,7 @@ const TermsAndConditions = () => {
         technical reasons, such as not having the SNPs we read to provide you
         with LifeDNA Products.
       </Text>
+      <hr className="w-full h-[2px] bg-gray-600" />{" "}
       <Text variant="terms" className="font-semibold">
         Mobile Message Service Terms and Conditions
       </Text>
@@ -1118,21 +1124,22 @@ const TermsAndConditions = () => {
         opting out.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold"></span> If at any time you intend to
-        stop using the mobile telephone number that has been used to subscribe
-        to the Program, including canceling your service plan or selling or
-        transferring the phone number to another party, you agree that you will
-        complete the User Opt Out process set forth above prior to ending your
-        use of the mobile telephone number. You understand and agree that your
-        agreement to do so is a material part of these terms and conditions. You
-        further agree that, if you discontinue the use of your mobile telephone
-        number without notifying Us of such change, you agree that you will be
-        responsible for all costs (including attorneys’ fees) and liabilities
-        incurred by Us, or any party that assists in the delivery of the mobile
-        messages, as a result of claims brought by individual(s) who are later
-        assigned that mobile telephone number. This duty and agreement shall
-        survive any cancellation or termination of your agreement to participate
-        in any of our Programs.
+        <span className="font-semibold"></span>
+        <strong>Duty to Notify and Indemnify:</strong> If at any time you intend
+        to stop using the mobile telephone number that has been used to
+        subscribe to the Program, including canceling your service plan or
+        selling or transferring the phone number to another party, you agree
+        that you will complete the User Opt Out process set forth above prior to
+        ending your use of the mobile telephone number. You understand and agree
+        that your agreement to do so is a material part of these terms and
+        conditions. You further agree that, if you discontinue the use of your
+        mobile telephone number without notifying Us of such change, you agree
+        that you will be responsible for all costs (including attorneys’ fees)
+        and liabilities incurred by Us, or any party that assists in the
+        delivery of the mobile messages, as a result of claims brought by
+        individual(s) who are later assigned that mobile telephone number. This
+        duty and agreement shall survive any cancellation or termination of your
+        agreement to participate in any of our Programs.
       </Text>
       <Text variant="terms">
         YOU AGREE THAT YOU SHALL INDEMNIFY, DEFEND, AND HOLD US HARMLESS FROM
@@ -1236,24 +1243,80 @@ const TermsAndConditions = () => {
         jurisdiction from which the message is sent.
       </Text>
       <Text variant="terms">
-        Dispute Resolution: In the event that there is a dispute, claim, or
-        controversy between you and Us, or any other third-party service
-        provider acting on Our behalf to transmit the mobile messages within the
-        scope of the Program, arising out of or relating to federal or state
-        statutory claims, common law claims, this Agreement, or the breach,
-        termination, enforcement, interpretation or validity thereof, including
-        the determination of the scope or applicability of this agreement to
-        arbitrate, such dispute, claim, or controversy will be, to the fullest
-        extent permitted by law, determined by arbitration in Honolulu, Hawaii
-        before one arbitrator.
+        <strong>Dispute Resolution:</strong> In the event that there is a
+        dispute, claim, or controversy between you and Us, or any other
+        third-party service provider acting on Our behalf to transmit the mobile
+        messages within the scope of the Program, arising out of or relating to
+        federal or state statutory claims, common law claims, this Agreement, or
+        the breach, termination, enforcement, interpretation or validity
+        thereof, including the determination of the scope or applicability of
+        this agreement to arbitrate, such dispute, claim, or controversy will
+        be, to the fullest extent permitted by law, determined by arbitration in
+        Honolulu, Hawaii before one arbitrator.
       </Text>
       <Text variant="terms">
-        The failure of either party to exercise in any respect any right
-        provided for herein will not be deemed a waiver of any further rights
-        hereunder. If any provision of this Agreement is found to be
-        unenforceable or invalid, that provision will be limited or eliminated
-        to the minimum extent necessary so that this Agreement will otherwise
-        remain in full force and effect and enforceable.
+        The parties agree to submit the dispute to binding arbitration in
+        accordance with the Commercial Arbitration Rules of the American
+        Arbitration Association (“AAA”) then in effect. Except as otherwise
+        provided herein, the arbitrator shall apply the substantive laws of the
+        Federal Judicial Circuit in which LifeDNA’s principle place of business
+        is located, without regard to its conflict of laws rules. Within ten
+        (10) calendar days after the arbitration demand is served upon a party,
+        the parties must jointly select an arbitrator with at least five years’
+        experience in that capacity and who has knowledge of and experience with
+        the subject matter of the dispute. If the parties do not agree on an
+        arbitrator within ten (10) calendar days, a party may petition the AAA
+        to appoint an arbitrator, who must satisfy the same experience
+        requirement. In the event of a dispute, the arbitrator shall decide the
+        enforceability and interpretation of this arbitration agreement in
+        accordance with the Federal Arbitration Act (“FAA”). The parties also
+        agree that the AAA’s rules governing Emergency Measures of Protection
+        shall apply in lieu of seeking emergency injunctive relief from a court.
+        The decision of the arbitrator shall be final and binding, and no party
+        shall have rights of appeal except for those provided in section 10 of
+        the FAA. Each party shall bear its share of the fees paid for the
+        arbitrator and the administration of the arbitration; however, the
+        arbitrator shall have the power to order one party to pay all or any
+        portion of such fees as part of a well-reasoned decision. The parties
+        agree that the arbitrator shall have the authority to award attorneys’
+        fees only to the extent expressly authorized by statute or contract. The
+        arbitrator shall have no authority to award punitive damages and each
+        party hereby waives any right to seek or recover punitive damages with
+        respect to any dispute resolved by arbitration. The parties agree to
+        arbitrate solely on an individual basis, and this agreement does not
+        permit class arbitration or any claims brought as a plaintiff or class
+        member in any class or representative arbitration proceeding. Except as
+        may be required by law, neither a party nor the arbitrator may disclose
+        the existence, content, or results of any arbitration without the prior
+        written consent of both parties, unless to protect or pursue a legal
+        right. If any term or provision of this Section is invalid, illegal, or
+        unenforceable in any jurisdiction, such invalidity, illegality, or
+        unenforceability shall not affect any other term or provision of this
+        Section or invalidate or render unenforceable such term or provision in
+        any other jurisdiction. If for any reason a dispute proceeds in court
+        rather than in arbitration, the parties hereby waive any right to a jury
+        trial. This arbitration provision shall survive any cancellation or
+        termination of your agreement to participate in any of our Programs.
+      </Text>
+      <Text variant="terms">
+        Miscellaneous: You warrant and represent to Us that you have all
+        necessary rights, power, and authority to agree to these Terms and
+        perform your obligations hereunder, and nothing contained in this
+        Agreement or in the performance of such obligations will place you in
+        breach of any other contract or obligation. The failure of either party
+        to exercise in any respect any right provided for herein will not be
+        deemed a waiver of any further rights hereunder. If any provision of
+        this Agreement is found to be unenforceable or invalid, that provision
+        will be limited or eliminated to the minimum extent necessary so that
+        this Agreement will otherwise remain in full force and effect and
+        enforceable. Any new features, changes, updates or improvements of the
+        Program shall be subject to this Agreement unless explicitly stated
+        otherwise in writing. We reserve the right to change this Agreement from
+        time to time. Any updates to this Agreement shall be communicated to
+        you. You acknowledge your responsibility to review this Agreement from
+        time to time and to be aware of any such changes. By continuing to
+        participate in the Program after any such changes, you accept this
+        Agreement, as modified.
       </Text>
     </div>
   );

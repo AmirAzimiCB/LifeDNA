@@ -20,7 +20,7 @@ export const Text: React.FC<TextProps> = ({
     small: "text-base lg:text-base leading-[150%] lg:leading-[120%]",
     smaller: "text-base leading-[130%]",
     paragraph: "text-sm leading-[130%]",
-    terms: "text-lg leading-[130%] text-[#7A7A7A]",
+    terms: "text-lg leading-[130%] text-[#383B42]",
   };
   return htmlContent ? (
     <p
