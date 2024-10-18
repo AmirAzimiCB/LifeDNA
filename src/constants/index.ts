@@ -322,7 +322,7 @@ export const RoadMapData: RoadMap[] = [
     description:
       "Optimize your workout routine: level up your exercise with personalized fitness insights.",
     items: [
-      "Power vs Endurance",
+      "Power vs. Endurance",
       "Post Exercise Recovery Rate",
       "Injury Predisposition",
       "Blood Pressure and Exercise",
@@ -480,7 +480,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     step: 1,
     showIcon: true,
     title:
-      "Purchase your <a target='_blank' href='/plans'> 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle</a>",
+      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
     _key: "have_dna_test",
   },
   {
@@ -516,7 +516,7 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
+      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
   },
   {
     id: 6,
@@ -568,7 +568,7 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
     id: 1,
     step: 1,
     title:
-      "Purchase your <a target='_blank' href='/plans'> 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle</a>",
+      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
     _key: "have_dna_test",
     icon: Basket,
   },
@@ -604,7 +604,7 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
+      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
     icon: ParkOutline,
   },
   {

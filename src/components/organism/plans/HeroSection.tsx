@@ -1,4 +1,4 @@
-import { BgDNA, WorksWith } from "../../../../public/icons";
+import { BgDNA } from "../../../../public/icons";
 import Image from "next/image";
 import { Text, Title } from "@/components/atoms";
 
@@ -32,13 +32,36 @@ export function HeroSection() {
         </Text>
         <div className="flex flex-col max-lg:mt-4 gap-3 lg:gap-6">
           <Text className="font-semibold">Works with:</Text>
-          <div className="w-full max-w-[636px]">
+          <div className="align-middle grid lg:flex justify-left gap-12 mb-6">
             <Image
-              src={WorksWith}
-              width={16200}
-              height={1200}
-              alt="works with"
-              className="w-full aspect-auto"
+              src="/images/23andme.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />
+            <Image
+              src="/images/ancestry.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />{" "}
+            <Image
+              src="/images/myheritage.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />{" "}
+            <Image
+              src="/images/livingdna.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />{" "}
+            <Image
+              src="/images/familytreedna.svg"
+              alt="23andme"
+              width={130}
+              height={130}
             />
           </div>
         </div>

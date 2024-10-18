@@ -1,5 +1,6 @@
 import { Text, Title } from "@/components/atoms";
 import Image from "next/image";
+import { GeneticResearch } from "../../../../public/icons";
 
 export function LatestGeneticResearch() {
   return (
@@ -31,7 +32,7 @@ export function LatestGeneticResearch() {
       </div>
       <div className="relative lg:max-w-[726px] w-full">
         <Image
-          src={"/images/DNAWellness2.png"}
+          src={GeneticResearch}
           alt="genetic cover"
           width={1600}
           height={1200}

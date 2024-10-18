@@ -28,7 +28,7 @@ export function HowItWorksInThreeSteps() {
             value="have_dna_test"
             className="px-8 py-2.5 text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
           >
-            I Already Have Done A DNA Test
+            I Have Already Done A DNA test
           </Tabs.Trigger>
           <Tabs.Trigger
             value="no_dna_test"
