@@ -31,6 +31,8 @@ import {
   DailyMail,
   Cnn,
   SleepReport,
+  Melatonin2,
+  Insomnia,
 } from "../../public/icons";
 
 import {
@@ -889,7 +891,7 @@ export const reportData: ReportCategory[] = [
         icon: Lactate,
       },
       {
-        name: "Power vs Endurance",
+        name: "Power vs. Endurance",
         icon: Power,
       },
       {
@@ -1236,11 +1238,11 @@ export const reportData: ReportCategory[] = [
       },
       {
         name: "Melatonin Secretion",
-        icon: SleepReport,
+        icon: Melatonin2,
       },
       {
         name: "Potential for Insomnia",
-        icon: SleepReport,
+        icon: Insomnia,
       },
     ],
   },

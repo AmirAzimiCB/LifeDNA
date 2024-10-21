@@ -128,7 +128,7 @@ const DataSecurity = () => {
         procedure. For more information, check out LifeDNA’s{" "}
         <a
           href="/privacy-policy"
-          className="text-green-500 underline  hover:underline"
+          className="text-green-500 underline font-bold hover:underline"
         >
           Privacy Policy
         </a>
@@ -141,9 +141,8 @@ const DataSecurity = () => {
         </strong>
       </Text>
       <Text variant="terms">
-        Please contact us at{" "}
-        <p className="text-green-500">security@lifedna.com</p>
-        .<br />
+        Please contact us at security@lifedna.com.
+        <br />
         <br />
         In an effort to safeguard our community, LifeDNA encourages users to
         inform us of any security-related problems with our website. If you

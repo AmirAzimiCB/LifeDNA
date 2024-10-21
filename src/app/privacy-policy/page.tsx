@@ -573,13 +573,17 @@ const PrivacyPolicy = () => {
       <Text variant="paragraph">
         It is our policy to post any changes we make to our privacy policy on
         this page with a notice that the privacy policy has been updated on the
-        <a href="/updates"> LifeDNA updates page</a>. If we make material
-        changes to how we treat our users’ personal information, we will notify
-        you by email to the email address specified in your account. The date
-        the privacy policy was last revised is identified at the top of the
-        page. You are responsible for ensuring we have an up-to-date active and
-        deliverable email address for you, and for periodically visiting our
-        website and this privacy policy to check for any changes.
+        <a href="/updates" className="text-green-500 hover:underline">
+          {" "}
+          LifeDNA updates page
+        </a>
+        . If we make material changes to how we treat our users’ personal
+        information, we will notify you by email to the email address specified
+        in your account. The date the privacy policy was last revised is
+        identified at the top of the page. You are responsible for ensuring we
+        have an up-to-date active and deliverable email address for you, and for
+        periodically visiting our website and this privacy policy to check for
+        any changes.
       </Text>
       <Text variant="paragraph">Contact Information</Text>
       <Text variant="paragraph">
