@@ -1,9 +1,13 @@
-import ProductPage from "../../product-page/page";
+import ProductPage from "../../product-page/[handle]/page";
+
+interface ProductPageWrapperProps {
+  params: {
+    handle: string;
+  };
+}
 
 export default function ProductPageWrapper({
   params,
-}: {
-  params: { handle: string };
-}) {
+}: ProductPageWrapperProps) {
   return <ProductPage handle={params.handle} />;
 }

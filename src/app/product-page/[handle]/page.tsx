@@ -3,11 +3,11 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, Star } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { ShopifyProduct } from "@/types/shopify";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/Button";
+import { Input } from "@/components/ui/Input";
 import {
   Select,
   SelectContent,
@@ -16,7 +16,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export default function ProductPage({ handle }: { handle: string }) {
+interface ProductPageProps {
+  handle: string;
+}
+
+export default function ProductPage({ handle }: ProductPageProps) {
   const [product, setProduct] = useState<ShopifyProduct | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -26,18 +30,27 @@ export default function ProductPage({ handle }: { handle: string }) {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
+        console.log("Fetching product with handle:", handle); // Debug log
         const response = await fetch(`/api/products/${handle}`);
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error(
+            `Network response was not ok: ${response.status} ${response.statusText}`
+          );
         }
         const data = await response.json();
         console.log("Fetched product data:", data); // Log the fetched data
+        if (!data || Object.keys(data).length === 0) {
+          throw new Error("Received empty product data");
+        }
         setProduct(data);
         // Safely set the main image
         setMainImage(
-          data.images?.edges[0]?.node.originalSrc || "/placeholder.svg"
+          data.images && data.images.length > 0
+            ? data.images[0].src
+            : "/placeholder.svg"
         );
       } catch (err: unknown) {
+        console.error("Error fetching product:", err); // Debug log
         if (err instanceof Error) {
           setError(err.message);
         } else {
@@ -48,21 +61,25 @@ export default function ProductPage({ handle }: { handle: string }) {
       }
     };
 
-    if (handle) {
-      fetchProduct();
-    }
+    fetchProduct();
   }, [handle]);
+
+  const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newQuantity = parseInt(e.target.value) || 1;
+    setQuantity(Math.max(1, newQuantity)); // Ensure quantity is at least 1
+  };
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!product) return <div>Product not found</div>;
 
-  const productImages = product.images?.edges || [];
+  const productImages = product.images || [];
 
   // Safely get the price
-  const price = product.variants?.edges[0]?.node.price
-    ? `$${parseFloat(product.variants.edges[0].node.price).toFixed(2)}`
-    : "Price not available";
+  const price =
+    product.variants && product.variants.length > 0 && product.variants[0].price
+      ? `$${parseFloat(product.variants[0].price.amount).toFixed(2)}`
+      : "Price not available";
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -77,8 +94,8 @@ export default function ProductPage({ handle }: { handle: string }) {
         <div>
           <div className="mb-4">
             <Image
-              src={mainImage}
-              alt={product.title}
+              src={mainImage || "/placeholder.svg"}
+              alt={product.title || "Product image"}
               width={600}
               height={600}
               className="w-full rounded-lg"
@@ -87,16 +104,13 @@ export default function ProductPage({ handle }: { handle: string }) {
           <div className="flex space-x-2 overflow-x-auto">
             {productImages.map((img, index) => (
               <button
-                key={index}
-                onClick={() => setMainImage(img.node.originalSrc)}
+                key={img.id || index}
+                onClick={() => setMainImage(img.src)}
                 className="flex-shrink-0"
               >
                 <Image
-                  src={img.node.originalSrc}
-                  alt={
-                    img.node.altText ||
-                    `${product.title} thumbnail ${index + 1}`
-                  }
+                  src={img.src || "/placeholder.svg"}
+                  alt={img.altText || `${product.title} thumbnail ${index + 1}`}
                   width={100}
                   height={100}
                   className="rounded-md"
@@ -107,15 +121,18 @@ export default function ProductPage({ handle }: { handle: string }) {
         </div>
         <div>
           <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
-          <p className="text-gray-600 mb-6">{product.description}</p>
+          <div
+            className="text-gray-600 mb-6"
+            dangerouslySetInnerHTML={{ __html: product.descriptionHtml || "" }}
+          />
           <p className="text-2xl font-bold mb-4">{price}</p>
           <div className="flex items-center space-x-4 mb-6">
             <Input
               type="number"
-              min="1"
               value={quantity}
-              onChange={(e) => setQuantity(parseInt(e.target.value))}
+              onChange={handleQuantityChange}
               className="w-20"
+              min={1}
             />
             <Button>Add to Cart</Button>
           </div>
@@ -154,23 +171,13 @@ export default function ProductPage({ handle }: { handle: string }) {
         </div>
       </div>
 
-      {/* The rest of your component remains largely unchanged */}
-      {/* You may need to adjust how you access certain properties based on the ShopifyProduct type */}
-      {/* For example, ingredients, warnings, and reviews might not be available in the standard Shopify product type */}
-      {/* You may need to add these as metafields or custom fields in your Shopify setup */}
-
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-2xl font-bold mb-4">How To Use</h2>
-          <p className="text-gray-600">
-            {product.descriptionHtml ? (
-              <div
-                dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
-              />
-            ) : (
-              "Product usage information not available."
-            )}
-          </p>
+          <div
+            className="text-gray-600"
+            dangerouslySetInnerHTML={{ __html: product.descriptionHtml || "" }}
+          />
         </div>
         <div>
           <h2 className="text-2xl font-bold mb-4">Related</h2>

@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/ui/Input";
 import {
   Select,
   SelectContent,
@@ -210,19 +210,17 @@ export default function ShopAllPage() {
           {/* Pagination */}
           <div className="flex justify-center items-center space-x-2 mt-8">
             <Button
-              variant="outline"
-              size="icon"
+              variant="primary"
               onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
               disabled={currentPage === 1}
             >
               <ChevronLeft className="h-4 w-4 ml-auto" />
             </Button>
-            <Button variant="outline" size="icon" disabled>
+            <Button variant="primary" disabled>
               {currentPage}
             </Button>
             <Button
-              variant="outline"
-              size="icon"
+              variant="primary" // Change "outline" to "primary" or another valid variant
               onClick={() =>
                 setCurrentPage(Math.min(totalPages, currentPage + 1))
               }
