@@ -70,7 +70,7 @@ export default function ResearchPage() {
       <div className="mt-8 text-center text-sm text-gray-600">
         <p>
           If you choose to consent to research, you agree to the terms{" "}
-          <a href="#" className="text-green-600">
+          <a href="/research/consent" className="text-green-600">
             here
           </a>
           .
