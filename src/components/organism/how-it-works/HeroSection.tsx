@@ -28,7 +28,7 @@ export function HeroSection() {
           alt="how it works"
           width={1600}
           height={1200}
-          className="w-auto h-[332px] lg:w-auto lg:h-[428px] aspect-auto"
+          className="w-auto h-auto lg:w-auto lg:h-[428px] aspect-auto"
         />
       </div>
     </section>
