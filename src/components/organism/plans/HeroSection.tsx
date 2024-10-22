@@ -31,8 +31,8 @@ export function HeroSection() {
           more—going beyond what other DNA tests may reveal.
         </Text>
         <div className="flex flex-col max-lg:mt-4 gap-3 lg:gap-6">
-          <Text className="font-semibold">Works with:</Text>
-          <div className="align-middle grid lg:flex justify-left gap-12 mb-6">
+          <Text className="font-semibold  text-center">Works with:</Text>
+          <div className="align-middle grid lg:flex justify-center lg:justify-left logoplan gap-8 lg:gap-12 mb-6">
             <Image
               src="/images/23andme.svg"
               alt="23andme"

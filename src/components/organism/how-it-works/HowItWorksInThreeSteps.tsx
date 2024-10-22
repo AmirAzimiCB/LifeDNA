@@ -49,19 +49,19 @@ export function HowItWorksInThreeSteps() {
               >
                 <div className="h-full w-full flex flex-col lg:gap-8 items-start">
                   <div className="flex items-start w-full justify-between gap-4">
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 ">
                       <Text variant="base" className="capitalize">
                         Step {step.step}
                       </Text>
                       <Text>
                         <Text
-                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[140%] font-semibold lg:leading-8 text-center lg:text-left lg:max-w-[340px] w-full"
+                          className="text-lg max-lg:max-w-[241px]  lg:text-2xl leading-[140%] font-semibold lg:leading-8 text-left lg:max-w-[340px] w-full"
                           htmlContent={step.title}
                         />
                       </Text>
                       {step?.description ? (
                         <Text
-                          className="text-center lg:text-left max-lg:mt-3"
+                          className="text-left max-lg:mt-3"
                           htmlContent={step.description}
                         />
                       ) : null}
@@ -99,13 +99,13 @@ export function HowItWorksInThreeSteps() {
                       </Text>
                       <Text className="">
                         <Text
-                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[120%] font-semibold lg:leading-8 text-center lg:text-left lg:max-w-[340px] w-full"
+                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[120%] font-semibold lg:leading-8 text-left lg:max-w-[340px] w-full"
                           htmlContent={step.title}
                         />
                       </Text>
                       {step?.description ? (
                         <Text
-                          className="text-center lg:text-left max-lg:mt-3"
+                          className="text-left max-lg:mt-3"
                           htmlContent={step.description}
                         />
                       ) : null}
