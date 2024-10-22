@@ -481,35 +481,37 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 1,
     step: 1,
     showIcon: true,
-    title:
-      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
+    title: "Select Your Plan",
     _key: "have_dna_test",
+    description:
+      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
   },
   {
     id: 2,
     step: 2,
     showIcon: true,
-    title: "Upload your existing DNA Test",
+    title: "Upload  Your Raw Data",
     _key: "have_dna_test",
     description:
-      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
+      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
   },
   {
     id: 3,
     step: 3,
     showIcon: false,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness",
     _key: "have_dna_test",
-    description: "Unlock 130+ trait reports in a few hours.",
+    description:
+      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
   },
   {
     id: 4,
     step: 1,
     showIcon: true,
-    title:
-      "Order your <a target='_blank' href='/plans'> 12 Methylation Genes Report + Wellness Test Bundle</a>",
+    title: "Select Your Plan",
     _key: "no_dna_test",
+    description:
+      "Get our <a target='_blank' href='/plans'>12 Methylation Genes Report + Wellness Test Bundle</a> which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
   },
   {
     id: 5,
@@ -524,10 +526,10 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 6,
     step: 3,
     showIcon: false,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness!",
     _key: "no_dna_test",
-    description: "Unlock up to 130+ trait reports.",
+    description:
+      "Empower your well-being with the guidance of your personalized DNA reports!",
   },
 ];
 
@@ -569,35 +571,37 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
   {
     id: 1,
     step: 1,
-    title:
-      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
+    title: "Select Your Plan",
     _key: "have_dna_test",
+    description:
+      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
     icon: Basket,
   },
   {
     id: 2,
     step: 2,
-    title: "Upload your existing DNA Test",
+    title: "Upload  Your Raw Data",
     _key: "have_dna_test",
     description:
-      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
+      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
     icon: ParkOutline,
   },
   {
     id: 3,
     step: 3,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness",
     _key: "have_dna_test",
-    description: "Unlock 130+ trait reports in a few hours.",
+    description:
+      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
     icon: Clock,
   },
   {
     id: 4,
     step: 1,
-    title:
-      "Order your <a target='_blank' href='/plans'> 12 Methylation Genes Report + Wellness Test Bundle</a>",
+    title: "Select Your Plan",
     _key: "no_dna_test",
+    description:
+      "Get our <a target='_blank' href='/plans'>12 Methylation Genes Report + Wellness Test Bundle</a> which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
     icon: Basket,
   },
   {
@@ -612,10 +616,10 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
   {
     id: 6,
     step: 3,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness!",
     _key: "no_dna_test",
-    description: "Unlock up to 130+ trait reports.",
+    description:
+      "Empower your well-being with the guidance of your personalized DNA reports!",
     icon: Clock,
   },
 ];

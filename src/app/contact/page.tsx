@@ -10,12 +10,12 @@ const ContactPage = () => {
           <Title type="h1" className="text-[34px] font-semibold">
             Contact Us
           </Title>
-          <Text variant="paragraph">
+          <Text>
             We would love to hear from you! Please fill out the form below, and
             we will get back to you as soon as possible.
           </Text>
           <div className="flex items-center">
-            <Text variant="paragraph" className="font-semibold">
+            <Text className="font-semibold">
               Email:{" "}
               <a href="mailto:aloha@lifedna.com" className="text-[#41c752]">
                 aloha@lifedna.com
@@ -23,7 +23,7 @@ const ContactPage = () => {
             </Text>
           </div>
           <div className="flex items-center">
-            <Text variant="paragraph" className="font-semibold">
+            <Text className="font-semibold">
               Phone:{" "}
               <a href="tel:18775433362" className="text-[#41c752]">
                 1-877-LIFEDNA (543-3362)

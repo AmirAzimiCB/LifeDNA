@@ -7,7 +7,7 @@ const Updates = () => {
     <div className="flex flex-col gap-6 max-w-[1440px] mx-auto w-full px-6 py-16 lg:p-16">
       <Wrapper className="text-6xl font-semibold">
         LifeDNA Updates
-        <Text variant="terms" className="mt-4v">
+        <Text variant="terms" className="mt-4">
           Last updated: <span style={{ color: "#289a96" }}>March 22, 2024</span>
         </Text>
       </Wrapper>
@@ -153,7 +153,7 @@ const Updates = () => {
             <Text variant="terms" className="mt-2">
               <strong>
                 Your top food and nutrient suggestions to optimize your
-                wellness:
+                wellness:{" "}
               </strong>
               See your top food sources in order to get the suggested dosage of
               vitamins and minerals indicated in your Vitamin reports.
