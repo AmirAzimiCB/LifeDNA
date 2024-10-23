@@ -176,6 +176,10 @@
     width: 100px !important;
     display: flex !important;
   }
+
+  .logoplan {
+    justify-content: center !important;
+  }
 }
 
 @layer base {

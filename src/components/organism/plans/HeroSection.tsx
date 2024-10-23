@@ -4,7 +4,7 @@ import { Text, Title } from "@/components/atoms";
 
 export function HeroSection() {
   return (
-    <section className="w-full relative px-6 lg:px-[94px] py-6 pb-8 flex flex-col gap-[157px] justify-center lg:min-h-[438px] h-full">
+    <section className="w-full relative px-6 lg:px-[94px] py-6 pb-0 lg:pb-8 flex flex-col gap-[157px] justify-center lg:min-h-[438px] h-full">
       <Image
         src={BgDNA}
         layout="fill"
@@ -31,37 +31,39 @@ export function HeroSection() {
           more—going beyond what other DNA tests may reveal.
         </Text>
         <div className="flex flex-col max-lg:mt-4 gap-3 lg:gap-6">
-          <Text className="font-semibold  text-center">Works with:</Text>
-          <div className="align-middle grid lg:flex justify-center lg:justify-left logoplan gap-8 lg:gap-12 mb-6">
+          <Text className="font-semibold  text-center lg:text-left">
+            Works with:
+          </Text>
+          <div className="align-middle grid lg:flex justify-left gap-8 lg:gap-12 mb-6 logoplan">
             <Image
               src="/images/23andme.svg"
               alt="23andme"
-              width={130}
-              height={130}
+              width={110}
+              height={110}
             />
             <Image
               src="/images/ancestry.svg"
               alt="23andme"
-              width={130}
-              height={130}
+              width={110}
+              height={110}
             />{" "}
             <Image
               src="/images/myheritage.svg"
               alt="23andme"
-              width={130}
-              height={130}
+              width={110}
+              height={110}
             />{" "}
             <Image
               src="/images/livingdna.svg"
               alt="23andme"
-              width={130}
-              height={130}
+              width={110}
+              height={110}
             />{" "}
             <Image
               src="/images/familytreedna.svg"
               alt="23andme"
-              width={130}
-              height={130}
+              width={110}
+              height={110}
             />
           </div>
         </div>

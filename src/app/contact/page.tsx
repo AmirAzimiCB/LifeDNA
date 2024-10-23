@@ -1,4 +1,6 @@
 import { Text, Title } from "@/components/atoms";
+import Link from "next/link";
+import { FacebookIcon, TwitterIcon, InstagramIcon } from "@/components/Icons";
 import React from "react";
 
 const ContactPage = () => {
@@ -29,6 +31,17 @@ const ContactPage = () => {
                 1-877-LIFEDNA (543-3362)
               </a>
             </Text>
+          </div>
+          <div className="flex gap-4 mt-2">
+            <Link href="https://m.facebook.com/golifedna/" target="_blank">
+              <FacebookIcon className="w-6 h-6 text-green-500" />
+            </Link>
+            <Link href="https://twitter.com/golifedna" target="_blank">
+              <TwitterIcon className="w-6 h-6 text-green-500 " />
+            </Link>
+            <Link href="https://www.instagram.com/golifedna/" target="_blank">
+              <InstagramIcon className="w-6 h-6 text-green-500" />
+            </Link>
           </div>
         </div>
         <form className="flex flex-col gap-4">

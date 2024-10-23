@@ -12,8 +12,8 @@ export function HowItWorksInThreeSteps() {
   const tabs = ["have_dna_test", "no_dna_test"];
 
   return (
-    <Wrapper className="flex flex-col gap-4 lg:gap-8 max-lg:p-0 max-lg:shadow-none max-lg:bg-white">
-      <div className="flex flex-col gap-4">
+    <Wrapper className="flex flex-col gap-4 lg:gap-8 max-lg:p-0 max-lg:shadow-none max-lg:bg-white ">
+      <div className="flex flex-col gap-4 shadow-md p-6 rounded-xl lg:shadow-none">
         <Title className="text-center">
           Whether You&apos;ve Already Taken a DNA Test or Need One - You Can
           Kickstart Your Wellness Journey with LifeDNA
