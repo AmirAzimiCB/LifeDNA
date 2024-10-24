@@ -34,7 +34,7 @@ export function HeroSection() {
           <Text className="font-semibold  text-center lg:text-left">
             Works with:
           </Text>
-          <div className="align-middle grid lg:flex justify-left gap-8 lg:gap-12 mb-6 logoplan">
+          <div className="align-middle hidden lg:flex justify-left gap-8 lg:gap-12 mb-6 logoplan">
             <Image
               src="/images/23andme.svg"
               alt="23andme"
