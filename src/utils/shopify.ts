@@ -20,3 +20,13 @@ export const adminClient = new GraphQLClient(
     },
   }
 );
+
+// Shopify API client
+export const shopifyClient = new GraphQLClient(
+  `https://${process.env.SHOPIFY_STORE_DOMAIN}/admin/api/2023-04/graphql.json`,
+  {
+    headers: {
+      "X-Shopify-Access-Token": process.env.SHOPIFY_ADMIN_ACCESS_TOKEN!,
+    },
+  }
+);

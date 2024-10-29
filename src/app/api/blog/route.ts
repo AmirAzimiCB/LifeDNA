@@ -10,6 +10,37 @@ const shopifyClient = new GraphQLClient(
   }
 );
 
+// Define the expected type for the response
+type BlogResponse = {
+  blogs: {
+    edges: {
+      node: {
+        id: string;
+        title: string;
+        articles: {
+          edges: {
+            node: {
+              id: string;
+              title: string;
+              handle: string;
+              content: string;
+              excerpt: string;
+              publishedAt: string;
+              image: {
+                url: string;
+                altText: string;
+              };
+              author: {
+                name: string;
+              };
+            };
+          }[];
+        };
+      };
+    }[];
+  };
+};
+
 export async function GET() {
   const query = `
     {
@@ -45,7 +76,7 @@ export async function GET() {
 
   try {
     console.log("Fetching blog posts...");
-    const data = await shopifyClient.request(query);
+    const data: BlogResponse = await shopifyClient.request(query); // Cast the response to the expected type
     console.log("Raw response:", JSON.stringify(data, null, 2));
 
     const articles =

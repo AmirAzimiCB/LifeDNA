@@ -1,6 +1,37 @@
 import { NextResponse } from "next/server";
 import { adminClient } from "@/utils/shopify";
 
+// Define the expected structure of the data
+interface ArticleNode {
+  id: string;
+  title: string;
+  content: string;
+  contentHtml: string;
+  publishedAt: string;
+  handle: string;
+  image: {
+    url: string;
+    altText: string;
+  };
+  author: {
+    name: string;
+  };
+}
+
+interface BlogData {
+  blogs: {
+    edges: {
+      node: {
+        articles: {
+          edges: {
+            node: ArticleNode;
+          }[];
+        };
+      };
+    }[];
+  };
+}
+
 export async function GET(
   request: Request,
   { params }: { params: { handle: string } }
@@ -36,7 +67,7 @@ export async function GET(
   `;
 
   try {
-    const data = await adminClient.request(query);
+    const data = (await adminClient.request(query)) as BlogData;
     const article = data.blogs.edges[0]?.node.articles.edges[0]?.node;
 
     if (!article) {

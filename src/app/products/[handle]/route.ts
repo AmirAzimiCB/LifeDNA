@@ -16,7 +16,17 @@ export async function GET(
 
   try {
     console.log("Fetching product with handle:", handle); // Debug log
-    const product = await shopifyClient.product.fetchByHandle(handle);
+    const query = `query getProductByHandle($handle: String!) {
+      product(handle: $handle) {
+        id
+        title
+        description
+        // Add other fields you need
+      }
+    }`;
+
+    const variables = { handle };
+    const product = await shopifyClient.request(query, variables);
     console.log("Fetched product:", product); // Debug log
     return NextResponse.json(product);
   } catch (error) {
