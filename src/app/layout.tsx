@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
 
 export const metadata = {
   title: "LifeDNA - Advanced DNA Testing",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );
