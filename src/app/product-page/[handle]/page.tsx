@@ -17,10 +17,13 @@ import {
 } from "@/components/ui/select";
 
 interface ProductPageProps {
-  handle: string;
+  params: {
+    handle: string;
+  };
 }
 
-export default function ProductPage({ handle }: ProductPageProps) {
+export default function ProductPage({ params }: ProductPageProps): JSX.Element {
+  const { handle } = params;
   const [product, setProduct] = useState<ShopifyProduct | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
