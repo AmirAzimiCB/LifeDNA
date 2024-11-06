@@ -1,4 +1,6 @@
 import { Text, Title } from "@/components/atoms";
+import Link from "next/link";
+import { FacebookIcon, TwitterIcon, InstagramIcon } from "@/components/Icons";
 import React from "react";
 
 const ContactPage = () => {
@@ -10,12 +12,12 @@ const ContactPage = () => {
           <Title type="h1" className="text-[34px] font-semibold">
             Contact Us
           </Title>
-          <Text variant="paragraph">
+          <Text>
             We would love to hear from you! Please fill out the form below, and
             we will get back to you as soon as possible.
           </Text>
           <div className="flex items-center">
-            <Text variant="paragraph" className="font-semibold">
+            <Text className="font-semibold">
               Email:{" "}
               <a href="mailto:aloha@lifedna.com" className="text-[#41c752]">
                 aloha@lifedna.com
@@ -23,12 +25,23 @@ const ContactPage = () => {
             </Text>
           </div>
           <div className="flex items-center">
-            <Text variant="paragraph" className="font-semibold">
+            <Text className="font-semibold">
               Phone:{" "}
               <a href="tel:18775433362" className="text-[#41c752]">
                 1-877-LIFEDNA (543-3362)
               </a>
             </Text>
+          </div>
+          <div className="flex gap-4 mt-2">
+            <Link href="https://m.facebook.com/golifedna/" target="_blank">
+              <FacebookIcon className="w-6 h-6 text-green-500" />
+            </Link>
+            <Link href="https://twitter.com/golifedna" target="_blank">
+              <TwitterIcon className="w-6 h-6 text-green-500 " />
+            </Link>
+            <Link href="https://www.instagram.com/golifedna/" target="_blank">
+              <InstagramIcon className="w-6 h-6 text-green-500" />
+            </Link>
           </div>
         </div>
         <form className="flex flex-col gap-4">

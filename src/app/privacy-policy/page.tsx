@@ -89,8 +89,8 @@ const PrivacyPolicy = () => {
         delete that information. If you believe we might have any information
         from or about a child under 18, please contact us at:
       </Text>
-      <address className="flex flex-col list-disc text-sm font-normal normal-case mb-6">
-        <li className="ml-4 lg:ml-5">
+      <address className="flex flex-col list-disc text-sm font-normal normal-case mb-6 not-italic">
+        <li className="ml-4 lg:ml-5 ">
           1050 Queen St., 100, <br />
           <span className="ml-4">Honolulu, HI 96814</span>
         </li>
@@ -124,8 +124,8 @@ const PrivacyPolicy = () => {
         <li className="ml-6 lg:ml-8">
           By which you may be personally identified, such as name, postal
           address, e-mail address, telephone number, date of birth, sex, or any
-          other identifier by which you may be contacted online or offline
-          (“personal information“);
+          other identifier by which you may be contacted online or offline (“
+          <strong>personal information</strong>“);
         </li>
         <li className="ml-6 lg:ml-8">
           That includes your genotype, diseases or other traits or
@@ -317,6 +317,10 @@ const PrivacyPolicy = () => {
           To fulfill any other purpose for which you provide it.
         </li>
         <li className="ml-6 lg:ml-8">
+          To provide you with information, products, or services that you
+          request from us.
+        </li>
+        <li className="ml-6 lg:ml-8">
           To provide you with notices about your account, including expiration
           and renewal notices.
         </li>
@@ -395,10 +399,7 @@ const PrivacyPolicy = () => {
           including through third party services such as social networks and
           third-party apps that connect to our services.
         </li>
-        <li className="ml-6 lg:ml-8">
-          To provide you with information, products, or services that you
-          request from us.
-        </li>
+
         <li className="ml-6 lg:ml-8">To our subsidiaries and affiliates.</li>
         <li className="ml-6 lg:ml-8">
           For any other purpose disclosed by us when you provide the
@@ -572,32 +573,36 @@ const PrivacyPolicy = () => {
       <Text variant="paragraph">
         It is our policy to post any changes we make to our privacy policy on
         this page with a notice that the privacy policy has been updated on the
-        <a href="/updates">LifeDNA updates page</a>. If we make material changes
-        to how we treat our users’ personal information, we will notify you by
-        email to the email address specified in your account. The date the
-        privacy policy was last revised is identified at the top of the page.
-        You are responsible for ensuring we have an up-to-date active and
-        deliverable email address for you, and for periodically visiting our
-        website and this privacy policy to check for any changes.
+        <a href="/updates" className="text-green-500 hover:underline">
+          {" "}
+          LifeDNA updates page
+        </a>
+        . If we make material changes to how we treat our users’ personal
+        information, we will notify you by email to the email address specified
+        in your account. The date the privacy policy was last revised is
+        identified at the top of the page. You are responsible for ensuring we
+        have an up-to-date active and deliverable email address for you, and for
+        periodically visiting our website and this privacy policy to check for
+        any changes.
       </Text>
       <Text variant="paragraph">Contact Information</Text>
       <Text variant="paragraph">
         To ask questions or comment about this privacy policy and our privacy
         practices, contact us at:
       </Text>
-      <address className="flex flex-col list-disc text-lg font-normal normal-case mb-6">
-        <li className="ml-4 lg:ml-5">
+      <address className="flex flex-col list-disc text-lg font-normal normal-case mb-6 not-italic">
+        <li className="ml-4 lg:ml-5 not-italic">
           1050 Queen St., 100
           <br />
-          <span className="ml-6">Honolulu, HI 96814</span>
+          <span className="ml-6 not-italic">Honolulu, HI 96814</span>
         </li>
         <br />
-        <li className="ml-4 lg:ml-5">
+        <li className="ml-4 lg:ml-5 not-italic">
           By email at:{" "}
           <a href="mailto:privacy@lifedna.com">privacy@lifedna.com</a> Or
         </li>{" "}
         <br />
-        <li className="ml-4 lg:ml-5">
+        <li className="ml-4 lg:ml-5 not-italic">
           Via calling our toll-free number: (877) 543-3362
         </li>
       </address>

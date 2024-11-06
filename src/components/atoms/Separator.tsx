@@ -8,7 +8,7 @@ export function Separator() {
       fill="none"
       className="w-full flex-shrink-0"
     >
-      <path d="M0 1L1356 1.00012" stroke="#CACACA" stroke-width="0.75" />
+      <path d="M0 1L1356 1.00012" stroke="#CACACA" strokeWidth="0.75" />
     </svg>
   );
 }

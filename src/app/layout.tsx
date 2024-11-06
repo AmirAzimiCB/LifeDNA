@@ -1,10 +1,14 @@
-import Header from "@/components/Header";
 import "./globals.css";
-
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Cart from "@/components/cart/Cart";
+import CookieBanner from "@/components/CookieBanner";
 
 export const metadata = {
-  title: "LifeDNA - Advanced DNA Testing",
+  title: {
+    default: "LifeDNA - Advanced DNA Testing",
+    template: `%s | LifeDNA`,
+  },
   description: "Discover Your Genetic Wellness Profile",
 };
 
@@ -16,9 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
+        <Header>
+          <Cart />
+        </Header>
         <main>{children}</main>
         <Footer />
+        <CookieBanner />
+        <div id="popup-portal"></div>
       </body>
     </html>
   );

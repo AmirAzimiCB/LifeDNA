@@ -114,3 +114,15 @@ export type ReportCard = {
   image?: string | StaticImageData;
   href: string;
 };
+
+export type ProductReviews = {
+  averageRating: number;
+  reviews: {
+    id: number;
+    rating: number;
+    date: string;
+    user: string;
+    reviewTitle: string;
+    reviewBody: string;
+  }[];
+};

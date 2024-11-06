@@ -7,10 +7,18 @@ interface ButtonProps {
   children: ReactNode;
 }
 
+interface ButtonProps {
+  variant?: "primary" | "secondary" | "accent";
+  onClick?: () => void; // Add this line to include onClick prop
+  disabled?: boolean;
+  children: React.ReactNode;
+}
+
 export const Button: React.FC<ButtonProps> = ({
   variant = "accent",
   className,
   children,
+  ...props
 }) => {
   const baseStyles =
     "w-full text-base py-2.5 lg:py-3 font-semibold rounded-[8px] focus:outline-none focus:ring-2";
@@ -21,7 +29,10 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   return (
-    <button className={cn(baseStyles, variantStyles[variant], className)}>
+    <button
+      className={cn(baseStyles, variantStyles[variant], className)}
+      {...props}
+    >
       {children}
     </button>
   );

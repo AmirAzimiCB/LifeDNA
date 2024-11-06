@@ -15,11 +15,14 @@ const TermsAndConditions = () => {
       </Text>
       <Text variant="terms">
         We are pleased to offer you access to the{" "}
-        <a href="http://www.LifeDNA.com" className="font-bold">
+        <a
+          href="http://www.LifeDNA.com"
+          className="text-green-500 hover:underline"
+        >
           www.LifeDNA.com
         </a>{" "}
         website, its associated mobile applications (“Apps”), and their features
-        and services (collectively, the “Service”) operated by LifeDNA, Inc.
+        and services (collectively, the “Service”) operated by LifeDNA , Inc.
         (“Company” or “LifeDNA”) conditioned on your acceptance without
         modification of the following Terms of Use. The Service provides an
         online platform that uses DNA to provide personalized insights,
@@ -748,74 +751,69 @@ const TermsAndConditions = () => {
         only by mail to the address indicated in subsection (l) below.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold">b. Governing Law.</span> These Terms
-        shall be governed by and construed in accordance with the laws of the
-        State of Hawaii, without giving effect to any principles of conflicts of
-        law.
+        b. Governing Law. These Terms shall be governed by and construed in
+        accordance with the laws of the State of Hawaii, without giving effect
+        to any principles of conflicts of law.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold"> c. Jurisdiction.</span> You agree that
-        any action at law or in equity arising out of or relating to these Terms
-        or the Service shall be filed only in the state or federal courts in and
-        for the County of Santa Clara and State of California and you hereby
-        consent and submit to the personal and exclusive jurisdiction and venue
-        of such courts for the purposes of litigating any such action.
+        c. Jurisdiction. You agree that any action at law or in equity arising
+        out of or relating to these Terms or the Service shall be filed only in
+        the state or federal courts in and for the County of Santa Clara and
+        State of California and you hereby consent and submit to the personal
+        and exclusive jurisdiction and venue of such courts for the purposes of
+        litigating any such action.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold">d. Waiver</span>. A provision of these
-        Terms may be waived only by a written instrument executed by the party
-        entitled to the benefit of such provision. The failure of Company to
-        exercise or enforce any right or provision of these Terms will not
-        constitute a waiver of such right or provision.
+        d. Waiver. A provision of these Terms may be waived only by a written
+        instrument executed by the party entitled to the benefit of such
+        provision. The failure of Company to exercise or enforce any right or
+        provision of these Terms will not constitute a waiver of such right or
+        provision.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold"> e. Severability.</span> If any
-        provision of these Terms shall be unlawful, void, or for any reason
-        unenforceable, then that provision shall be deemed severable from these
-        Terms and shall not affect the validity and enforceability of any
-        remaining provisions.
+        e. Severability. If any provision of these Terms shall be unlawful,
+        void, or for any reason unenforceable, then that provision shall be
+        deemed severable from these Terms and shall not affect the validity and
+        enforceability of any remaining provisions.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold"> f. Assignment.</span> The Terms and any
-        rights and licenses granted hereunder, may not be transferred or
-        assigned by you, but may be assigned by Company without restriction. Any
-        assignment attempted to be made in violation of these Terms shall be
-        void.
+        f. Assignment.The Terms and any rights and licenses granted hereunder,
+        may not be transferred or assigned by you, but may be assigned by
+        Company without restriction. Any assignment attempted to be made in
+        violation of these Terms shall be void.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold">g. No Relationship.</span> You agree
-        that no joint venture, partnership, employment, or agency relationship
-        exists between you and Company as a result of these Terms or use of the
-        Service. You further acknowledge that by submitting User Content or
-        other Contributed Content, no confidential, fiduciary, contractually
-        implied or other relationship is created between you and Company other
-        than pursuant to these Terms.
+        g. No Relationship. You agree that no joint venture, partnership,
+        employment, or agency relationship exists between you and Company as a
+        result of these Terms or use of the Service. You further acknowledge
+        that by submitting User Content or other Contributed Content, no
+        confidential, fiduciary, contractually implied or other relationship is
+        created between you and Company other than pursuant to these Terms.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold">h. Headings.</span> The heading
-        references herein are for convenience purposes only, do not constitute a
-        part of these Terms, and shall not be deemed to limit or affect any of
-        the provisions hereof.
+        h. Headings. The heading references herein are for convenience purposes
+        only, do not constitute a part of these Terms, and shall not be deemed
+        to limit or affect any of the provisions hereof.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold">i. Entire Agreement.</span> This is the
-        entire agreement between you and Company relating to the subject matter
-        herein and supersedes all previous communications, representations,
-        understandings and agreements, either oral or written, between the
-        parties with respect to said subject matter, excluding any Services
-        Agreement that you may have entered into with Company. These Terms shall
-        not be modified except in writing, signed by both parties, or by a
-        change to these Terms made by Company as set forth in Section 3 above.
+        i. Entire Agreement.This is the entire agreement between you and Company
+        relating to the subject matter herein and supersedes all previous
+        communications, representations, understandings and agreements, either
+        oral or written, between the parties with respect to said subject
+        matter, excluding any Services Agreement that you may have entered into
+        with Company. These Terms shall not be modified except in writing,
+        signed by both parties, or by a change to these Terms made by Company as
+        set forth in Section 3 above.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold">j. CLAIMS.</span> YOU AGREE THAT ANY
-        CAUSE OF ACTION BROUGHT BY YOU ARISING OUT OF OR RELATED TO THE SERVICE
-        MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES.
-        OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
+        j. CLAIMS.YOU AGREE THAT ANY CAUSE OF ACTION BROUGHT BY YOU ARISING OUT
+        OF OR RELATED TO THE SERVICE MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE
+        CAUSE OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY
+        BARRED.
       </Text>
       <Text variant="terms">
-        <span className="font-semibold"> k. Disclosures.</span> The services
-        hereunder are offered by LifeDNA, Inc., located at{" "}
+        k. Disclosures.The services hereunder are offered by LifeDNA, Inc.,
+        located at{" "}
         <span className="font-semibold">
           1050 Queen St. #100, Honolulu, HI 96814.
         </span>
@@ -846,7 +844,7 @@ const TermsAndConditions = () => {
         Consent is incorporated in the Terms & Conditions along with our Privacy
         Policy.
       </Text>
-      <Text variant="terms" className="font-semibold">
+      <Text variant="terms" className="italic">
         Important terms
       </Text>
       <Text variant="terms">
@@ -876,7 +874,7 @@ const TermsAndConditions = () => {
         your DNA. It may include details about your wellness, ethnicity,
         lifestyle, and behaviors.
       </Text>
-      <Text variant="terms" className="font-semibold">
+      <Text variant="terms" className="italic">
         Purpose of the LifeDNA Application
       </Text>
       <Text variant="terms">
@@ -899,7 +897,7 @@ const TermsAndConditions = () => {
         what you can expect to learn from it. You’ll also learn what information
         we will use to create it.
       </Text>
-      <Text variant="terms" className="font-semibold">
+      <Text variant="terms" className="italic">
         Using the LifeDNA Application
       </Text>
       <Text variant="terms">– Providing your genetic file</Text>
@@ -1299,9 +1297,9 @@ const TermsAndConditions = () => {
         termination of your agreement to participate in any of our Programs.
       </Text>
       <Text variant="terms">
-        Miscellaneous: You warrant and represent to Us that you have all
-        necessary rights, power, and authority to agree to these Terms and
-        perform your obligations hereunder, and nothing contained in this
+        <strong>Miscellaneous:</strong> You warrant and represent to Us that you
+        have all necessary rights, power, and authority to agree to these Terms
+        and perform your obligations hereunder, and nothing contained in this
         Agreement or in the performance of such obligations will place you in
         breach of any other contract or obligation. The failure of either party
         to exercise in any respect any right provided for herein will not be

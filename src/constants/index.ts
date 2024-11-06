@@ -10,6 +10,7 @@ import {
   SelectOptions,
   Slide,
   Testimonials,
+  ProductReviews,
 } from "@/types";
 import {
   Nutrition,
@@ -31,6 +32,8 @@ import {
   DailyMail,
   Cnn,
   SleepReport,
+  Melatonin2,
+  Insomnia,
 } from "../../public/icons";
 
 import {
@@ -322,7 +325,7 @@ export const RoadMapData: RoadMap[] = [
     description:
       "Optimize your workout routine: level up your exercise with personalized fitness insights.",
     items: [
-      "Power vs Endurance",
+      "Power vs. Endurance",
       "Post Exercise Recovery Rate",
       "Injury Predisposition",
       "Blood Pressure and Exercise",
@@ -479,35 +482,37 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 1,
     step: 1,
     showIcon: true,
-    title:
-      "Purchase your <a target='_blank' href='/plans'> 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle</a>",
+    title: "Select Your Plan",
     _key: "have_dna_test",
+    description:
+      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
   },
   {
     id: 2,
     step: 2,
     showIcon: true,
-    title: "Upload your existing DNA Test",
+    title: "Upload  Your Raw Data",
     _key: "have_dna_test",
     description:
-      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
+      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
   },
   {
     id: 3,
     step: 3,
     showIcon: false,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness",
     _key: "have_dna_test",
-    description: "Unlock 130+ trait reports in a few hours.",
+    description:
+      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
   },
   {
     id: 4,
     step: 1,
     showIcon: true,
-    title:
-      "Order your <a target='_blank' href='/plans'> 12 Methylation Genes Report + Wellness Test Bundle</a>",
+    title: "Select Your Plan",
     _key: "no_dna_test",
+    description:
+      "Get our <a target='_blank' href='/plans'>12 Methylation Genes Report + Wellness Test Bundle</a> which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
   },
   {
     id: 5,
@@ -516,16 +521,16 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
+      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
   },
   {
     id: 6,
     step: 3,
     showIcon: false,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness!",
     _key: "no_dna_test",
-    description: "Unlock up to 130+ trait reports.",
+    description:
+      "Empower your well-being with the guidance of your personalized DNA reports!",
   },
 ];
 
@@ -567,35 +572,37 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
   {
     id: 1,
     step: 1,
-    title:
-      "Purchase your <a target='_blank' href='/plans'> 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle</a>",
+    title: "Select Your Plan",
     _key: "have_dna_test",
+    description:
+      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
     icon: Basket,
   },
   {
     id: 2,
     step: 2,
-    title: "Upload your existing DNA Test",
+    title: "Upload  Your Raw Data",
     _key: "have_dna_test",
     description:
-      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
+      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
     icon: ParkOutline,
   },
   {
     id: 3,
     step: 3,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness",
     _key: "have_dna_test",
-    description: "Unlock 130+ trait reports in a few hours.",
+    description:
+      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
     icon: Clock,
   },
   {
     id: 4,
     step: 1,
-    title:
-      "Order your <a target='_blank' href='/plans'> 12 Methylation Genes Report + Wellness Test Bundle</a>",
+    title: "Select Your Plan",
     _key: "no_dna_test",
+    description:
+      "Get our <a target='_blank' href='/plans'>12 Methylation Genes Report + Wellness Test Bundle</a> which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
     icon: Basket,
   },
   {
@@ -604,16 +611,16 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
+      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
     icon: ParkOutline,
   },
   {
     id: 6,
     step: 3,
-    title:
-      "Discover personalized methylation and wellness insights from your DNA!",
+    title: "Start Optimizing Your Wellness!",
     _key: "no_dna_test",
-    description: "Unlock up to 130+ trait reports.",
+    description:
+      "Empower your well-being with the guidance of your personalized DNA reports!",
     icon: Clock,
   },
 ];
@@ -889,7 +896,7 @@ export const reportData: ReportCategory[] = [
         icon: Lactate,
       },
       {
-        name: "Power vs Endurance",
+        name: "Power vs. Endurance",
         icon: Power,
       },
       {
@@ -1236,11 +1243,11 @@ export const reportData: ReportCategory[] = [
       },
       {
         name: "Melatonin Secretion",
-        icon: SleepReport,
+        icon: Melatonin2,
       },
       {
         name: "Potential for Insomnia",
-        icon: SleepReport,
+        icon: Insomnia,
       },
     ],
   },
@@ -1316,3 +1323,73 @@ export const reportCards: ReportCard[] = [
     href: "https://my.lifedna.com/payments?line_items_added%5B%5D=LDPLATV99,LDMETHRV99,LDDTKV51&checkbox_items%5B%5D=LDAGREPV67,LDPGCV67&upsells%5B%5D=LDCUSTOMSUPPV397,LDCUSTOMEALV197,SUPSEEUPS,LDPGCV67&channel=flow&funnel=LDPLATMETHKIT249PLANS&pt=cc",
   },
 ];
+
+export const sortOptions = [
+  { label: "Featured", key: "featured" },
+  {
+    label: "Best Selling",
+    key: "best-selling",
+  },
+  {
+    label: "Price: (Low To High)",
+    key: "price-low-high",
+  },
+  {
+    label: "Price: (High To Low)",
+    key: "price-high-low",
+  },
+  {
+    label: "Date, (Old To New)",
+    key: "date-old-new",
+  },
+  {
+    label: "Date, (New To Old)",
+    key: "date-new-old",
+  },
+  {
+    label: "Alphabetically, (A To Z)",
+    key: "name-a-z",
+  },
+  {
+    label: "Alphabetically, (Z To A)",
+    key: "name-z-a",
+  },
+];
+
+export const PRODUCTS_PER_PAGE = 9;
+
+export const reviewsList: ProductReviews = {
+  averageRating: 5,
+  reviews: [
+    {
+      id: 1,
+      rating: 5,
+      date: "10-10-2024",
+      user: "Jennifer",
+      reviewTitle: "Excellent customer support",
+      reviewBody:
+        "You cannot beat the experience with this company, especially for the price!",
+    },
+    {
+      id: 1,
+      rating: 5,
+      date: "10-10-2024",
+      user: "Casey",
+      reviewTitle: "Great experience with LifeDNA",
+      reviewBody:
+        "They are honest, high quality, and stand behind their product! I would recommend them with zero reservations!",
+    },
+    {
+      id: 1,
+      rating: 5,
+      date: "10-10-2024",
+      user: "Lori Choate",
+      reviewTitle: "Everything was great",
+      reviewBody:
+        "Everything was great. The website is easy to navigate and has much useful information.",
+    },
+  ],
+};
+
+export const DEFAULT_OPTION = "Default Title";
+export const HIDDEN_PRODUCT_TAG = "hidden-on-frontend";

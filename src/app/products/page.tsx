@@ -1,45 +1,45 @@
-"use client"; // Add this line to mark the component as a Client Component
+import { getProductList } from "@/lib";
+import SortSelect from "@/components/filter-sort/Sort";
+import InfiniteScroll from "@/components/InfiniteScroll";
+import FilterDrawer from "@/components/filter-sort/FilterDrawer";
+import { getSortValuesFromParam, getFilterValuesFromParams } from "@/lib/utils";
 
-import ProductList from "../../components/ProductList"; // Adjust the path based on your structure
-import { useEffect, useState } from "react";
+export const metadata = {
+  title: "Products List",
+  description: "List of all LifeDNA's available products",
+};
 
-interface ProductNode {
-  id: string;
-  title: string;
-  priceRange: {
-    minVariantPrice: {
-      amount: string;
-    };
-  };
-  images: {
-    edges: {
-      node: {
-        originalSrc: string;
-        altText: string;
-      };
-    }[];
-  };
-  handle?: string; // Add handle as an optional property
-}
-
-export default function ProductsPage() {
-  const [products, setProducts] = useState<ProductNode[]>([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await fetch("/api/products");
-      const data = await response.json();
-      console.log("API Response:", data); // Log the API response
-      setProducts(data); // Assuming the data is an array of ProductNode
-    };
-
-    fetchProducts();
-  }, []);
+export default async function ShopAllPage({ searchParams }) {
+  const { sort, ...clonedSearchParams } = searchParams;
+  const { sortKey, reverse } = getSortValuesFromParam(sort);
+  const appliedFilters = getFilterValuesFromParams(clonedSearchParams);
+  const { pageInfo, products, filters } = await getProductList(
+    sortKey,
+    reverse,
+    appliedFilters
+  );
 
   return (
-    <div className="container mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-4">Our Products</h1>
-      <ProductList products={products} /> {/* Pass the products prop */}
+    <div className="container mx-auto px-4 py-8">
+      <div className="flex flex-col gap-4 text-[#383B42] font-bold border-b-[0.75px] border-[#CACACA] pb-4 md:mb-8 ">
+        <h2 className="md:text-2xl text-xl">DNA-Targeted Products</h2>
+        <h1 className="text-3xl">Supplements</h1>
+      </div>
+      <div className="flex flex-col lg:flex-row gap-8">
+        {/* Sidebar Filters */}
+        <FilterDrawer filters={filters} />
+        {/* Main Content */}
+        <main className="flex-1">
+          <div className="lg:flex hidden justify-end items-center mb-6">
+            <SortSelect />
+          </div>
+          <InfiniteScroll
+            pageInfo={pageInfo}
+            connection={products}
+            info={{ sortKey, reverse, filters: appliedFilters }}
+          />
+        </main>
+      </div>
     </div>
   );
 }

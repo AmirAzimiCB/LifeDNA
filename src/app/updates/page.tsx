@@ -5,9 +5,9 @@ import Image from "next/image"; // Add this import
 const Updates = () => {
   return (
     <div className="flex flex-col gap-6 max-w-[1440px] mx-auto w-full px-6 py-16 lg:p-16">
-      <Wrapper className="text-6xl font-semibold">
+      <Wrapper className="text-3xl lg:text-5xl font-semibold">
         LifeDNA Updates
-        <Text variant="terms" className="mt-4v">
+        <Text variant="terms" className="mt-4">
           Last updated: <span style={{ color: "#289a96" }}>March 22, 2024</span>
         </Text>
       </Wrapper>
@@ -115,7 +115,7 @@ const Updates = () => {
               data.
             </Text>
             <Image
-              src="/images/update1.png"
+              src="/images/update1new.png"
               alt="Placeholder for future integrations"
               className="mt-4"
               width={500} // Specify width
@@ -153,15 +153,15 @@ const Updates = () => {
             <Text variant="terms" className="mt-2">
               <strong>
                 Your top food and nutrient suggestions to optimize your
-                wellness:
+                wellness:{" "}
               </strong>
               See your top food sources in order to get the suggested dosage of
               vitamins and minerals indicated in your Vitamin reports.
             </Text>
             <Image
-              src="/images/update2.png"
+              src="/images/update6.png"
               alt="Placeholder for future integrations"
-              className="mt-4"
+              className="mt-8"
               width={500} // Specify width
               height={300} // Specify height
             />
@@ -199,7 +199,7 @@ const Updates = () => {
               survey).
             </Text>
             <Image
-              src="/images/update3.png"
+              src="/images/update3new.png"
               alt="Placeholder for future integrations"
               className="mt-4"
               width={500} // Specify width
@@ -293,7 +293,7 @@ const Updates = () => {
               experience.
             </Text>
             <Image
-              src="/images/update4.png"
+              src="/images/update3new.png"
               alt="Placeholder for future integrations"
               className="mt-4"
               width={500} // Specify width

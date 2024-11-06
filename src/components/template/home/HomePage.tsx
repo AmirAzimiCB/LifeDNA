@@ -10,7 +10,7 @@ import {
 } from "@/components/organism/home";
 import { LifeDNAGameChangerData, ReportsData, RoadMapData } from "@/constants";
 import Image from "next/image";
-import { lock, WorksWith, Upload, ColoredDNA } from "../../../../public/icons";
+import { lock, Upload, ColoredDNA } from "../../../../public/icons";
 import { Button } from "@/components/ui/Button";
 import { LifeDNATabsComponent } from "@/components/organism/home/LifeDNATabsComponent";
 import Link from "next/link";
@@ -52,13 +52,36 @@ export function HomePage() {
         </Text>
         <div className="flex flex-col gap-4 lg:gap-6 text-center max-lg:mt-4">
           <Text className="font-semibold">Works with:</Text>
-          <div className="w-full max-w-[636px] mx-auto">
+          <div className="align-middle grid lg:flex justify-center gap-12 mb-6">
             <Image
-              src={WorksWith}
-              width={16200}
-              height={1200}
-              alt="works with"
-              className="w-full aspect-auto"
+              src="/images/23andme.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />
+            <Image
+              src="/images/ancestry.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />{" "}
+            <Image
+              src="/images/myheritage.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />{" "}
+            <Image
+              src="/images/livingdna.svg"
+              alt="23andme"
+              width={130}
+              height={130}
+            />{" "}
+            <Image
+              src="/images/familytreedna.svg"
+              alt="23andme"
+              width={130}
+              height={130}
             />
           </div>
         </div>

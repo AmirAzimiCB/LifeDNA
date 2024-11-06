@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { HowItWorks } from "../../../../public/icons";
 import { Text, Title } from "@/components/atoms";
 
 export function HeroSection() {
@@ -25,11 +24,11 @@ export function HeroSection() {
       </div>
       <div>
         <Image
-          src={HowItWorks}
+          src={"/images/DNAWellness2.png"}
           alt="how it works"
           width={1600}
           height={1200}
-          className="w-[382px] h-[332px] lg:w-[490px] lg:h-[428px] aspect-auto"
+          className="w-auto h-auto lg:w-auto lg:h-[428px] aspect-auto"
         />
       </div>
     </section>
