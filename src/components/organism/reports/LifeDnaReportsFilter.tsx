@@ -65,7 +65,7 @@ export function LifeDnaReportsFilter({ queryParam }: { queryParam: string }) {
                   alt={`${item.name}`}
                   width={32}
                   height={32}
-                  className="w-6 h-6 aspect-auto"
+                  className="w-6 h-6 aspect-auto rounded-es-full"
                 />
               </div>
               <Text className="font-semibold text-base">{`${item.name}`}</Text>

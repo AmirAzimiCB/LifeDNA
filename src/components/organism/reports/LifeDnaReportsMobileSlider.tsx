@@ -21,9 +21,7 @@ export function LifeDnaReportsMobileSlider({
           className="h-full min-h-[386px]"
           renderItem={(data) => <LifeDnaReportSliderCard data={data} />}
         />
-        <Button className="">
-          Explore LifeDNA’s Personalized Methylation Plans
-        </Button>
+        <Button className="">Yes, I want to transform my wellness!</Button>
       </div>
     </div>
   );

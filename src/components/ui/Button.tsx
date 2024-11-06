@@ -7,13 +7,6 @@ interface ButtonProps {
   children: ReactNode;
 }
 
-interface ButtonProps {
-  variant?: "primary" | "secondary" | "accent";
-  onClick?: () => void; // Add this line to include onClick prop
-  disabled?: boolean;
-  children: React.ReactNode;
-}
-
 export const Button: React.FC<ButtonProps> = ({
   variant = "accent",
   className,

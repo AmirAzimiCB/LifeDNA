@@ -38,15 +38,9 @@ export default function Footer() {
               </button>
             </div>
             <div className="hidden lg:flex space-x-4">
-              <Link href="https://m.facebook.com/golifedna/" target="_blank">
-                <FacebookIcon className="w-6 h-6 text-white" />
-              </Link>
-              <Link href="https://twitter.com/golifedna" target="_blank">
-                <TwitterIcon className="w-6 h-6 text-white" />
-              </Link>
-              <Link href="https://www.instagram.com/golifedna/" target="_blank">
-                <InstagramIcon className="w-6 h-6 text-white" />
-              </Link>
+              <FacebookIcon className="w-6 h-6 text-white" />
+              <TwitterIcon className="w-6 h-6 text-white" />
+              <InstagramIcon className="w-6 h-6 text-white" />
             </div>
           </div>
           <div className="flex flex-col items-center lg:flex-row lg:items-start gap-[42px] lg:space-x-16">
@@ -144,15 +138,9 @@ export default function Footer() {
               </ul>
             </div>
             <div className="flex lg:hidden gap-4">
-              <Link href="https://m.facebook.com/golifedna/" target="_blank">
-                <FacebookIcon className="w-6 h-6 text-white" />
-              </Link>
-              <Link href="https://twitter.com/golifedna" target="_blank">
-                <TwitterIcon className="w-6 h-6 text-white" />
-              </Link>
-              <Link href="https://www.instagram.com/golifedna/" target="_blank">
-                <InstagramIcon className="w-6 h-6 text-white" />
-              </Link>
+              <FacebookIcon className="w-6 h-6 text-white" />
+              <TwitterIcon className="w-6 h-6 text-white" />
+              <InstagramIcon className="w-6 h-6 text-white" />
             </div>
           </div>
         </div>

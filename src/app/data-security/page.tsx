@@ -29,18 +29,20 @@ const DataSecurity = () => {
         purposes for which we do so, and how we utilize it. Personal information
         is typically processed by LifeDNA for the following reasons:
       </Text>
-      <Text variant="terms" className="flex flex-col gap-6 list-disc mb-6">
-        <li className="  font-normal ml-6 ">DNA kit purchase(s).</li>
-        <li className="  font-normal ml-6 ">
-          Make an account, then add a kit to that account.
-        </li>
-        <li className="  font-normal ml-6">
-          Promote our reports and other DNA – personalized services.
-        </li>
-        <li className="  font-normal ml-6 ">
-          Conduct website maintenance, analytics, and network and infrastructure
-          security as well.
-        </li>
+      <Text variant="terms" className="flex flex-col gap-6 mb-6">
+        <ul>
+          <li className="  font-normal ml-6 ">DNA kit purchase(s).</li>
+          <li className="  font-normal ml-6 ">
+            Make an account, then add a kit to that account.
+          </li>
+          <li className="  font-normal ml-6">
+            Promote our reports and other DNA – personalized services.
+          </li>
+          <li className="  font-normal ml-6 ">
+            Conduct website maintenance, analytics, and network and
+            infrastructure security as well.
+          </li>
+        </ul>
       </Text>
       <Text variant="terms">
         Generally, we process highly sensitive personal data, such as genetic
@@ -75,7 +77,7 @@ const DataSecurity = () => {
           Support Team at{" "}
           <a
             href="mailto:aloha@lifedna.com"
-            className="text-green-500  hover:underline"
+            className="text-green-500 font-bold hover:underline"
           >
             aloha@lifedna.com
           </a>
@@ -128,7 +130,7 @@ const DataSecurity = () => {
         procedure. For more information, check out LifeDNA’s{" "}
         <a
           href="/privacy-policy"
-          className="text-green-500 underline font-bold hover:underline"
+          className="text-green-500 font-bold hover:underline"
         >
           Privacy Policy
         </a>
@@ -141,8 +143,14 @@ const DataSecurity = () => {
         </strong>
       </Text>
       <Text variant="terms">
-        Please contact us at security@lifedna.com.
-        <br />
+        Please contact us at{" "}
+        <a
+          href="mailto:security@lifedna.com"
+          className="text-green-500 font-bold hover:underline"
+        >
+          security@lifedna.com
+        </a>
+        .<br />
         <br />
         In an effort to safeguard our community, LifeDNA encourages users to
         inform us of any security-related problems with our website. If you

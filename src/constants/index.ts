@@ -31,8 +31,6 @@ import {
   DailyMail,
   Cnn,
   SleepReport,
-  Melatonin2,
-  Insomnia,
 } from "../../public/icons";
 
 import {
@@ -324,7 +322,7 @@ export const RoadMapData: RoadMap[] = [
     description:
       "Optimize your workout routine: level up your exercise with personalized fitness insights.",
     items: [
-      "Power vs. Endurance",
+      "Power vs Endurance",
       "Post Exercise Recovery Rate",
       "Injury Predisposition",
       "Blood Pressure and Exercise",
@@ -481,37 +479,35 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     id: 1,
     step: 1,
     showIcon: true,
-    title: "Select Your Plan",
+    title:
+      "Purchase your <a target='_blank' href='/plans'> 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle</a>",
     _key: "have_dna_test",
-    description:
-      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
   },
   {
     id: 2,
     step: 2,
     showIcon: true,
-    title: "Upload  Your Raw Data",
+    title: "Upload your existing DNA Test",
     _key: "have_dna_test",
     description:
-      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
+      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
   },
   {
     id: 3,
     step: 3,
     showIcon: false,
-    title: "Start Optimizing Your Wellness",
+    title:
+      "Discover personalized methylation and wellness insights from your DNA!",
     _key: "have_dna_test",
-    description:
-      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
+    description: "Unlock 130+ trait reports in a few hours.",
   },
   {
     id: 4,
     step: 1,
     showIcon: true,
-    title: "Select Your Plan",
+    title:
+      "Order your <a target='_blank' href='/plans'> 12 Methylation Genes Report + Wellness Test Bundle</a>",
     _key: "no_dna_test",
-    description:
-      "Get our <a target='_blank' href='/plans'>12 Methylation Genes Report + Wellness Test Bundle</a> which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
   },
   {
     id: 5,
@@ -520,16 +516,16 @@ export const LifeDNAStepsData: LifeDNASteps[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
+      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
   },
   {
     id: 6,
     step: 3,
     showIcon: false,
-    title: "Start Optimizing Your Wellness!",
+    title:
+      "Discover personalized methylation and wellness insights from your DNA!",
     _key: "no_dna_test",
-    description:
-      "Empower your well-being with the guidance of your personalized DNA reports!",
+    description: "Unlock up to 130+ trait reports.",
   },
 ];
 
@@ -571,37 +567,35 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
   {
     id: 1,
     step: 1,
-    title: "Select Your Plan",
+    title:
+      "Purchase your <a target='_blank' href='/plans'> 12 Methylation Genes Report / 12 Methylation Genes Report + Wellness Report Bundle</a>",
     _key: "have_dna_test",
-    description:
-      "Choose between our <a target='_blank' href='/plans'>12 Methylation Genes Report and our 12 Methylation Genes Report + Wellness Report Bundle</a>. These plans provide access to your personalized insights within hours.",
     icon: Basket,
   },
   {
     id: 2,
     step: 2,
-    title: "Upload  Your Raw Data",
+    title: "Upload your existing DNA Test",
     _key: "have_dna_test",
     description:
-      "Simply upload your raw data, and our system will promptly analyze it. You'll be notified via email as soon as your reports are ready to view!",
+      "Follow the steps on how to upload your 23andme, Ancestry, MyHeritage, Living DNA, or Family Tree DNA data.",
     icon: ParkOutline,
   },
   {
     id: 3,
     step: 3,
-    title: "Start Optimizing Your Wellness",
+    title:
+      "Discover personalized methylation and wellness insights from your DNA!",
     _key: "have_dna_test",
-    description:
-      "Dive into your actionable DNA insights, kickstarting your journey to optimal wellness!",
+    description: "Unlock 130+ trait reports in a few hours.",
     icon: Clock,
   },
   {
     id: 4,
     step: 1,
-    title: "Select Your Plan",
+    title:
+      "Order your <a target='_blank' href='/plans'> 12 Methylation Genes Report + Wellness Test Bundle</a>",
     _key: "no_dna_test",
-    description:
-      "Get our <a target='_blank' href='/plans'>12 Methylation Genes Report + Wellness Test Bundle</a> which includes a LifeDNA kit to help you get started. It ships in 1 to 3 days.",
     icon: Basket,
   },
   {
@@ -610,16 +604,16 @@ export const HowItWorksInThreeStepsData: HowItWorksInThreeStepsTypes[] = [
     title: "Take A DNA Test",
     _key: "no_dna_test",
     description:
-      "Simply follow the kit instructions for a simple cheek swab. Mail it back with your DNA sample and get your results in 3-5 weeks.",
+      "Follow the steps in the kit on how to get your DNA sample. Get your results in 3-5 weeks!",
     icon: ParkOutline,
   },
   {
     id: 6,
     step: 3,
-    title: "Start Optimizing Your Wellness!",
+    title:
+      "Discover personalized methylation and wellness insights from your DNA!",
     _key: "no_dna_test",
-    description:
-      "Empower your well-being with the guidance of your personalized DNA reports!",
+    description: "Unlock up to 130+ trait reports.",
     icon: Clock,
   },
 ];
@@ -895,7 +889,7 @@ export const reportData: ReportCategory[] = [
         icon: Lactate,
       },
       {
-        name: "Power vs. Endurance",
+        name: "Power vs Endurance",
         icon: Power,
       },
       {
@@ -1242,11 +1236,11 @@ export const reportData: ReportCategory[] = [
       },
       {
         name: "Melatonin Secretion",
-        icon: Melatonin2,
+        icon: SleepReport,
       },
       {
         name: "Potential for Insomnia",
-        icon: Insomnia,
+        icon: SleepReport,
       },
     ],
   },

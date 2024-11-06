@@ -24,8 +24,6 @@ import skincare from "./skincare.svg";
 import wellness from "./wellness.svg";
 import PersonalityHome from "./Personality & Cognitionhome.svg";
 import SleepReport from "./sleepReport.svg";
-import Melatonin2 from "./melatonin.svg";
-import Insomnia from "./insomnia.svg";
 
 // partners
 import Forbes from "./forbes.svg";
@@ -71,7 +69,5 @@ export {
   lock,
   Upload,
   ColoredDNA,
-  Melatonin2,
-  Insomnia,
   TestimonialBg,
 };

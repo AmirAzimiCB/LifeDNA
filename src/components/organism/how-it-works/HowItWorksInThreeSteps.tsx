@@ -12,8 +12,8 @@ export function HowItWorksInThreeSteps() {
   const tabs = ["have_dna_test", "no_dna_test"];
 
   return (
-    <Wrapper className="flex flex-col gap-4 lg:gap-8 max-lg:p-0 max-lg:shadow-none max-lg:bg-white ">
-      <div className="flex flex-col gap-4 shadow-md p-6 rounded-xl lg:shadow-none">
+    <Wrapper className="flex flex-col gap-4 lg:gap-8 max-lg:p-0 max-lg:shadow-none max-lg:bg-white">
+      <div className="flex flex-col gap-4">
         <Title className="text-center">
           Whether You&apos;ve Already Taken a DNA Test or Need One - You Can
           Kickstart Your Wellness Journey with LifeDNA
@@ -28,7 +28,7 @@ export function HowItWorksInThreeSteps() {
             value="have_dna_test"
             className="px-8 py-2.5 text-sm capitalize font-normal text-[#383B42] rounded-full data-[state=active]:bg-[#00A084] data-[state=active]:text-white data-[state=active]:font-semibold"
           >
-            I Have Already Done A DNA test
+            I Already Have Done A DNA Test
           </Tabs.Trigger>
           <Tabs.Trigger
             value="no_dna_test"
@@ -49,19 +49,19 @@ export function HowItWorksInThreeSteps() {
               >
                 <div className="h-full w-full flex flex-col lg:gap-8 items-start">
                   <div className="flex items-start w-full justify-between gap-4">
-                    <div className="flex flex-col gap-2 ">
+                    <div className="flex flex-col gap-2">
                       <Text variant="base" className="capitalize">
                         Step {step.step}
                       </Text>
                       <Text>
                         <Text
-                          className="text-lg max-lg:max-w-[241px]  lg:text-2xl leading-[140%] font-semibold lg:leading-8 text-left lg:max-w-[340px] w-full"
+                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[140%] font-semibold lg:leading-8 text-center lg:text-left lg:max-w-[340px] w-full"
                           htmlContent={step.title}
                         />
                       </Text>
                       {step?.description ? (
                         <Text
-                          className="text-left max-lg:mt-3"
+                          className="text-center lg:text-left max-lg:mt-3"
                           htmlContent={step.description}
                         />
                       ) : null}
@@ -99,13 +99,13 @@ export function HowItWorksInThreeSteps() {
                       </Text>
                       <Text className="">
                         <Text
-                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[120%] font-semibold lg:leading-8 text-left lg:max-w-[340px] w-full"
+                          className="text-lg max-lg:max-w-[241px] lg:text-2xl leading-[120%] font-semibold lg:leading-8 text-center lg:text-left lg:max-w-[340px] w-full"
                           htmlContent={step.title}
                         />
                       </Text>
                       {step?.description ? (
                         <Text
-                          className="text-left max-lg:mt-3"
+                          className="text-center lg:text-left max-lg:mt-3"
                           htmlContent={step.description}
                         />
                       ) : null}
