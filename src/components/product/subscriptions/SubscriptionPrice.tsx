@@ -4,6 +4,7 @@ const SubscriptionPrice = ({
   selectedSellingPlan,
   selectedVariant,
   originalPrice,
+  shippingPrice,
 }) => {
   const sellingPlanPriceAdjustments = selectedSellingPlan?.priceAdjustments;
   if (!sellingPlanPriceAdjustments?.length) return null;
@@ -34,6 +35,9 @@ const SubscriptionPrice = ({
           currencyDisplay: "narrowSymbol",
         }
       ).format(parseFloat(sellingPlanPrice.amount))}`}</span>
+      <span className="font-semibold ">
+        +&nbsp;{shippingPrice}&nbsp;shipping
+      </span>
       {/* percentage of flat price off */}
       <span className="rounded-lg overflow-hidden py-[3px] px-2 bg-green-950 text-white text-sm font-semibold">
         save&nbsp;{sellingPlanPrice?.amountSaved}

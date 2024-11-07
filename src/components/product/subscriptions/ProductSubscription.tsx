@@ -8,8 +8,9 @@ import { calculateSubscriptionPrice, getSubscriptionCycle } from "@/lib/utils";
 
 const ProductSubscription = ({
   originalPrice,
-  sellingPlanGroup,
+  shippingPrice,
   selectedVariant,
+  sellingPlanGroup,
 }) => {
   const router = useRouter();
   const pathname = usePathname();
@@ -24,6 +25,8 @@ const ProductSubscription = ({
     amount: parseFloat(selectedVariant.price.amount),
     currencyCode: selectedVariant.price.currencyCode,
   };
+
+  console.log(shippingPrice);
   return (
     <div className="text-gray-600 flex flex-col gap-3">
       <div className="relative overflow-hidden rounded-xl md:p-4 p-3 border-[#CACACA] border-[.75px] flex gap-3 flex-col bg-green-50">
@@ -51,6 +54,7 @@ const ProductSubscription = ({
                 </Link>
                 <SubscriptionPrice
                   selectedSellingPlan={plan}
+                  shippingPrice={shippingPrice}
                   originalPrice={originalPrice}
                   selectedVariant={selectedVariant}
                 />
@@ -77,6 +81,8 @@ const ProductSubscription = ({
               )}
             </span>
           </p>
+          <p>&#10003;&nbsp;High-Quality, Pure Ingredients</p>
+          <p>&#10003;&nbsp;Consistent Methylation Support</p>
         </div>
       </div>
       <div className="rounded-lg md:p-4 p-3 border-[#CACACA] border-[.75px] flex items-center bg-[#ebebeb]/30">
@@ -103,6 +109,9 @@ const ProductSubscription = ({
                 currency: originalPrice.currencyCode,
                 currencyDisplay: "narrowSymbol",
               }).format(parseFloat(originalPrice.amount))}`}
+            </span>
+            <span className="font-semibold ">
+              +&nbsp;{shippingPrice}&nbsp;shipping
             </span>
           </Link>
         </label>

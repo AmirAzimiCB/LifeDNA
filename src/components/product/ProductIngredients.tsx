@@ -43,11 +43,15 @@ const ProductIngredients = ({ data }) => {
       <h4 className="text-lg font-semibold">Ingredient Information</h4>
 
       {/* Key Ingredients Tags */}
-      <div>
+      <div className="lg:pr-6">
         <h5 className="font-medium mb-3 capitalize">Key Ingredients</h5>
         <ul className="flex flex-wrap gap-2">
           {keyIngredients.map((ingredient, index) => (
-            <Tag item={ingredient.title} key={`key-ingredients-${index}`} />
+            <Tag
+              item={ingredient.title}
+              key={`key-ingredients-${index}`}
+              className="bg-green-50 border-[#CACACA] border-[.75px] rounded-xl md:gap-2"
+            />
           ))}
         </ul>
       </div>
@@ -61,8 +65,13 @@ const ProductIngredients = ({ data }) => {
             className="border-b-[0.75px] border-[#CACACA] md:py-4 py-2"
           >
             <Accordion.Header>
-              <Accordion.Trigger className="group flex items-center justify-between w-full pl-1 md:pr-6 pr-3 py-3 text-left [&[data-state=open]>svg]:rotate-180">
-                <span className="font-bold">{ingredient.title}</span>
+              <Accordion.Trigger className="group flex md:gap-3 gap-2 items-center justify-between w-full pl-1 md:pr-6 pr-3 py-3 text-left [&[data-state=open]>svg]:rotate-180">
+                <div className="flex flex-1 gap-2 items-center justify-between">
+                  <span className="font-bold">{ingredient.title}</span>
+                  <span className="font-semibold text-sm">
+                    {ingredient.amount}
+                  </span>
+                </div>
                 <ChevronDownIcon
                   aria-hidden
                   className="w-4 h-4 transition-transform duration-200 ease-out"
@@ -73,9 +82,6 @@ const ProductIngredients = ({ data }) => {
             <Accordion.Content className="pl-1 md:pr-6 pr-3 pb-3 text-sm text-gray-600">
               <div className="pt-2">
                 {ingredient.details && <p>{ingredient.details}</p>}
-                {ingredient.amount && (
-                  <p className="mt-2 font-bold">{ingredient.amount}</p>
-                )}
               </div>
             </Accordion.Content>
           </Accordion.Item>

@@ -6,6 +6,7 @@ import { PRODUCT_FRAGMENT } from "../fragments/product";
 // custom.product_warnings
 // custom.product_ingredients
 // custom.product_extra_details
+// custom.product_shipping_price
 
 export const GET_PRODUCT_QUERY = `
   query Product(
@@ -22,6 +23,7 @@ export const GET_PRODUCT_QUERY = `
           { namespace: "custom", key: "product_ingredients" }
           { namespace: "custom", key: "product_extra_details" }
           { namespace: "custom", key: "product_warnings" }
+          { namespace: "custom", key: "product_shipping_price" }
         ]
       ) {
         id

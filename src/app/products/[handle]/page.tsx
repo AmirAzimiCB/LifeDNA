@@ -2,11 +2,13 @@ import { getProduct } from "@/lib";
 import { ClientError } from "graphql-request";
 import { notFound, redirect } from "next/navigation";
 import ProductMedia from "@/components/product/ProductMedia";
+import ProductUsage from "@/components/product/ProductUsage";
 import { reviewsList, HIDDEN_PRODUCT_TAG } from "@/constants";
 import ProductHeader from "@/components/product/ProductHeader";
 import ProductDetails from "@/components/product/ProductDetails";
 import ProductRatings from "@/components/product/ProductRatings";
 import ProductWarnings from "@/components/product/ProductWarnings";
+import ProductArticles from "@/components/product/ProductArticles";
 import ProductIngredients from "@/components/product/ProductIngredients";
 import ProductExtraDetails from "@/components/product/ProductExtraDetails";
 
@@ -149,13 +151,32 @@ export default async function ProductPage({ params, searchParams }) {
           <ProductExtraDetails
             key={metafield.id}
             data={metafield.value}
-            title={`${product.title} DETAILS`}
+            title={`${product.title}+ Details`}
           />
         );
       case "product_ingredients":
         return <ProductIngredients key={metafield.id} data={metafield} />;
       case "product_warnings":
         return <ProductWarnings key={metafield.id} data={metafield} />;
+
+      default:
+        break;
+    }
+  };
+  const renderProductMetadata2 = (metafield) => {
+    switch (metafield?.key) {
+      case "usage_guide":
+        return <ProductUsage data={metafield} key={metafield.id} />;
+      case "related_articles":
+        return <ProductArticles data={metafield} key={metafield.id} />;
+      case "references":
+        return (
+          <ProductArticles
+            data={metafield}
+            title="References"
+            key={metafield.id}
+          />
+        );
       default:
         break;
     }
@@ -164,6 +185,7 @@ export default async function ProductPage({ params, searchParams }) {
   return (
     <div className="container mx-auto px-4 pt-8">
       <ProductHeader
+        title={product.title}
         price={product.priceRange.maxVariantPrice.amount}
         currencyCode={product.priceRange.maxVariantPrice.currencyCode}
       />
@@ -183,6 +205,14 @@ export default async function ProductPage({ params, searchParams }) {
           selectedVariant={firstVariant}
           selectedSellingPlan={selectedSellingPlan}
         />
+        {/* product references and extra metafields */}
+        <div className="flex flex-col md:gap-6 lg:px-6 px-0 lg:pb-0 pb-6 gap-4 lg:border-l-[0.75px] border-[#CACACA]    lg:row-start-2 row-span-1">
+          {product.metafields &&
+            product.metafields.length &&
+            product.metafields.map((metafield) => {
+              return renderProductMetadata2(metafield);
+            })}
+        </div>
       </div>
     </div>
   );

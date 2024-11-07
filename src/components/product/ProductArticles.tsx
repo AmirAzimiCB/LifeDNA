@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { removeEdgesAndNodes } from "@/lib/utils";
 
-const ProductArticles = ({ data, title = "Articles and Videos" }) => {
+const ProductArticles = ({ data, title = "Related Articles" }) => {
   const references = removeEdgesAndNodes(data.references);
 
   return (
@@ -21,7 +21,7 @@ const ProductArticles = ({ data, title = "Articles and Videos" }) => {
               href={linkUrl}
               target="_blank"
               key={`${reference.id}-reference-${index}`}
-              className="transition-all hover:opacity-70 border-b-[.25px] border-transparent hover:border-gray-600/70"
+              className="transition-all hover:opacity-70 border-b-[.25px] border-transparent hover:border-green-600 text-green-600"
             >
               {linkText}
             </Link>
