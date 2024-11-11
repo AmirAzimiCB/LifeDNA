@@ -1388,6 +1388,24 @@ export const reviewsList: ProductReviews = {
       reviewBody:
         "Everything was great. The website is easy to navigate and has much useful information.",
     },
+    {
+      id: 1,
+      rating: 5,
+      date: "10-10-2024",
+      user: "Hila",
+      reviewTitle: "Quick and Easy",
+      reviewBody:
+        "Easy to order. Easy to use. Great support. I highly recommend it.",
+    },
+    {
+      id: 1,
+      rating: 5,
+      date: "10-10-2024",
+      user: "Karen Pennington",
+      reviewTitle: "This was a very interesting and unique experience!",
+      reviewBody:
+        "I highly recommend it to everyone who has done the DNA testing.",
+    },
   ],
 };
 

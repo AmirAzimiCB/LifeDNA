@@ -46,13 +46,15 @@ const ProductIngredients = ({ data }) => {
       <div className="lg:pr-6">
         <h5 className="font-medium mb-3 capitalize">Key Ingredients</h5>
         <ul className="flex flex-wrap gap-2">
-          {keyIngredients.map((ingredient, index) => (
-            <Tag
-              item={ingredient.title}
-              key={`key-ingredients-${index}`}
-              className="bg-green-50 border-[#CACACA] border-[.75px] rounded-xl md:gap-2"
-            />
-          ))}
+          {keyIngredients
+            .sort((a, b) => (a.title > b.title ? 1 : -1))
+            .map((ingredient, index) => (
+              <Tag
+                item={ingredient.title}
+                key={`key-ingredients-${index}`}
+                className="bg-green-50 border-[#CACACA] border-[.75px] rounded-xl md:gap-2"
+              />
+            ))}
         </ul>
       </div>
 

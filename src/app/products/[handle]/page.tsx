@@ -151,7 +151,7 @@ export default async function ProductPage({ params, searchParams }) {
           <ProductExtraDetails
             key={metafield.id}
             data={metafield.value}
-            title={`${product.title}+ Details`}
+            title={`${product.title} Details`}
           />
         );
       case "product_ingredients":

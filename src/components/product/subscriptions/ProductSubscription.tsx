@@ -62,10 +62,9 @@ const ProductSubscription = ({
             );
           })}
         </ul>
-        <div className="flex flex-wrap gap-2 [&>p]:flex-auto">
-          <p>&#10003;&nbsp;Pause or cancel anytime</p>
+        <div className="flex grow flex-wrap gap-2 [&>p]:flex-auto">
           <p>
-            &#10003;&nbsp;save&nbsp;
+            &#10003;&nbsp;Save&nbsp;
             <span className="font-semibold">
               {
                 calculateSubscriptionPrice(
@@ -74,15 +73,16 @@ const ProductSubscription = ({
                   selectedVariantPrice
                 ).amountSaved
               }
-              &nbsp;every &nbsp;
+              &nbsp;Every&nbsp;
               {getSubscriptionCycle(
                 sellingPlanGroup.sellingPlans.nodes[selectedIndex]
                   .deliveryPolicy.interval
               )}
             </span>
           </p>
-          <p>&#10003;&nbsp;High-Quality, Pure Ingredients</p>
           <p>&#10003;&nbsp;Consistent Methylation Support</p>
+          <p>&#10003;&nbsp;Pause or Cancel Anytime</p>
+          <p>&#10003;&nbsp;High-Quality, Pure Ingredients</p>
         </div>
       </div>
       <div className="rounded-lg md:p-4 p-3 border-[#CACACA] border-[.75px] flex items-center bg-[#ebebeb]/30">
