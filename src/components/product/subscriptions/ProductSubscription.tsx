@@ -26,10 +26,9 @@ const ProductSubscription = ({
     currencyCode: selectedVariant.price.currencyCode,
   };
 
-  console.log(shippingPrice);
   return (
     <div className="text-gray-600 flex flex-col gap-3">
-      <div className="relative overflow-hidden rounded-xl md:p-4 p-3 border-[#CACACA] border-[.75px] flex gap-3 flex-col bg-green-50">
+      <div className="relative overflow-hidden rounded-xl md:p-4 p-3 border-[#CACACA] border-[.75px] flex gap-3 flex-col bg-green-50 @container">
         <span className="uppercase text-white md:text-base text-sm md:font-semibold font-medium absolute right-1 top-1 p-1 bg-accent-color px-3  rounded-[6px]">
           {sellingPlanGroup.name}
         </span>
@@ -62,7 +61,7 @@ const ProductSubscription = ({
             );
           })}
         </ul>
-        <div className="flex grow flex-wrap gap-2 [&>p]:flex-auto">
+        <div className="grid @[450px]:grid-cols-[auto_auto] grid-cols-1 gap-2">
           <p>
             &#10003;&nbsp;Save&nbsp;
             <span className="font-semibold">

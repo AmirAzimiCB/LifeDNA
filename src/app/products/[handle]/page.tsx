@@ -11,6 +11,7 @@ import ProductWarnings from "@/components/product/ProductWarnings";
 import ProductArticles from "@/components/product/ProductArticles";
 import ProductIngredients from "@/components/product/ProductIngredients";
 import ProductExtraDetails from "@/components/product/ProductExtraDetails";
+import ProductKeyIngredients from "@/components/product/ProductKeyIngredients";
 
 export async function generateMetadata({ params }) {
   const product = await getProduct(params.handle);
@@ -156,6 +157,8 @@ export default async function ProductPage({ params, searchParams }) {
         );
       case "product_ingredients":
         return <ProductIngredients key={metafield.id} data={metafield} />;
+      case "product_key_ingredients":
+        return <ProductKeyIngredients key={metafield.id} data={metafield} />;
       case "product_warnings":
         return <ProductWarnings key={metafield.id} data={metafield} />;
 
