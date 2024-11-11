@@ -32,7 +32,7 @@ export const GET_PRODUCT_QUERY = `
         key
         value
         namespace
-        references(first: 10) {
+        references(first: 20) {
           edges {
             node {
               ... on Metaobject {
