@@ -8,7 +8,7 @@ const Tag = ({ item, className }: { item: string; className?: string }) => {
         className
       )}
     >
-      <span className="w-3 h-3 rounded-full bg-gray-600" />
+      <span className="w-3 h-3 rounded-full bg-green-500" />
       {item}
     </span>
   );

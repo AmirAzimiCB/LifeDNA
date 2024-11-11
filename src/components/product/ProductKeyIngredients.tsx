@@ -14,7 +14,7 @@ const ProductKeyIngredients = ({ data }) => {
             <Tag
               key={`key-ingredients-${index}`}
               item={ingredient.fields[0].value}
-              className="bg-green-50 border-[#CACACA] border-[.75px] rounded-xl md:gap-2"
+              className="bg-green-50 border-green-500 border-[.75px] rounded-xl md:gap-2"
             />
           ))}
         </ul>
