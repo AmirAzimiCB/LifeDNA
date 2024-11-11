@@ -39,7 +39,7 @@ const SubscriptionPrice = ({
         +&nbsp;{shippingPrice}&nbsp;shipping
       </span>
       {/* percentage of flat price off */}
-      <span className="rounded-lg overflow-hidden py-[3px] px-2 bg-green-950 text-white text-sm font-semibold">
+      <span className="rounded-lg overflow-hidden p-2 bg-green-950 text-white text-sm font-semibold">
         save&nbsp;{sellingPlanPrice?.amountSaved}
       </span>
     </div>
