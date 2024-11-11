@@ -43,7 +43,7 @@ const ProductRatings = ({ data }: { data: ProductReviews }) => {
             </div>
             <div className="flex flex-col gap-2 lg:pr-6">
               <p className="capitalize font-semibold">{review.reviewTitle}</p>
-              <p>{review.reviewTitle}</p>
+              <p>{review.reviewBody}</p>
             </div>
           </div>
         );
