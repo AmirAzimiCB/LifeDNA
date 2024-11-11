@@ -37,9 +37,6 @@ const ProductRatings = ({ data }: { data: ProductReviews }) => {
                 <Stars rating={review.rating} />
                 <p className="capitalize font-medium">{review.user}</p>
               </div>
-              <p className="text-sm">
-                verified {new Date(review.date).toLocaleDateString()}
-              </p>
             </div>
             <div className="flex flex-col gap-2 lg:pr-6">
               <p className="capitalize font-semibold">{review.reviewTitle}</p>
